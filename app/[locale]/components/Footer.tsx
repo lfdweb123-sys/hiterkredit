@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-5 md:px-8 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <span className="font-display font-bold text-xl">
-            Hiter<span className="text-[var(--color-sky)]">Kredit</span>
+            Posojil<span className="text-[var(--color-sky)]">nica</span>
           </span>
           <p className="mt-3 text-sm text-white/60 leading-relaxed max-w-xs">
             {t('tagline')}
