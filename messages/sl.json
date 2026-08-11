@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "siteName": "HiterKredit",
+    "titleHome": "HiterKredit — Hitri in pregledni osebni krediti",
+    "descHome": "Simulirajte svoje posojilo v realnem času in oddajte vlogo v nekaj minutah. Brez skritih stroškov, brez shranjevanja nepotrebnih podatkov.",
+    "titleSimulate": "Simulacija posojila — HiterKredit",
+    "descSimulate": "Izračunajte mesečni obrok in skupne stroške posojila s preprostim drsnikom. Rezultat takoj uporabite za vlogo.",
+    "titleApply": "Vloga za posojilo — HiterKredit",
+    "descApply": "Oddajte enostavno vlogo za posojilo. Hiter odgovor, brez odvečnih obrazcev.",
+    "titleAbout": "O nas — HiterKredit",
+    "descAbout": "Spoznajte HiterKredit: preglednost, hitrost in odgovorno posojanje."
+  },
+  "nav": {
+    "home": "Domov",
+    "simulate": "Simulacija",
+    "apply": "Vloga",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "cta": "Preveri ponudbo"
+  },
+  "hero": {
+    "eyebrow": "Osebna posojila po vsej Evropi",
+    "title": "Vaš znesek. Vaš rok. Vaš mesečni obrok — vidite ga takoj.",
+    "subtitle": "Premaknite drsnik in v realnem času preverite, koliko bi znašal vaš mesečni obrok. Brez registracije, brez skritih pristojbin.",
+    "ctaPrimary": "Izračunaj posojilo",
+    "ctaSecondary": "Kako deluje",
+    "trust1": "Odgovor v 24 urah",
+    "trust2": "Brez skritih stroškov",
+    "trust3": "Podatki se ne shranjujejo"
+  },
+  "simulator": {
+    "title": "Izračunajte svoj obrok",
+    "subtitle": "Prilagodite znesek in rok posojila — izračun se posodobi takoj.",
+    "amountLabel": "Znesek posojila",
+    "durationLabel": "Doba odplačevanja",
+    "months": "mesecev",
+    "monthlyPayment": "Mesečni obrok",
+    "totalRepay": "Skupaj za vrniti",
+    "totalCost": "Skupni strošek posojila",
+    "rateNote": "Reprezentativni letni obrestni meri (RE) 6,9 % nominalno / 7,4 % efektivno. Dejanska ponudba je odvisna od vaše osebne ocene.",
+    "ctaUseValues": "Nadaljuj z vlogo s temi podatki",
+    "disclaimer": "Simulacija je informativne narave in ne predstavlja zavezujoče ponudbe."
+  },
+  "howItWorks": {
+    "title": "Trije koraki do vašega posojila",
+    "step1Title": "Izračunajte",
+    "step1Text": "Nastavite znesek in rok na drsniku ter takoj vidite mesečni obrok.",
+    "step2Title": "Oddajte vlogo",
+    "step2Text": "Izpolnite kratek obrazec — izračunani podatki se samodejno prenesejo.",
+    "step3Title": "Prejmite odgovor",
+    "step3Text": "Naša ekipa pregleda vlogo in vas kontaktira v najkrajšem možnem času."
+  },
+  "features": {
+    "title": "Zakaj HiterKredit",
+    "f1Title": "Popolna preglednost",
+    "f1Text": "Vsi stroški so vidni že pri simulaciji — brez presenečenj v pogodbi.",
+    "f2Title": "Hitra obravnava",
+    "f2Text": "Enostaven obrazec in hitri odzivni časi naše ekipe.",
+    "f3Title": "Varnost podatkov",
+    "f3Text": "Vaših osebnih podatkov ne shranjujemo dlje, kot je potrebno za obravnavo vloge.",
+    "f4Title": "Podpora po meri",
+    "f4Text": "Naša ekipa vam je na voljo za vsa vprašanja glede posojila."
+  },
+  "countries": {
+    "title": "Prisotni v vaši državi",
+    "subtitle": "HiterKredit deluje v več evropskih državah in Portoriku, prilagojen lokalnemu jeziku in praksam."
+  },
+  "form": {
+    "title": "Vloga za posojilo",
+    "subtitle": "Izpolnite spodnji obrazec. Vsa polja so obvezna, razen če je označeno drugače.",
+    "prefilled": "Podatki iz simulacije so bili samodejno izpolnjeni. Lahko jih spremenite.",
+    "firstName": "Ime",
+    "lastName": "Priimek",
+    "email": "E-poštni naslov",
+    "phone": "Telefonska številka",
+    "amount": "Želeni znesek posojila",
+    "duration": "Želeni rok odplačevanja (meseci)",
+    "message": "Dodatno sporočilo (neobvezno)",
+    "consent": "Strinjam se, da HiterKredit uporabi moje podatke izključno za obravnavo te vloge.",
+    "submit": "Oddaj vlogo",
+    "submitting": "Pošiljanje ...",
+    "successTitle": "Vloga je bila uspešno oddana",
+    "successText": "Hvala! Naša ekipa vas bo kontaktirala v najkrajšem možnem času.",
+    "errorTitle": "Prišlo je do napake",
+    "errorText": "Vloge ni bilo mogoče poslati. Poskusite znova ali nas kontaktirajte neposredno.",
+    "required": "To polje je obvezno."
+  },
+  "contactForm": {
+    "title": "Kontaktirajte nas",
+    "subtitle": "Imate vprašanje? Pišite nam in odgovorili vam bomo v najkrajšem možnem času.",
+    "name": "Ime in priimek",
+    "email": "E-poštni naslov",
+    "subject": "Zadeva",
+    "message": "Sporočilo",
+    "submit": "Pošlji sporočilo",
+    "submitting": "Pošiljanje ...",
+    "successTitle": "Sporočilo je bilo poslano",
+    "successText": "Hvala za vaše sporočilo. Odgovorili vam bomo čim prej.",
+    "errorTitle": "Sporočila ni bilo mogoče poslati",
+    "errorText": "Prosimo, poskusite znova pozneje."
+  },
+  "about": {
+    "eyebrow": "O podjetju",
+    "title": "Preglednost, hitrost in odgovorno posojanje",
+    "intro": "HiterKredit je bil ustanovljen z enim samim ciljem: narediti osebna posojila enostavna, pregledna in dostopna, ne glede na to, v kateri državi živite.",
+    "missionTitle": "Naše poslanstvo",
+    "missionText": "Verjamemo, da mora biti finančna odločitev preprosta. Zato smo razvili simulator, ki v realnem času prikaže dejanski strošek posojila, in obrazec za vlogo, ki traja manj kot dve minuti.",
+    "valuesTitle": "Naše vrednote",
+    "value1Title": "Jasnost",
+    "value1Text": "Nobenih skritih stroškov ali drobnega tiska, ki bi presenetil.",
+    "value2Title": "Spoštovanje podatkov",
+    "value2Text": "Zbiramo samo podatke, potrebne za obravnavo vaše vloge.",
+    "value3Title": "Odgovornost",
+    "value3Text": "Posojamo odgovorno in vas spodbujamo, da izračunate, kaj si lahko privoščite.",
+    "presenceTitle": "Naša prisotnost",
+    "presenceText": "Delujemo v Sloveniji, na Slovaškem, v Litvi, na Portoriku, na Nizozemskem/v Flandriji in na Irskem, vsakič prilagojeni lokalnemu jeziku."
+  },
+  "footer": {
+    "tagline": "Hitri in pregledni osebni krediti po vsej Evropi.",
+    "linksTitle": "Povezave",
+    "legalTitle": "Pravno",
+    "contactTitle": "Kontakt",
+    "terms": "Splošni pogoji",
+    "privacy": "Zasebnost",
+    "cookies": "Piškotki",
+    "rights": "Vse pravice pridržane.",
+    "riskNote": "Posojilo je finančna obveznost. Pred podpisom pogodbe skrbno preučite svoje zmožnosti odplačevanja."
+  },
+  "bottomNav": {
+    "home": "Domov",
+    "simulate": "Simulacija",
+    "apply": "Vloga",
+    "about": "O nas"
+  }
+}

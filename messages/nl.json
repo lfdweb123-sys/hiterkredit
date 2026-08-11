@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "siteName": "HiterKredit",
+    "titleHome": "HiterKredit — Snelle en transparante persoonlijke leningen",
+    "descHome": "Simuleer uw lening in real time en dien uw aanvraag in enkele minuten in. Geen verborgen kosten, geen onnodige opslag van gegevens.",
+    "titleSimulate": "Leningsimulator — HiterKredit",
+    "descSimulate": "Bereken uw maandelijkse aflossing en de totale kosten van de lening met een eenvoudige schuifregelaar. Gebruik het resultaat meteen voor uw aanvraag.",
+    "titleApply": "Leningaanvraag — HiterKredit",
+    "descApply": "Dien een eenvoudige leningaanvraag in. Snel antwoord, zonder overbodige formulieren.",
+    "titleAbout": "Over ons — HiterKredit",
+    "descAbout": "Maak kennis met HiterKredit: transparantie, snelheid en verantwoord lenen."
+  },
+  "nav": {
+    "home": "Home",
+    "simulate": "Simulator",
+    "apply": "Aanvraag",
+    "about": "Over ons",
+    "contact": "Contact",
+    "cta": "Bekijk aanbod"
+  },
+  "hero": {
+    "eyebrow": "Persoonlijke leningen in meerdere landen",
+    "title": "Uw bedrag. Uw looptijd. Uw maandelijkse aflossing, meteen zichtbaar.",
+    "subtitle": "Verschuif de regelaar en ontdek in real time hoeveel uw maandelijkse aflossing zou bedragen. Zonder registratie, zonder verborgen kosten.",
+    "ctaPrimary": "Bereken uw lening",
+    "ctaSecondary": "Hoe het werkt",
+    "trust1": "Antwoord binnen 24 uur",
+    "trust2": "Geen verborgen kosten",
+    "trust3": "Gegevens worden niet opgeslagen"
+  },
+  "simulator": {
+    "title": "Bereken uw aflossing",
+    "subtitle": "Pas het bedrag en de looptijd aan — de berekening wordt meteen bijgewerkt.",
+    "amountLabel": "Leningbedrag",
+    "durationLabel": "Aflossingsperiode",
+    "months": "maanden",
+    "monthlyPayment": "Maandelijkse aflossing",
+    "totalRepay": "Totaal terug te betalen",
+    "totalCost": "Totale kosten van de lening",
+    "rateNote": "Representatief jaarlijks rentepercentage (JKP) 6,9 % nominaal / 7,4 % effectief. Het werkelijke aanbod is afhankelijk van uw persoonlijke beoordeling.",
+    "ctaUseValues": "Ga verder met de aanvraag met deze gegevens",
+    "disclaimer": "Deze simulatie is informatief en vormt geen bindend aanbod."
+  },
+  "howItWorks": {
+    "title": "Drie stappen naar uw lening",
+    "step1Title": "Bereken",
+    "step1Text": "Stel het bedrag en de looptijd in met de schuifregelaar en zie meteen uw maandelijkse aflossing.",
+    "step2Title": "Dien uw aanvraag in",
+    "step2Text": "Vul een kort formulier in — de berekende gegevens worden automatisch overgenomen.",
+    "step3Title": "Ontvang een antwoord",
+    "step3Text": "Ons team beoordeelt uw aanvraag en neemt zo snel mogelijk contact met u op."
+  },
+  "features": {
+    "title": "Waarom HiterKredit",
+    "f1Title": "Volledige transparantie",
+    "f1Text": "U ziet alle kosten al bij de simulatie — geen verrassingen in het contract.",
+    "f2Title": "Snelle verwerking",
+    "f2Text": "Eenvoudig formulier en snelle reactietijden van ons team.",
+    "f3Title": "Gegevensbeveiliging",
+    "f3Text": "Wij bewaren uw persoonsgegevens niet langer dan nodig is voor de verwerking van uw aanvraag.",
+    "f4Title": "Persoonlijke ondersteuning",
+    "f4Text": "Ons team staat klaar om al uw vragen over de lening te beantwoorden."
+  },
+  "countries": {
+    "title": "Actief in uw land",
+    "subtitle": "HiterKredit is actief in meerdere Europese landen en Puerto Rico, aangepast aan de lokale taal en gebruiken."
+  },
+  "form": {
+    "title": "Leningaanvraag",
+    "subtitle": "Vul onderstaand formulier in. Alle velden zijn verplicht, tenzij anders vermeld.",
+    "prefilled": "De gegevens uit de simulator zijn automatisch ingevuld. U kunt ze wijzigen.",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "E-mailadres",
+    "phone": "Telefoonnummer",
+    "amount": "Gewenst leningbedrag",
+    "duration": "Gewenste aflossingsperiode (maanden)",
+    "message": "Aanvullend bericht (optioneel)",
+    "consent": "Ik ga ermee akkoord dat HiterKredit mijn gegevens uitsluitend gebruikt voor de verwerking van deze aanvraag.",
+    "submit": "Aanvraag verzenden",
+    "submitting": "Verzenden ...",
+    "successTitle": "Aanvraag succesvol verzonden",
+    "successText": "Bedankt! Ons team neemt zo snel mogelijk contact met u op.",
+    "errorTitle": "Er is een fout opgetreden",
+    "errorText": "De aanvraag kon niet worden verzonden. Probeer het opnieuw of neem rechtstreeks contact met ons op.",
+    "required": "Dit veld is verplicht."
+  },
+  "contactForm": {
+    "title": "Neem contact met ons op",
+    "subtitle": "Heeft u een vraag? Schrijf ons en wij antwoorden zo snel mogelijk.",
+    "name": "Volledige naam",
+    "email": "E-mailadres",
+    "subject": "Onderwerp",
+    "message": "Bericht",
+    "submit": "Bericht verzenden",
+    "submitting": "Verzenden ...",
+    "successTitle": "Bericht verzonden",
+    "successText": "Bedankt voor uw bericht. Wij antwoorden zo snel mogelijk.",
+    "errorTitle": "Bericht kon niet worden verzonden",
+    "errorText": "Probeer het later opnieuw."
+  },
+  "about": {
+    "eyebrow": "Over het bedrijf",
+    "title": "Transparantie, snelheid en verantwoord lenen",
+    "intro": "HiterKredit is opgericht met één doel: persoonlijke leningen eenvoudig, transparant en toegankelijk maken, ongeacht in welk land u woont.",
+    "missionTitle": "Onze missie",
+    "missionText": "Wij geloven dat een financiële beslissing eenvoudig moet zijn. Daarom ontwikkelden wij een simulator die in real time de werkelijke kosten van de lening toont, en een aanvraagformulier dat minder dan twee minuten duurt.",
+    "valuesTitle": "Onze waarden",
+    "value1Title": "Duidelijkheid",
+    "value1Text": "Geen verborgen kosten of kleine lettertjes die verrassen.",
+    "value2Title": "Respect voor gegevens",
+    "value2Text": "Wij verzamelen alleen de gegevens die nodig zijn voor de verwerking van uw aanvraag.",
+    "value3Title": "Verantwoordelijkheid",
+    "value3Text": "Wij lenen verantwoord uit en moedigen u aan te berekenen wat u zich kunt veroorloven.",
+    "presenceTitle": "Onze aanwezigheid",
+    "presenceText": "Wij zijn actief in Slovenië, Slowakije, Litouwen, Puerto Rico, Nederland/Vlaanderen en Ierland, telkens aangepast aan de lokale taal."
+  },
+  "footer": {
+    "tagline": "Snelle en transparante persoonlijke leningen.",
+    "linksTitle": "Links",
+    "legalTitle": "Juridisch",
+    "contactTitle": "Contact",
+    "terms": "Algemene voorwaarden",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "rights": "Alle rechten voorbehouden.",
+    "riskNote": "Een lening is een financiële verplichting. Bekijk zorgvuldig uw aflossingscapaciteit voordat u het contract ondertekent."
+  },
+  "bottomNav": {
+    "home": "Home",
+    "simulate": "Simulator",
+    "apply": "Aanvraag",
+    "about": "Over ons"
+  }
+}

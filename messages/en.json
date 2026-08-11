@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "siteName": "HiterKredit",
+    "titleHome": "HiterKredit — Fast, transparent personal loans",
+    "descHome": "Simulate your loan in real time and submit your application in minutes. No hidden fees, no unnecessary data storage.",
+    "titleSimulate": "Loan simulator — HiterKredit",
+    "descSimulate": "Work out your monthly repayment and total loan cost with a simple slider. Use the result straight away in your application.",
+    "titleApply": "Loan application — HiterKredit",
+    "descApply": "Submit a simple loan application. Fast response, no unnecessary paperwork.",
+    "titleAbout": "About us — HiterKredit",
+    "descAbout": "Get to know HiterKredit: transparency, speed and responsible lending."
+  },
+  "nav": {
+    "home": "Home",
+    "simulate": "Simulator",
+    "apply": "Apply",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "See your offer"
+  },
+  "hero": {
+    "eyebrow": "Personal loans across several countries",
+    "title": "Your amount. Your term. Your monthly repayment — instantly.",
+    "subtitle": "Move the slider and see in real time what your monthly repayment would be. No sign-up, no hidden fees.",
+    "ctaPrimary": "Calculate your loan",
+    "ctaSecondary": "How it works",
+    "trust1": "Response within 24 hours",
+    "trust2": "No hidden costs",
+    "trust3": "Data isn't stored"
+  },
+  "simulator": {
+    "title": "Work out your repayment",
+    "subtitle": "Adjust the amount and term — the calculation updates instantly.",
+    "amountLabel": "Loan amount",
+    "durationLabel": "Repayment term",
+    "months": "months",
+    "monthlyPayment": "Monthly repayment",
+    "totalRepay": "Total to repay",
+    "totalCost": "Total cost of credit",
+    "rateNote": "Representative annual rate (APR) 6.9% nominal / 7.4% effective. The actual offer depends on your personal assessment.",
+    "ctaUseValues": "Continue application with these figures",
+    "disclaimer": "This simulation is for information only and does not constitute a binding offer."
+  },
+  "howItWorks": {
+    "title": "Three steps to your loan",
+    "step1Title": "Calculate",
+    "step1Text": "Set the amount and term on the slider and see your monthly repayment instantly.",
+    "step2Title": "Submit your application",
+    "step2Text": "Fill in a short form — the calculated figures carry over automatically.",
+    "step3Title": "Get a response",
+    "step3Text": "Our team reviews your application and gets back to you as quickly as possible."
+  },
+  "features": {
+    "title": "Why HiterKredit",
+    "f1Title": "Full transparency",
+    "f1Text": "You see every cost right from the simulator — no surprises in the contract.",
+    "f2Title": "Fast processing",
+    "f2Text": "A simple form and quick response times from our team.",
+    "f3Title": "Data security",
+    "f3Text": "We don't keep your personal data any longer than needed to process your application.",
+    "f4Title": "Tailored support",
+    "f4Text": "Our team is on hand to answer any question about your loan."
+  },
+  "countries": {
+    "title": "Available in your country",
+    "subtitle": "HiterKredit operates across several European countries and Puerto Rico, adapted to local language and practice."
+  },
+  "form": {
+    "title": "Loan application",
+    "subtitle": "Fill in the form below. All fields are required unless marked otherwise.",
+    "prefilled": "The figures from the simulator have been filled in automatically. You can change them.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "amount": "Desired loan amount",
+    "duration": "Desired repayment term (months)",
+    "message": "Additional message (optional)",
+    "consent": "I agree that HiterKredit will use my data solely to process this application.",
+    "submit": "Submit application",
+    "submitting": "Sending ...",
+    "successTitle": "Application submitted successfully",
+    "successText": "Thank you! Our team will contact you as soon as possible.",
+    "errorTitle": "Something went wrong",
+    "errorText": "We couldn't send your application. Please try again or contact us directly.",
+    "required": "This field is required."
+  },
+  "contactForm": {
+    "title": "Get in touch",
+    "subtitle": "Have a question? Write to us and we'll reply as soon as possible.",
+    "name": "Full name",
+    "email": "Email address",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send message",
+    "submitting": "Sending ...",
+    "successTitle": "Message sent",
+    "successText": "Thanks for your message. We'll get back to you as soon as possible.",
+    "errorTitle": "Message couldn't be sent",
+    "errorText": "Please try again later."
+  },
+  "about": {
+    "eyebrow": "About the company",
+    "title": "Transparency, speed and responsible lending",
+    "intro": "HiterKredit was founded with one goal: to make personal loans simple, transparent and accessible, wherever you live.",
+    "missionTitle": "Our mission",
+    "missionText": "We believe a financial decision should be simple. That's why we built a simulator that shows the real cost of a loan in real time, and an application form that takes under two minutes.",
+    "valuesTitle": "Our values",
+    "value1Title": "Clarity",
+    "value1Text": "No hidden costs or small print to catch you out.",
+    "value2Title": "Respect for your data",
+    "value2Text": "We only collect the data needed to process your application.",
+    "value3Title": "Responsibility",
+    "value3Text": "We lend responsibly and encourage you to work out what you can afford.",
+    "presenceTitle": "Where we operate",
+    "presenceText": "We operate in Slovenia, Slovakia, Lithuania, Puerto Rico, the Netherlands/Flanders and Ireland, each adapted to the local language."
+  },
+  "footer": {
+    "tagline": "Fast, transparent personal loans.",
+    "linksTitle": "Links",
+    "legalTitle": "Legal",
+    "contactTitle": "Contact",
+    "terms": "Terms & conditions",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "rights": "All rights reserved.",
+    "riskNote": "A loan is a financial commitment. Carefully consider your ability to repay before signing the contract."
+  },
+  "bottomNav": {
+    "home": "Home",
+    "simulate": "Simulator",
+    "apply": "Apply",
+    "about": "About"
+  }
+}

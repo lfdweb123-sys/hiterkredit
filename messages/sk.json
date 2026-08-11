@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "siteName": "HiterKredit",
+    "titleHome": "HiterKredit — Rýchle a transparentné osobné pôžičky",
+    "descHome": "Simulujte svoju pôžičku v reálnom čase a podajte žiadosť za pár minút. Žiadne skryté poplatky, žiadne zbytočné ukladanie údajov.",
+    "titleSimulate": "Simulácia pôžičky — HiterKredit",
+    "descSimulate": "Vypočítajte si mesačnú splátku a celkové náklady pôžičky pomocou jednoduchého posuvníka. Výsledok hneď použite pri žiadosti.",
+    "titleApply": "Žiadosť o pôžičku — HiterKredit",
+    "descApply": "Podajte jednoduchú žiadosť o pôžičku. Rýchla odpoveď, žiadne zbytočné formuláre.",
+    "titleAbout": "O nás — HiterKredit",
+    "descAbout": "Spoznajte HiterKredit: transparentnosť, rýchlosť a zodpovedné požičiavanie."
+  },
+  "nav": {
+    "home": "Domov",
+    "simulate": "Simulácia",
+    "apply": "Žiadosť",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "cta": "Zistiť ponuku"
+  },
+  "hero": {
+    "eyebrow": "Osobné pôžičky po celej Európe",
+    "title": "Vaša suma. Vaša doba splácania. Vašu splátku vidíte okamžite.",
+    "subtitle": "Posuňte posuvník a v reálnom čase zistite, koľko by predstavovala vaša mesačná splátka. Bez registrácie, bez skrytých poplatkov.",
+    "ctaPrimary": "Vypočítať pôžičku",
+    "ctaSecondary": "Ako to funguje",
+    "trust1": "Odpoveď do 24 hodín",
+    "trust2": "Žiadne skryté náklady",
+    "trust3": "Údaje sa neukladajú"
+  },
+  "simulator": {
+    "title": "Vypočítajte si splátku",
+    "subtitle": "Upravte sumu a dobu splácania — výpočet sa aktualizuje okamžite.",
+    "amountLabel": "Výška pôžičky",
+    "durationLabel": "Doba splácania",
+    "months": "mesiacov",
+    "monthlyPayment": "Mesačná splátka",
+    "totalRepay": "Celkovo splatené",
+    "totalCost": "Celkové náklady na pôžičku",
+    "rateNote": "Reprezentatívna ročná úroková sadzba (RPMN) 6,9 % nominálna / 7,4 % efektívna. Konkrétna ponuka závisí od vášho osobného posúdenia.",
+    "ctaUseValues": "Pokračovať v žiadosti s týmito údajmi",
+    "disclaimer": "Simulácia má informatívny charakter a nepredstavuje záväznú ponuku."
+  },
+  "howItWorks": {
+    "title": "Tri kroky k vašej pôžičke",
+    "step1Title": "Vypočítajte",
+    "step1Text": "Nastavte sumu a dobu splácania na posuvníku a okamžite uvidíte mesačnú splátku.",
+    "step2Title": "Podajte žiadosť",
+    "step2Text": "Vyplňte krátky formulár — vypočítané údaje sa prenesú automaticky.",
+    "step3Title": "Dostanete odpoveď",
+    "step3Text": "Náš tím posúdi žiadosť a kontaktuje vás v čo najkratšom čase."
+  },
+  "features": {
+    "title": "Prečo HiterKredit",
+    "f1Title": "Úplná transparentnosť",
+    "f1Text": "Všetky náklady vidíte už pri simulácii — žiadne prekvapenia v zmluve.",
+    "f2Title": "Rýchle spracovanie",
+    "f2Text": "Jednoduchý formulár a rýchle reakčné časy nášho tímu.",
+    "f3Title": "Bezpečnosť údajov",
+    "f3Text": "Vaše osobné údaje neuchovávame dlhšie, ako je potrebné na spracovanie žiadosti.",
+    "f4Title": "Podpora na mieru",
+    "f4Text": "Náš tím je vám k dispozícii pri všetkých otázkach ohľadom pôžičky."
+  },
+  "countries": {
+    "title": "Prítomní vo vašej krajine",
+    "subtitle": "HiterKredit pôsobí vo viacerých európskych krajinách a v Portoriku, prispôsobený miestnemu jazyku a praxi."
+  },
+  "form": {
+    "title": "Žiadosť o pôžičku",
+    "subtitle": "Vyplňte formulár nižšie. Všetky polia sú povinné, pokiaľ nie je uvedené inak.",
+    "prefilled": "Údaje zo simulácie boli automaticky predvyplnené. Môžete ich zmeniť.",
+    "firstName": "Meno",
+    "lastName": "Priezvisko",
+    "email": "E-mailová adresa",
+    "phone": "Telefónne číslo",
+    "amount": "Požadovaná výška pôžičky",
+    "duration": "Požadovaná doba splácania (mesiace)",
+    "message": "Dodatočná správa (nepovinné)",
+    "consent": "Súhlasím, že HiterKredit použije moje údaje výlučne na spracovanie tejto žiadosti.",
+    "submit": "Odoslať žiadosť",
+    "submitting": "Odosielanie ...",
+    "successTitle": "Žiadosť bola úspešne odoslaná",
+    "successText": "Ďakujeme! Náš tím vás bude kontaktovať v čo najkratšom čase.",
+    "errorTitle": "Vyskytla sa chyba",
+    "errorText": "Žiadosť sa nepodarilo odoslať. Skúste to znova alebo nás kontaktujte priamo.",
+    "required": "Toto pole je povinné."
+  },
+  "contactForm": {
+    "title": "Kontaktujte nás",
+    "subtitle": "Máte otázku? Napíšte nám a odpovieme vám čo najskôr.",
+    "name": "Meno a priezvisko",
+    "email": "E-mailová adresa",
+    "subject": "Predmet",
+    "message": "Správa",
+    "submit": "Odoslať správu",
+    "submitting": "Odosielanie ...",
+    "successTitle": "Správa bola odoslaná",
+    "successText": "Ďakujeme za vašu správu. Odpovieme vám čo najskôr.",
+    "errorTitle": "Správu sa nepodarilo odoslať",
+    "errorText": "Skúste to prosím znova neskôr."
+  },
+  "about": {
+    "eyebrow": "O spoločnosti",
+    "title": "Transparentnosť, rýchlosť a zodpovedné požičiavanie",
+    "intro": "HiterKredit vznikol s jediným cieľom: urobiť osobné pôžičky jednoduché, transparentné a dostupné, bez ohľadu na to, v ktorej krajine žijete.",
+    "missionTitle": "Naše poslanie",
+    "missionText": "Veríme, že finančné rozhodnutie musí byť jednoduché. Preto sme vyvinuli simulátor, ktorý v reálnom čase zobrazuje skutočné náklady pôžičky, a formulár žiadosti, ktorý trvá menej ako dve minúty.",
+    "valuesTitle": "Naše hodnoty",
+    "value1Title": "Jasnosť",
+    "value1Text": "Žiadne skryté náklady ani drobné písmo, ktoré by prekvapilo.",
+    "value2Title": "Rešpekt k údajom",
+    "value2Text": "Zbierame len údaje potrebné na spracovanie vašej žiadosti.",
+    "value3Title": "Zodpovednosť",
+    "value3Text": "Požičiavame zodpovedne a povzbudzujeme vás, aby ste si vypočítali, čo si môžete dovoliť.",
+    "presenceTitle": "Naša prítomnosť",
+    "presenceText": "Pôsobíme na Slovensku, v Slovinsku, Litve, Portoriku, Holandsku/Flámsku a Írsku, vždy prispôsobení miestnemu jazyku."
+  },
+  "footer": {
+    "tagline": "Rýchle a transparentné osobné pôžičky po celej Európe.",
+    "linksTitle": "Odkazy",
+    "legalTitle": "Právne",
+    "contactTitle": "Kontakt",
+    "terms": "Všeobecné podmienky",
+    "privacy": "Súkromie",
+    "cookies": "Cookies",
+    "rights": "Všetky práva vyhradené.",
+    "riskNote": "Pôžička je finančný záväzok. Pred podpisom zmluvy si dôkladne zvážte svoje možnosti splácania."
+  },
+  "bottomNav": {
+    "home": "Domov",
+    "simulate": "Simulácia",
+    "apply": "Žiadosť",
+    "about": "O nás"
+  }
+}

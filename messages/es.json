@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "siteName": "HiterKredit",
+    "titleHome": "HiterKredit — Préstamos personales rápidos y transparentes",
+    "descHome": "Simula tu préstamo en tiempo real y envía tu solicitud en minutos. Sin cargos ocultos, sin almacenamiento innecesario de datos.",
+    "titleSimulate": "Simulador de préstamo — HiterKredit",
+    "descSimulate": "Calcula tu cuota mensual y el costo total del préstamo con un control deslizante simple. Usa el resultado directamente en tu solicitud.",
+    "titleApply": "Solicitud de préstamo — HiterKredit",
+    "descApply": "Envía una solicitud de préstamo sencilla. Respuesta rápida, sin formularios innecesarios.",
+    "titleAbout": "Sobre nosotros — HiterKredit",
+    "descAbout": "Conoce HiterKredit: transparencia, rapidez y préstamos responsables."
+  },
+  "nav": {
+    "home": "Inicio",
+    "simulate": "Simulador",
+    "apply": "Solicitud",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Ver oferta"
+  },
+  "hero": {
+    "eyebrow": "Préstamos personales en varios países",
+    "title": "Tu monto. Tu plazo. Tu cuota mensual, al instante.",
+    "subtitle": "Mueve el control deslizante y descubre en tiempo real cuánto sería tu cuota mensual. Sin registro, sin cargos ocultos.",
+    "ctaPrimary": "Calcular préstamo",
+    "ctaSecondary": "Cómo funciona",
+    "trust1": "Respuesta en 24 horas",
+    "trust2": "Sin costos ocultos",
+    "trust3": "Los datos no se almacenan"
+  },
+  "simulator": {
+    "title": "Calcula tu cuota",
+    "subtitle": "Ajusta el monto y el plazo — el cálculo se actualiza al instante.",
+    "amountLabel": "Monto del préstamo",
+    "durationLabel": "Plazo de pago",
+    "months": "meses",
+    "monthlyPayment": "Cuota mensual",
+    "totalRepay": "Total a devolver",
+    "totalCost": "Costo total del préstamo",
+    "rateNote": "Tasa de interés anual representativa (TAE) 6,9 % nominal / 7,4 % efectiva. La oferta real depende de tu evaluación personal.",
+    "ctaUseValues": "Continuar la solicitud con estos datos",
+    "disclaimer": "Esta simulación es solo informativa y no constituye una oferta vinculante."
+  },
+  "howItWorks": {
+    "title": "Tres pasos hacia tu préstamo",
+    "step1Title": "Calcula",
+    "step1Text": "Ajusta el monto y el plazo con el control deslizante y ve tu cuota mensual al instante.",
+    "step2Title": "Envía tu solicitud",
+    "step2Text": "Completa un formulario breve — los datos calculados se transfieren automáticamente.",
+    "step3Title": "Recibe una respuesta",
+    "step3Text": "Nuestro equipo revisa tu solicitud y te contacta lo antes posible."
+  },
+  "features": {
+    "title": "Por qué HiterKredit",
+    "f1Title": "Transparencia total",
+    "f1Text": "Ves todos los costos desde el simulador — sin sorpresas en el contrato.",
+    "f2Title": "Procesamiento rápido",
+    "f2Text": "Formulario simple y tiempos de respuesta rápidos de nuestro equipo.",
+    "f3Title": "Seguridad de datos",
+    "f3Text": "No conservamos tus datos personales más tiempo del necesario para procesar tu solicitud.",
+    "f4Title": "Atención personalizada",
+    "f4Text": "Nuestro equipo está disponible para responder tus preguntas sobre el préstamo."
+  },
+  "countries": {
+    "title": "Presentes en tu país",
+    "subtitle": "HiterKredit opera en varios países europeos y en Puerto Rico, adaptado al idioma y las prácticas locales."
+  },
+  "form": {
+    "title": "Solicitud de préstamo",
+    "subtitle": "Completa el formulario a continuación. Todos los campos son obligatorios salvo que se indique lo contrario.",
+    "prefilled": "Los datos del simulador se completaron automáticamente. Puedes modificarlos.",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "phone": "Número de teléfono",
+    "amount": "Monto de préstamo deseado",
+    "duration": "Plazo de pago deseado (meses)",
+    "message": "Mensaje adicional (opcional)",
+    "consent": "Acepto que HiterKredit use mis datos exclusivamente para procesar esta solicitud.",
+    "submit": "Enviar solicitud",
+    "submitting": "Enviando ...",
+    "successTitle": "Solicitud enviada con éxito",
+    "successText": "¡Gracias! Nuestro equipo se pondrá en contacto contigo lo antes posible.",
+    "errorTitle": "Ocurrió un error",
+    "errorText": "No se pudo enviar la solicitud. Intenta de nuevo o contáctanos directamente.",
+    "required": "Este campo es obligatorio."
+  },
+  "contactForm": {
+    "title": "Contáctanos",
+    "subtitle": "¿Tienes una pregunta? Escríbenos y te responderemos lo antes posible.",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando ...",
+    "successTitle": "Mensaje enviado",
+    "successText": "Gracias por tu mensaje. Te responderemos lo antes posible.",
+    "errorTitle": "No se pudo enviar el mensaje",
+    "errorText": "Por favor, inténtalo de nuevo más tarde."
+  },
+  "about": {
+    "eyebrow": "Sobre la empresa",
+    "title": "Transparencia, rapidez y préstamos responsables",
+    "intro": "HiterKredit se fundó con un solo objetivo: hacer que los préstamos personales sean simples, transparentes y accesibles, sin importar en qué país vivas.",
+    "missionTitle": "Nuestra misión",
+    "missionText": "Creemos que una decisión financiera debe ser simple. Por eso desarrollamos un simulador que muestra el costo real del préstamo en tiempo real, y un formulario de solicitud que toma menos de dos minutos.",
+    "valuesTitle": "Nuestros valores",
+    "value1Title": "Claridad",
+    "value1Text": "Sin costos ocultos ni letra pequeña que sorprenda.",
+    "value2Title": "Respeto por tus datos",
+    "value2Text": "Solo recopilamos los datos necesarios para procesar tu solicitud.",
+    "value3Title": "Responsabilidad",
+    "value3Text": "Prestamos de forma responsable y te animamos a calcular lo que puedes pagar.",
+    "presenceTitle": "Nuestra presencia",
+    "presenceText": "Operamos en Eslovenia, Eslovaquia, Lituania, Puerto Rico, Países Bajos/Flandes e Irlanda, siempre adaptados al idioma local."
+  },
+  "footer": {
+    "tagline": "Préstamos personales rápidos y transparentes.",
+    "linksTitle": "Enlaces",
+    "legalTitle": "Legal",
+    "contactTitle": "Contacto",
+    "terms": "Términos y condiciones",
+    "privacy": "Privacidad",
+    "cookies": "Cookies",
+    "rights": "Todos los derechos reservados.",
+    "riskNote": "Un préstamo es un compromiso financiero. Antes de firmar el contrato, evalúa cuidadosamente tu capacidad de pago."
+  },
+  "bottomNav": {
+    "home": "Inicio",
+    "simulate": "Simulador",
+    "apply": "Solicitud",
+    "about": "Nosotros"
+  }
+}

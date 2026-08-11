@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "siteName": "HiterKredit",
+    "titleHome": "HiterKredit — Greitos ir skaidrios paskolos gyventojams",
+    "descHome": "Simuliuokite savo paskolą realiu laiku ir pateikite paraišką per kelias minutes. Jokių paslėptų mokesčių, jokio nereikalingo duomenų saugojimo.",
+    "titleSimulate": "Paskolos skaičiuoklė — HiterKredit",
+    "descSimulate": "Apskaičiuokite mėnesinę įmoką ir bendrą paskolos kainą naudodami paprastą slankiklį. Rezultatą iškart panaudokite paraiškai.",
+    "titleApply": "Paskolos paraiška — HiterKredit",
+    "descApply": "Pateikite paprastą paskolos paraišką. Greitas atsakymas, be nereikalingų formų.",
+    "titleAbout": "Apie mus — HiterKredit",
+    "descAbout": "Susipažinkite su HiterKredit: skaidrumas, greitis ir atsakingas skolinimas."
+  },
+  "nav": {
+    "home": "Pradžia",
+    "simulate": "Skaičiuoklė",
+    "apply": "Paraiška",
+    "about": "Apie mus",
+    "contact": "Kontaktai",
+    "cta": "Sužinoti pasiūlymą"
+  },
+  "hero": {
+    "eyebrow": "Paskolos gyventojams visoje Europoje",
+    "title": "Jūsų suma. Jūsų terminas. Jūsų mėnesinę įmoką matote iš karto.",
+    "subtitle": "Pastumkite slankiklį ir realiu laiku sužinokite, kiek sudarytų jūsų mėnesinė įmoka. Be registracijos, be paslėptų mokesčių.",
+    "ctaPrimary": "Apskaičiuoti paskolą",
+    "ctaSecondary": "Kaip tai veikia",
+    "trust1": "Atsakymas per 24 val.",
+    "trust2": "Jokių paslėptų mokesčių",
+    "trust3": "Duomenys nesaugomi"
+  },
+  "simulator": {
+    "title": "Apskaičiuokite savo įmoką",
+    "subtitle": "Koreguokite sumą ir terminą — skaičiavimas atnaujinamas iš karto.",
+    "amountLabel": "Paskolos suma",
+    "durationLabel": "Grąžinimo terminas",
+    "months": "mėn.",
+    "monthlyPayment": "Mėnesinė įmoka",
+    "totalRepay": "Iš viso grąžinti",
+    "totalCost": "Bendra paskolos kaina",
+    "rateNote": "Reprezentatyvi metinė palūkanų norma (BVKKMN) 6,9 % nominali / 7,4 % efektyvi. Konkretus pasiūlymas priklauso nuo jūsų individualaus vertinimo.",
+    "ctaUseValues": "Tęsti paraišką su šiais duomenimis",
+    "disclaimer": "Skaičiuoklė yra informacinio pobūdžio ir nėra įpareigojantis pasiūlymas."
+  },
+  "howItWorks": {
+    "title": "Trys žingsniai iki jūsų paskolos",
+    "step1Title": "Apskaičiuokite",
+    "step1Text": "Nustatykite sumą ir terminą slankikliu ir iš karto pamatysite mėnesinę įmoką.",
+    "step2Title": "Pateikite paraišką",
+    "step2Text": "Užpildykite trumpą formą — apskaičiuoti duomenys perkeliami automatiškai.",
+    "step3Title": "Gaukite atsakymą",
+    "step3Text": "Mūsų komanda peržiūrės paraišką ir susisieks su jumis kuo greičiau."
+  },
+  "features": {
+    "title": "Kodėl HiterKredit",
+    "f1Title": "Visiškas skaidrumas",
+    "f1Text": "Visas kainas matote jau skaičiuojant — jokių netikėtumų sutartyje.",
+    "f2Title": "Greitas nagrinėjimas",
+    "f2Text": "Paprasta forma ir greitas mūsų komandos atsakymo laikas.",
+    "f3Title": "Duomenų saugumas",
+    "f3Text": "Jūsų asmens duomenų nesaugome ilgiau, nei būtina paraiškai nagrinėti.",
+    "f4Title": "Individuali pagalba",
+    "f4Text": "Mūsų komanda pasirengusi atsakyti į visus klausimus dėl paskolos."
+  },
+  "countries": {
+    "title": "Veikiame jūsų šalyje",
+    "subtitle": "HiterKredit veikia keliose Europos šalyse ir Puerto Rike, pritaikytas vietinei kalbai ir praktikai."
+  },
+  "form": {
+    "title": "Paskolos paraiška",
+    "subtitle": "Užpildykite žemiau esančią formą. Visi laukai privalomi, jei nenurodyta kitaip.",
+    "prefilled": "Duomenys iš skaičiuoklės buvo užpildyti automatiškai. Galite juos pakeisti.",
+    "firstName": "Vardas",
+    "lastName": "Pavardė",
+    "email": "El. pašto adresas",
+    "phone": "Telefono numeris",
+    "amount": "Pageidaujama paskolos suma",
+    "duration": "Pageidaujamas grąžinimo terminas (mėn.)",
+    "message": "Papildoma žinutė (neprivaloma)",
+    "consent": "Sutinku, kad HiterKredit naudotų mano duomenis išimtinai šios paraiškos nagrinėjimui.",
+    "submit": "Pateikti paraišką",
+    "submitting": "Siunčiama ...",
+    "successTitle": "Paraiška sėkmingai pateikta",
+    "successText": "Ačiū! Mūsų komanda susisieks su jumis kuo greičiau.",
+    "errorTitle": "Įvyko klaida",
+    "errorText": "Nepavyko išsiųsti paraiškos. Bandykite dar kartą arba susisiekite su mumis tiesiogiai.",
+    "required": "Šis laukas privalomas."
+  },
+  "contactForm": {
+    "title": "Susisiekite su mumis",
+    "subtitle": "Turite klausimą? Parašykite mums ir atsakysime kuo greičiau.",
+    "name": "Vardas ir pavardė",
+    "email": "El. pašto adresas",
+    "subject": "Tema",
+    "message": "Žinutė",
+    "submit": "Siųsti žinutę",
+    "submitting": "Siunčiama ...",
+    "successTitle": "Žinutė išsiųsta",
+    "successText": "Ačiū už jūsų žinutę. Atsakysime kuo greičiau.",
+    "errorTitle": "Nepavyko išsiųsti žinutės",
+    "errorText": "Bandykite dar kartą vėliau."
+  },
+  "about": {
+    "eyebrow": "Apie įmonę",
+    "title": "Skaidrumas, greitis ir atsakingas skolinimas",
+    "intro": "HiterKredit buvo įkurta su vienu tikslu: padaryti paskolas gyventojams paprastas, skaidrias ir prieinamas, nesvarbu, kurioje šalyje gyvenate.",
+    "missionTitle": "Mūsų misija",
+    "missionText": "Tikime, kad finansinis sprendimas turi būti paprastas. Todėl sukūrėme skaičiuoklę, kuri realiu laiku parodo tikrąją paskolos kainą, ir paraiškos formą, kurią užpildyti užtrunka mažiau nei dvi minutes.",
+    "valuesTitle": "Mūsų vertybės",
+    "value1Title": "Aiškumas",
+    "value1Text": "Jokių paslėptų kaštų ar smulkaus šrifto, kuris nustebintų.",
+    "value2Title": "Pagarba duomenims",
+    "value2Text": "Renkame tik tuos duomenis, kurie būtini jūsų paraiškai nagrinėti.",
+    "value3Title": "Atsakomybė",
+    "value3Text": "Skoliname atsakingai ir skatiname jus apskaičiuoti, ką galite sau leisti.",
+    "presenceTitle": "Mūsų veikla",
+    "presenceText": "Veikiame Slovėnijoje, Slovakijoje, Lietuvoje, Puerto Rike, Nyderlanduose / Flandrijoje ir Airijoje, visada pritaikyti vietinei kalbai."
+  },
+  "footer": {
+    "tagline": "Greitos ir skaidrios paskolos gyventojams visoje Europoje.",
+    "linksTitle": "Nuorodos",
+    "legalTitle": "Teisinė informacija",
+    "contactTitle": "Kontaktai",
+    "terms": "Bendrosios sąlygos",
+    "privacy": "Privatumas",
+    "cookies": "Slapukai",
+    "rights": "Visos teisės saugomos.",
+    "riskNote": "Paskola yra finansinis įsipareigojimas. Prieš pasirašydami sutartį atidžiai įvertinkite savo galimybes grąžinti."
+  },
+  "bottomNav": {
+    "home": "Pradžia",
+    "simulate": "Skaičiuoklė",
+    "apply": "Paraiška",
+    "about": "Apie mus"
+  }
+}

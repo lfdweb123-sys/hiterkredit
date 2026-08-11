@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-sky: #2E9BF0;
+  --color-sky-deep: #1B6FC2;
+  --color-sky-pale: #EAF4FE;
+  --color-sky-mist: #F5FAFE;
+  --color-ink: #0F1B2D;
+  --color-ink-soft: #4A5A70;
+  --color-success: #1FAE7A;
+  --color-line: #DCEBFA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFFFF;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Signature dual-range slider */
+.range-track {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-sky) 0%, var(--color-sky) var(--fill, 50%), #D7E8FB var(--fill, 50%), #D7E8FB 100%);
+  outline: none;
+}
+
+.range-track::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3px solid var(--color-sky-deep);
+  box-shadow: 0 2px 8px rgba(27, 111, 194, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.range-track::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.range-track::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3px solid var(--color-sky-deep);
+  box-shadow: 0 2px 8px rgba(27, 111, 194, 0.35);
+  cursor: pointer;
+}
+
+.range-track::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: #D7E8FB;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid var(--color-sky-deep);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@keyframes count-fade {
+  from { opacity: 0.4; transform: translateY(2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-count {
+  animation: count-fade 0.25s ease-out;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-rise {
+  animation: rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
