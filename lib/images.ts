@@ -12,6 +12,11 @@ export const IMAGES = {
     width: 1200,
     height: 900,
   },
+  featuresSecurity: {
+    src: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop',
+    width: 1200,
+    height: 900,
+  },
   aboutTeam: {
     src: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1400&auto=format&fit=crop',
     width: 1400,
@@ -22,9 +27,29 @@ export const IMAGES = {
     width: 1200,
     height: 900,
   },
+  aboutValues: {
+    src: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1200&auto=format&fit=crop',
+    width: 1200,
+    height: 900,
+  },
   applyHero: {
     src: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop',
     width: 1200,
     height: 900,
+  },
+  contactHero: {
+    src: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=1200&auto=format&fit=crop',
+    width: 1200,
+    height: 900,
+  },
+  simulatorSide: {
+    src: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop',
+    width: 1200,
+    height: 900,
+  },
+  trustBackground: {
+    src: 'https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=1600&auto=format&fit=crop',
+    width: 1600,
+    height: 700,
   },
 } as const;

@@ -15,7 +15,7 @@ type LoanContextType = {
 
 const LoanContext = createContext<LoanContextType | null>(null);
 
-const STORAGE_KEY = 'hiterkredit_simulation';
+const STORAGE_KEY = 'posojilnica_simulation';
 
 export function LoanProvider({ children }: { children: ReactNode }) {
   const [values, setValuesState] = useState<LoanValues>({

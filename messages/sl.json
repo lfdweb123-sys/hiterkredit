@@ -1,14 +1,16 @@
 {
   "meta": {
-    "siteName": "HiterKredit",
-    "titleHome": "HiterKredit — Hitri in pregledni osebni krediti",
+    "siteName": "Posojilnica",
+    "titleHome": "Posojilnica — Hitri in pregledni osebni krediti",
     "descHome": "Simulirajte svoje posojilo v realnem času in oddajte vlogo v nekaj minutah. Brez skritih stroškov, brez shranjevanja nepotrebnih podatkov.",
-    "titleSimulate": "Simulacija posojila — HiterKredit",
+    "titleSimulate": "Simulacija posojila — Posojilnica",
     "descSimulate": "Izračunajte mesečni obrok in skupne stroške posojila s preprostim drsnikom. Rezultat takoj uporabite za vlogo.",
-    "titleApply": "Vloga za posojilo — HiterKredit",
+    "titleApply": "Vloga za posojilo — Posojilnica",
     "descApply": "Oddajte enostavno vlogo za posojilo. Hiter odgovor, brez odvečnih obrazcev.",
-    "titleAbout": "O nas — HiterKredit",
-    "descAbout": "Spoznajte HiterKredit: preglednost, hitrost in odgovorno posojanje."
+    "titleAbout": "O nas — Posojilnica",
+    "descAbout": "Spoznajte Posojilnica: preglednost, hitrost in odgovorno posojanje.",
+    "titleContact": "Kontakt — Posojilnica",
+    "descContact": "Kontaktirajte ekipo Posojilnica za vsa vprašanja o posojilih, vlogah ali sodelovanju."
   },
   "nav": {
     "home": "Domov",
@@ -51,7 +53,7 @@
     "step3Text": "Naša ekipa pregleda vlogo in vas kontaktira v najkrajšem možnem času."
   },
   "features": {
-    "title": "Zakaj HiterKredit",
+    "title": "Zakaj Posojilnica",
     "f1Title": "Popolna preglednost",
     "f1Text": "Vsi stroški so vidni že pri simulaciji — brez presenečenj v pogodbi.",
     "f2Title": "Hitra obravnava",
@@ -63,7 +65,7 @@
   },
   "countries": {
     "title": "Prisotni v vaši državi",
-    "subtitle": "HiterKredit deluje v več evropskih državah in Portoriku, prilagojen lokalnemu jeziku in praksam."
+    "subtitle": "Posojilnica deluje v več evropskih državah in Portoriku, prilagojen lokalnemu jeziku in praksam."
   },
   "form": {
     "title": "Vloga za posojilo",
@@ -76,7 +78,7 @@
     "amount": "Želeni znesek posojila",
     "duration": "Želeni rok odplačevanja (meseci)",
     "message": "Dodatno sporočilo (neobvezno)",
-    "consent": "Strinjam se, da HiterKredit uporabi moje podatke izključno za obravnavo te vloge.",
+    "consent": "Strinjam se, da Posojilnica uporabi moje podatke izključno za obravnavo te vloge.",
     "submit": "Oddaj vlogo",
     "submitting": "Pošiljanje ...",
     "successTitle": "Vloga je bila uspešno oddana",
@@ -102,7 +104,7 @@
   "about": {
     "eyebrow": "O podjetju",
     "title": "Preglednost, hitrost in odgovorno posojanje",
-    "intro": "HiterKredit je bil ustanovljen z enim samim ciljem: narediti osebna posojila enostavna, pregledna in dostopna, ne glede na to, v kateri državi živite.",
+    "intro": "Posojilnica je bil ustanovljen z enim samim ciljem: narediti osebna posojila enostavna, pregledna in dostopna, ne glede na to, v kateri državi živite.",
     "missionTitle": "Naše poslanstvo",
     "missionText": "Verjamemo, da mora biti finančna odločitev preprosta. Zato smo razvili simulator, ki v realnem času prikaže dejanski strošek posojila, in obrazec za vlogo, ki traja manj kot dve minuti.",
     "valuesTitle": "Naše vrednote",
@@ -131,5 +133,36 @@
     "simulate": "Simulacija",
     "apply": "Vloga",
     "about": "O nas"
+  },
+  "contactPage": {
+    "eyebrow": "Smo tu za vas",
+    "title": "Kontaktirajte ekipo Posojilnica",
+    "subtitle": "Imate vprašanje o posojilu, vlogi ali našem delovanju v vaši državi? Pišite nam — odgovorimo hitro.",
+    "emailLabel": "E-pošta",
+    "emailValue": "podpora@posojilnica.com",
+    "responseLabel": "Odzivni čas",
+    "responseValue": "Običajno v 24 urah ob delavnikih",
+    "hoursLabel": "Poslovni čas podpore",
+    "hoursValue": "Ponedeljek–petek, 9.00–17.00 (CET)"
+  },
+  "trust": {
+    "title": "Delujemo v skladu z lokalno zakonodajo",
+    "subtitle": "V vsaki državi upoštevamo predpise pristojnega finančnega nadzornega organa."
+  },
+  "legal": {
+    "termsTitle": "Splošni pogoji",
+    "termsP1": "Ta dokument ureja pogoje uporabe spletnega mesta Posojilnica (posojilnica.com) ter storitev simulacije in oddaje vloge za posojilo. Z uporabo spletnega mesta se strinjate s temi pogoji.",
+    "termsP2": "Simulacija posojila na spletnem mestu je zgolj informativne narave in ne predstavlja zavezujoče ponudbe kredita. Končna ponudba je odvisna od individualne ocene vloge.",
+    "termsP3": "Posojilnica si pridržuje pravico, da brez navedbe razloga zavrne katero koli vlogo za posojilo, v skladu z veljavno zakonodajo posamezne države.",
+    "termsP4": "Vsebina spletnega mesta je zaščitena z avtorskimi pravicami. Kopiranje ali razširjanje vsebine brez dovoljenja ni dovoljeno.",
+    "privacyTitle": "Zasebnost",
+    "privacyP1": "Posojilnica spoštuje vašo zasebnost. Simulator posojila na tem spletnem mestu ne zahteva nobenih osebnih podatkov in nič se ne shranjuje na naših strežnikih — vrednosti ostanejo samo v vašem brskalniku med sejo.",
+    "privacyP2": "Osebne podatke (ime, priimek, e-pošto, telefon), ki nam jih posredujete prek kontaktnega obrazca ali obrazca za vlogo za posojilo, uporabimo izključno za obravnavo vaše vloge in jih pošljemo neposredno na naš e-poštni naslov. Teh podatkov ne shranjujemo v bazi podatkov.",
+    "privacyP3": "Vaših podatkov nikoli ne prodajamo ali posredujemo tretjim osebam za trženjske namene.",
+    "privacyP4": "Za vsa vprašanja glede varstva podatkov nas kontaktirajte na podpora@posojilnica.com.",
+    "cookiesTitle": "Piškotki",
+    "cookiesP1": "To spletno mesto uporablja minimalno količino tehničnih podatkov, shranjenih v vašem brskalniku (session storage), izključno zato, da si med vašim obiskom zapomni vrednosti iz simulatorja posojila (znesek in dobo odplačevanja), ko preidete na obrazec za vlogo.",
+    "cookiesP2": "Ti podatki se samodejno izbrišejo, ko zaprete brskalnik, in nikoli niso poslani na noben strežnik.",
+    "cookiesP3": "Spletno mesto ne uporablja sledilnih ali oglaševalskih piškotkov tretjih oseb."
   }
 }

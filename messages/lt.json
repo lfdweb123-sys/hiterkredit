@@ -1,14 +1,16 @@
 {
   "meta": {
-    "siteName": "HiterKredit",
-    "titleHome": "HiterKredit — Greitos ir skaidrios paskolos gyventojams",
+    "siteName": "Posojilnica",
+    "titleHome": "Posojilnica — Greitos ir skaidrios paskolos gyventojams",
     "descHome": "Simuliuokite savo paskolą realiu laiku ir pateikite paraišką per kelias minutes. Jokių paslėptų mokesčių, jokio nereikalingo duomenų saugojimo.",
-    "titleSimulate": "Paskolos skaičiuoklė — HiterKredit",
+    "titleSimulate": "Paskolos skaičiuoklė — Posojilnica",
     "descSimulate": "Apskaičiuokite mėnesinę įmoką ir bendrą paskolos kainą naudodami paprastą slankiklį. Rezultatą iškart panaudokite paraiškai.",
-    "titleApply": "Paskolos paraiška — HiterKredit",
+    "titleApply": "Paskolos paraiška — Posojilnica",
     "descApply": "Pateikite paprastą paskolos paraišką. Greitas atsakymas, be nereikalingų formų.",
-    "titleAbout": "Apie mus — HiterKredit",
-    "descAbout": "Susipažinkite su HiterKredit: skaidrumas, greitis ir atsakingas skolinimas."
+    "titleAbout": "Apie mus — Posojilnica",
+    "descAbout": "Susipažinkite su Posojilnica: skaidrumas, greitis ir atsakingas skolinimas.",
+    "titleContact": "Kontaktai — Posojilnica",
+    "descContact": "Susisiekite su Posojilnica komanda dėl paskolų, paraiškų ar bendradarbiavimo klausimų."
   },
   "nav": {
     "home": "Pradžia",
@@ -51,7 +53,7 @@
     "step3Text": "Mūsų komanda peržiūrės paraišką ir susisieks su jumis kuo greičiau."
   },
   "features": {
-    "title": "Kodėl HiterKredit",
+    "title": "Kodėl Posojilnica",
     "f1Title": "Visiškas skaidrumas",
     "f1Text": "Visas kainas matote jau skaičiuojant — jokių netikėtumų sutartyje.",
     "f2Title": "Greitas nagrinėjimas",
@@ -63,7 +65,7 @@
   },
   "countries": {
     "title": "Veikiame jūsų šalyje",
-    "subtitle": "HiterKredit veikia keliose Europos šalyse ir Puerto Rike, pritaikytas vietinei kalbai ir praktikai."
+    "subtitle": "Posojilnica veikia keliose Europos šalyse ir Puerto Rike, pritaikytas vietinei kalbai ir praktikai."
   },
   "form": {
     "title": "Paskolos paraiška",
@@ -76,7 +78,7 @@
     "amount": "Pageidaujama paskolos suma",
     "duration": "Pageidaujamas grąžinimo terminas (mėn.)",
     "message": "Papildoma žinutė (neprivaloma)",
-    "consent": "Sutinku, kad HiterKredit naudotų mano duomenis išimtinai šios paraiškos nagrinėjimui.",
+    "consent": "Sutinku, kad Posojilnica naudotų mano duomenis išimtinai šios paraiškos nagrinėjimui.",
     "submit": "Pateikti paraišką",
     "submitting": "Siunčiama ...",
     "successTitle": "Paraiška sėkmingai pateikta",
@@ -102,7 +104,7 @@
   "about": {
     "eyebrow": "Apie įmonę",
     "title": "Skaidrumas, greitis ir atsakingas skolinimas",
-    "intro": "HiterKredit buvo įkurta su vienu tikslu: padaryti paskolas gyventojams paprastas, skaidrias ir prieinamas, nesvarbu, kurioje šalyje gyvenate.",
+    "intro": "Posojilnica buvo įkurta su vienu tikslu: padaryti paskolas gyventojams paprastas, skaidrias ir prieinamas, nesvarbu, kurioje šalyje gyvenate.",
     "missionTitle": "Mūsų misija",
     "missionText": "Tikime, kad finansinis sprendimas turi būti paprastas. Todėl sukūrėme skaičiuoklę, kuri realiu laiku parodo tikrąją paskolos kainą, ir paraiškos formą, kurią užpildyti užtrunka mažiau nei dvi minutes.",
     "valuesTitle": "Mūsų vertybės",
@@ -131,5 +133,36 @@
     "simulate": "Skaičiuoklė",
     "apply": "Paraiška",
     "about": "Apie mus"
+  },
+  "contactPage": {
+    "eyebrow": "Esame čia dėl jūsų",
+    "title": "Susisiekite su Posojilnica komanda",
+    "subtitle": "Turite klausimą apie paskolą, paraišką ar mūsų veiklą jūsų šalyje? Parašykite mums — atsakysime greitai.",
+    "emailLabel": "El. paštas",
+    "emailValue": "podpora@posojilnica.com",
+    "responseLabel": "Atsakymo laikas",
+    "responseValue": "Paprastai per 24 val. darbo dienomis",
+    "hoursLabel": "Palaikymo darbo laikas",
+    "hoursValue": "Pirmadienis–penktadienis, 9.00–17.00 (CET)"
+  },
+  "trust": {
+    "title": "Veikiame laikydamiesi vietinių teisės aktų",
+    "subtitle": "Kiekvienoje šalyje laikomės atitinkamos finansų priežiūros institucijos reikalavimų."
+  },
+  "legal": {
+    "termsTitle": "Bendrosios sąlygos",
+    "termsP1": "Šis dokumentas nustato Posojilnica svetainės (posojilnica.com) bei paskolos skaičiuoklės ir paraiškos teikimo paslaugų naudojimo sąlygas. Naudodamiesi svetaine sutinkate su šiomis sąlygomis.",
+    "termsP2": "Svetainėje pateikiama paskolos skaičiuoklė yra tik informacinio pobūdžio ir nėra įpareigojantis kredito pasiūlymas. Galutinis pasiūlymas priklauso nuo individualaus paraiškos vertinimo.",
+    "termsP3": "Posojilnica pasilieka teisę atmesti bet kurią paskolos paraišką nenurodydama priežasties, laikantis atitinkamos šalies galiojančių teisės aktų.",
+    "termsP4": "Svetainės turinys yra saugomas autorių teisių. Bet koks turinio kopijavimas ar platinimas be sutikimo draudžiamas.",
+    "privacyTitle": "Privatumas",
+    "privacyP1": "Posojilnica gerbia jūsų privatumą. Šioje svetainėje esanti paskolos skaičiuoklė nereikalauja jokių asmens duomenų, ir niekas nėra saugoma mūsų serveriuose — reikšmės išlieka tik jūsų naršyklėje sesijos metu.",
+    "privacyP2": "Asmens duomenys (vardas, pavardė, el. paštas, telefonas), kuriuos pateikiate per kontaktų formą ar paskolos paraiškos formą, naudojami išimtinai jūsų paraiškos nagrinėjimui ir siunčiami tiesiogiai mūsų el. paštu. Šių duomenų nesaugome duomenų bazėje.",
+    "privacyP3": "Niekada neparduodame ir neperduodame jūsų duomenų trečiosioms šalims rinkodaros tikslais.",
+    "privacyP4": "Dėl bet kokių klausimų, susijusių su duomenų apsauga, kreipkitės el. paštu podpora@posojilnica.com.",
+    "cookiesTitle": "Slapukai",
+    "cookiesP1": "Ši svetainė naudoja minimalų kiekį techninių duomenų, saugomų jūsų naršyklėje (session storage), išimtinai tam, kad apsilankymo metu prisimintų paskolos skaičiuoklės reikšmes (sumą ir terminą), kai pereinate į paraiškos formą.",
+    "cookiesP2": "Šie duomenys automatiškai ištrinami uždarius naršyklę ir niekada nesiunčiami į jokį serverį.",
+    "cookiesP3": "Svetainė nenaudoja trečiųjų šalių sekimo ar reklamos slapukų."
   }
 }

@@ -17,6 +17,7 @@ export default function Header() {
     { href: '/simulator', label: t('simulate') },
     { href: '/apply', label: t('apply') },
     { href: '/about', label: t('about') },
+    { href: '/contact', label: t('contact') },
   ];
 
   return (

@@ -6,10 +6,12 @@ import { Link } from '@/i18n/navigation';
 import {
   AMOUNT_MIN,
   AMOUNT_MAX,
-  AMOUNT_STEP,
   DURATION_MIN,
   DURATION_MAX,
   DURATION_STEP,
+  SLIDER_MAX,
+  amountToSliderPosition,
+  sliderPositionToAmount,
   computeMonthlyPayment,
   formatCurrency,
 } from '@/lib/loan';
@@ -36,7 +38,8 @@ export default function LoanSimulator({ compact = false }: { compact?: boolean }
   const monthly = useMemo(() => computeMonthlyPayment(amount, duration), [amount, duration]);
   const total = monthly * duration;
 
-  const amountFill = ((amount - AMOUNT_MIN) / (AMOUNT_MAX - AMOUNT_MIN)) * 100;
+  const sliderPos = amountToSliderPosition(amount);
+  const amountFill = (sliderPos / SLIDER_MAX) * 100;
   const durationFill = ((duration - DURATION_MIN) / (DURATION_MAX - DURATION_MIN)) * 100;
 
   return (
@@ -56,22 +59,22 @@ export default function LoanSimulator({ compact = false }: { compact?: boolean }
 
       <div className="space-y-8">
         <div>
-          <div className="flex items-baseline justify-between mb-3">
+          <div className="flex items-baseline justify-between mb-3 gap-3">
             <label htmlFor="amount-range" className="text-sm font-semibold text-[var(--color-ink)]">
               {t('amountLabel')}
             </label>
-            <span className="font-display text-xl font-bold text-[var(--color-sky-deep)] animate-count" key={amount}>
+            <span className="font-display text-xl font-bold text-[var(--color-sky-deep)] animate-count text-right" key={amount}>
               {formatCurrency(amount, locale)}
             </span>
           </div>
           <input
             id="amount-range"
             type="range"
-            min={AMOUNT_MIN}
-            max={AMOUNT_MAX}
-            step={AMOUNT_STEP}
-            value={amount}
-            onChange={(e) => setAmount(Number(e.target.value))}
+            min={0}
+            max={SLIDER_MAX}
+            step={1}
+            value={sliderPos}
+            onChange={(e) => setAmount(sliderPositionToAmount(Number(e.target.value)))}
             className="range-track"
             style={{ ['--fill' as string]: `${amountFill}%` }}
           />
@@ -112,13 +115,13 @@ export default function LoanSimulator({ compact = false }: { compact?: boolean }
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div>
             <p className="text-sm text-white/80">{t('monthlyPayment')}</p>
-            <p className="font-display text-4xl md:text-5xl font-bold mt-1 animate-count" key={monthly}>
+            <p className="font-display text-4xl md:text-5xl font-bold mt-1 animate-count break-all" key={monthly}>
               {formatCurrency(monthly, locale)}
             </p>
           </div>
           <div className="text-left sm:text-right">
             <p className="text-sm text-white/80">{t('totalRepay')}</p>
-            <p className="font-display text-xl font-semibold mt-1">{formatCurrency(total, locale)}</p>
+            <p className="font-display text-xl font-semibold mt-1 break-all">{formatCurrency(total, locale)}</p>
           </div>
         </div>
       </div>

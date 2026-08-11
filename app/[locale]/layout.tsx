@@ -8,6 +8,7 @@ import { routing } from '@/i18n/navigation';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BottomNav from './components/BottomNav';
+import TrustBar from './components/TrustBar';
 import { LoanProvider } from './loan-context';
 import '../globals.css';
 
@@ -15,7 +16,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const SITE_URL = 'https://www.hiterkredit.com';
+const SITE_URL = 'https://www.posojilnica.com';
 
 export async function generateMetadata({
   params,
@@ -68,7 +69,12 @@ export async function generateMetadata({
       follow: true,
     },
     icons: {
-      icon: '/favicon.ico',
+      icon: [
+        { url: '/favicon.ico' },
+        { url: '/images/favicon-32.png', sizes: '32x32', type: 'image/png' },
+        { url: '/images/icon-512.png', sizes: '512x512', type: 'image/png' },
+      ],
+      apple: '/images/apple-touch-icon.png',
     },
   };
 }
@@ -90,10 +96,10 @@ export default async function LocaleLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
-    name: 'HiterKredit',
+    name: 'Posojilnica',
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.png`,
-    email: 'podpora@hiterkredit.com',
+    email: 'podpora@posojilnica.com',
     areaServed: ['SI', 'SK', 'LT', 'PR', 'NL', 'BE', 'IE'],
     availableLanguage: ['sl', 'sk', 'lt', 'es', 'nl', 'en'],
   };
@@ -118,6 +124,7 @@ export default async function LocaleLayout({
           <LoanProvider>
             <Header />
             <main className="flex-1 pb-16 md:pb-0">{children}</main>
+            <TrustBar locale={locale as Locale} />
             <Footer />
             <BottomNav />
           </LoanProvider>

@@ -1,14 +1,16 @@
 {
   "meta": {
-    "siteName": "HiterKredit",
-    "titleHome": "HiterKredit — Snelle en transparante persoonlijke leningen",
+    "siteName": "Posojilnica",
+    "titleHome": "Posojilnica — Snelle en transparante persoonlijke leningen",
     "descHome": "Simuleer uw lening in real time en dien uw aanvraag in enkele minuten in. Geen verborgen kosten, geen onnodige opslag van gegevens.",
-    "titleSimulate": "Leningsimulator — HiterKredit",
+    "titleSimulate": "Leningsimulator — Posojilnica",
     "descSimulate": "Bereken uw maandelijkse aflossing en de totale kosten van de lening met een eenvoudige schuifregelaar. Gebruik het resultaat meteen voor uw aanvraag.",
-    "titleApply": "Leningaanvraag — HiterKredit",
+    "titleApply": "Leningaanvraag — Posojilnica",
     "descApply": "Dien een eenvoudige leningaanvraag in. Snel antwoord, zonder overbodige formulieren.",
-    "titleAbout": "Over ons — HiterKredit",
-    "descAbout": "Maak kennis met HiterKredit: transparantie, snelheid en verantwoord lenen."
+    "titleAbout": "Over ons — Posojilnica",
+    "descAbout": "Maak kennis met Posojilnica: transparantie, snelheid en verantwoord lenen.",
+    "titleContact": "Contact — Posojilnica",
+    "descContact": "Neem contact op met het Posojilnica-team voor al uw vragen over leningen, aanvragen of samenwerking."
   },
   "nav": {
     "home": "Home",
@@ -51,7 +53,7 @@
     "step3Text": "Ons team beoordeelt uw aanvraag en neemt zo snel mogelijk contact met u op."
   },
   "features": {
-    "title": "Waarom HiterKredit",
+    "title": "Waarom Posojilnica",
     "f1Title": "Volledige transparantie",
     "f1Text": "U ziet alle kosten al bij de simulatie — geen verrassingen in het contract.",
     "f2Title": "Snelle verwerking",
@@ -63,7 +65,7 @@
   },
   "countries": {
     "title": "Actief in uw land",
-    "subtitle": "HiterKredit is actief in meerdere Europese landen en Puerto Rico, aangepast aan de lokale taal en gebruiken."
+    "subtitle": "Posojilnica is actief in meerdere Europese landen en Puerto Rico, aangepast aan de lokale taal en gebruiken."
   },
   "form": {
     "title": "Leningaanvraag",
@@ -76,7 +78,7 @@
     "amount": "Gewenst leningbedrag",
     "duration": "Gewenste aflossingsperiode (maanden)",
     "message": "Aanvullend bericht (optioneel)",
-    "consent": "Ik ga ermee akkoord dat HiterKredit mijn gegevens uitsluitend gebruikt voor de verwerking van deze aanvraag.",
+    "consent": "Ik ga ermee akkoord dat Posojilnica mijn gegevens uitsluitend gebruikt voor de verwerking van deze aanvraag.",
     "submit": "Aanvraag verzenden",
     "submitting": "Verzenden ...",
     "successTitle": "Aanvraag succesvol verzonden",
@@ -102,7 +104,7 @@
   "about": {
     "eyebrow": "Over het bedrijf",
     "title": "Transparantie, snelheid en verantwoord lenen",
-    "intro": "HiterKredit is opgericht met één doel: persoonlijke leningen eenvoudig, transparant en toegankelijk maken, ongeacht in welk land u woont.",
+    "intro": "Posojilnica is opgericht met één doel: persoonlijke leningen eenvoudig, transparant en toegankelijk maken, ongeacht in welk land u woont.",
     "missionTitle": "Onze missie",
     "missionText": "Wij geloven dat een financiële beslissing eenvoudig moet zijn. Daarom ontwikkelden wij een simulator die in real time de werkelijke kosten van de lening toont, en een aanvraagformulier dat minder dan twee minuten duurt.",
     "valuesTitle": "Onze waarden",
@@ -131,5 +133,36 @@
     "simulate": "Simulator",
     "apply": "Aanvraag",
     "about": "Over ons"
+  },
+  "contactPage": {
+    "eyebrow": "Wij staan voor u klaar",
+    "title": "Neem contact op met Posojilnica",
+    "subtitle": "Heeft u een vraag over een lening, een aanvraag of onze werking in uw land? Schrijf ons — wij antwoorden snel.",
+    "emailLabel": "E-mail",
+    "emailValue": "podpora@posojilnica.com",
+    "responseLabel": "Reactietijd",
+    "responseValue": "Doorgaans binnen 24 uur op werkdagen",
+    "hoursLabel": "Openingstijden ondersteuning",
+    "hoursValue": "Maandag–vrijdag, 9.00–17.00 (CET)"
+  },
+  "trust": {
+    "title": "Wij opereren conform de lokale regelgeving",
+    "subtitle": "In elk land houden wij ons aan de voorschriften van de bevoegde financiële toezichthouder."
+  },
+  "legal": {
+    "termsTitle": "Algemene voorwaarden",
+    "termsP1": "Dit document regelt de gebruiksvoorwaarden van de website Posojilnica (posojilnica.com) en de diensten voor leningsimulatie en -aanvraag. Door de website te gebruiken, gaat u akkoord met deze voorwaarden.",
+    "termsP2": "De leningsimulator op de website is uitsluitend informatief en vormt geen bindend kredietaanbod. Het uiteindelijke aanbod hangt af van de individuele beoordeling van de aanvraag.",
+    "termsP3": "Posojilnica behoudt zich het recht voor om elke leningaanvraag zonder opgave van reden te weigeren, in overeenstemming met de geldende wetgeving van het betreffende land.",
+    "termsP4": "De inhoud van de website is auteursrechtelijk beschermd. Het kopiëren of verspreiden van de inhoud zonder toestemming is verboden.",
+    "privacyTitle": "Privacy",
+    "privacyP1": "Posojilnica respecteert uw privacy. De leningsimulator op deze website vereist geen persoonsgegevens en er wordt niets op onze servers opgeslagen — de waarden blijven alleen in uw browser tijdens de sessie.",
+    "privacyP2": "Persoonsgegevens (voornaam, achternaam, e-mail, telefoon) die u via het contactformulier of het leningaanvraagformulier verstrekt, worden uitsluitend gebruikt voor de verwerking van uw aanvraag en rechtstreeks naar ons e-mailadres verzonden. Wij bewaren deze gegevens niet in een database.",
+    "privacyP3": "Wij verkopen of delen uw gegevens nooit met derden voor marketingdoeleinden.",
+    "privacyP4": "Voor vragen over gegevensbescherming kunt u contact met ons opnemen via podpora@posojilnica.com.",
+    "cookiesTitle": "Cookies",
+    "cookiesP1": "Deze website gebruikt een minimale hoeveelheid technische gegevens die in uw browser worden opgeslagen (session storage), uitsluitend om tijdens uw bezoek de waarden van de leningsimulator (bedrag en looptijd) te onthouden wanneer u naar het aanvraagformulier gaat.",
+    "cookiesP2": "Deze gegevens worden automatisch verwijderd wanneer u uw browser sluit en worden nooit naar een server verzonden.",
+    "cookiesP3": "De website gebruikt geen trackings- of reclamecookies van derden."
   }
 }

@@ -27,6 +27,7 @@ export default function Footer() {
             <li><Link href="/simulator" className="hover:text-white transition-colors">{nav('simulate')}</Link></li>
             <li><Link href="/apply" className="hover:text-white transition-colors">{nav('apply')}</Link></li>
             <li><Link href="/about" className="hover:text-white transition-colors">{nav('about')}</Link></li>
+            <li><Link href="/contact" className="hover:text-white transition-colors">{nav('contact')}</Link></li>
           </ul>
         </div>
 
@@ -47,18 +48,17 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2.5 text-sm text-white/80">
             <li>
-              <a href="mailto:podpora@hiterkredit.com" className="hover:text-white transition-colors">
-                podpora@hiterkredit.com
+              <a href="mailto:podpora@posojilnica.com" className="hover:text-white transition-colors">
+                podpora@posojilnica.com
               </a>
             </li>
-            <li className="text-white/60">www.hiterkredit.com</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-5 md:px-8 py-6 flex flex-col md:flex-row gap-3 md:items-center md:justify-between text-xs text-white/50">
-          <p>© {year} HiterKredit. {t('rights')}</p>
+          <p>© {year} Posojilnica. {t('rights')}</p>
           <p className="max-w-xl">{t('riskNote')}</p>
         </div>
       </div>

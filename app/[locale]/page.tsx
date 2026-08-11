@@ -15,7 +15,7 @@ export async function generateMetadata({
   return {
     title: t('titleHome'),
     description: t('descHome'),
-    alternates: { canonical: `https://www.hiterkredit.com/${locale}` },
+    alternates: { canonical: `https://www.posojilnica.com/${locale}` },
   };
 }
 
@@ -110,10 +110,23 @@ export default async function HomePage({
       {/* FEATURES */}
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)] text-center">
-            {features('title')}
-          </h2>
-          <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-14">
+            <div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)]">
+                {features('title')}
+              </h2>
+            </div>
+            <div className="rounded-3xl overflow-hidden hidden lg:block">
+              <Image
+                src={IMAGES.featuresSecurity.src}
+                alt={features('title')}
+                width={IMAGES.featuresSecurity.width}
+                height={IMAGES.featuresSecurity.height}
+                className="w-full h-52 object-cover"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard title={features('f1Title')} text={features('f1Text')} icon="shield" />
             <FeatureCard title={features('f2Title')} text={features('f2Text')} icon="bolt" />
             <FeatureCard title={features('f3Title')} text={features('f3Text')} icon="lock" />

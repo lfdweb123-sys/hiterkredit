@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import ContactForm from '../components/ContactForm';
+import { Link } from '@/i18n/navigation';
 import { IMAGES } from '@/lib/images';
 
 export async function generateMetadata({
@@ -14,7 +14,7 @@ export async function generateMetadata({
   return {
     title: t('titleAbout'),
     description: t('descAbout'),
-    alternates: { canonical: `https://www.hiterkredit.com/${locale}/about` },
+    alternates: { canonical: `https://www.posojilnica.com/${locale}/about` },
   };
 }
 
@@ -25,6 +25,8 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'about' });
+  const contact = await getTranslations({ locale, namespace: 'contactPage' });
+  const nav = await getTranslations({ locale, namespace: 'nav' });
 
   return (
     <>
@@ -50,11 +52,22 @@ export default async function AboutPage({
       </section>
 
       <section className="bg-[var(--color-sky-mist)] py-16 md:py-20">
-        <div className="mx-auto max-w-4xl px-5 md:px-8">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-[var(--color-ink)]">
-            {t('missionTitle')}
-          </h2>
-          <p className="mt-4 text-[var(--color-ink-soft)] leading-relaxed">{t('missionText')}</p>
+        <div className="mx-auto max-w-6xl px-5 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-[var(--color-ink)]">
+              {t('missionTitle')}
+            </h2>
+            <p className="mt-4 text-[var(--color-ink-soft)] leading-relaxed">{t('missionText')}</p>
+          </div>
+          <div className="rounded-3xl overflow-hidden">
+            <Image
+              src={IMAGES.aboutMission.src}
+              alt={t('missionTitle')}
+              width={IMAGES.aboutMission.width}
+              height={IMAGES.aboutMission.height}
+              className="w-full h-64 object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -63,7 +76,16 @@ export default async function AboutPage({
           <h2 className="font-display text-2xl md:text-3xl font-bold text-[var(--color-ink)] text-center">
             {t('valuesTitle')}
           </h2>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-10 rounded-3xl overflow-hidden max-w-4xl mx-auto">
+            <Image
+              src={IMAGES.aboutValues.src}
+              alt={t('valuesTitle')}
+              width={IMAGES.aboutValues.width}
+              height={IMAGES.aboutValues.height}
+              className="w-full h-56 object-cover"
+            />
+          </div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             <ValueCard title={t('value1Title')} text={t('value1Text')} />
             <ValueCard title={t('value2Title')} text={t('value2Text')} />
             <ValueCard title={t('value3Title')} text={t('value3Text')} />
@@ -79,8 +101,20 @@ export default async function AboutPage({
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-2xl px-5 md:px-8">
-          <ContactForm />
+        <div className="mx-auto max-w-2xl px-5 md:px-8 text-center">
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-[var(--color-ink)]">
+            {contact('title')}
+          </h2>
+          <p className="mt-3 text-[var(--color-ink-soft)]">{contact('subtitle')}</p>
+          <Link
+            href="/contact"
+            className="mt-7 inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[var(--color-sky)] text-white font-semibold hover:bg-[var(--color-sky-deep)] transition-colors focus-ring"
+          >
+            {nav('contact')}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
         </div>
       </section>
     </>

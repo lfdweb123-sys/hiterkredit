@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.hiterkredit.com/sitemap.xml',
+    sitemap: 'https://www.posojilnica.com/sitemap.xml',
   };
 }
