@@ -25,7 +25,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-5 md:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 shrink-0 focus-ring">
           <span className="font-display font-bold text-xl tracking-tight text-[var(--color-ink)]">
-            Hiter<span className="text-[var(--color-sky-deep)]">Kredit</span>
+            Posojil<span className="text-[var(--color-sky-deep)]">nica</span>
           </span>
         </Link>
 
