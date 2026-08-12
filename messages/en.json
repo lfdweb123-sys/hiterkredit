@@ -85,7 +85,8 @@
     "successText": "Thank you! Our team will contact you as soon as possible.",
     "errorTitle": "Something went wrong",
     "errorText": "We couldn't send your application. Please try again or contact us directly.",
-    "required": "This field is required."
+    "required": "This field is required.",
+    "successContractNote": "We've sent the detailed loan offer as a PDF to your email address."
   },
   "contactForm": {
     "title": "Get in touch",
@@ -164,5 +165,16 @@
     "cookiesP1": "This website uses a minimal amount of technical data stored in your browser (session storage), solely to remember the loan simulator figures (amount and term) during your visit when you move to the application form.",
     "cookiesP2": "This data is automatically deleted when you close your browser and is never sent to any server.",
     "cookiesP3": "The website does not use third-party tracking or advertising cookies."
+  },
+  "contractEmail": {
+    "subject": "Your Posojilnica loan offer — {ref}",
+    "greeting": "Hello {name},",
+    "intro": "Thank you for submitting your application to Posojilnica. Attached is the calculated loan offer, prepared from the details you provided.",
+    "summaryTitle": "Summary of your application",
+    "amountLabel": "Amount",
+    "durationLabel": "Repayment term",
+    "monthlyLabel": "Monthly instalment",
+    "instructions": "Please review the attached document carefully. For signature and next steps, contact us at podpora@posojilnica.com — we may also reach out to you by phone if needed.",
+    "closing": "Best regards,\nThe Posojilnica Team"
   }
 }

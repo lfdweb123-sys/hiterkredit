@@ -85,7 +85,8 @@
     "successText": "¡Gracias! Nuestro equipo se pondrá en contacto contigo lo antes posible.",
     "errorTitle": "Ocurrió un error",
     "errorText": "No se pudo enviar la solicitud. Intenta de nuevo o contáctanos directamente.",
-    "required": "Este campo es obligatorio."
+    "required": "Este campo es obligatorio.",
+    "successContractNote": "Hemos enviado la oferta detallada del préstamo en formato PDF a tu correo electrónico."
   },
   "contactForm": {
     "title": "Contáctanos",
@@ -164,5 +165,16 @@
     "cookiesP1": "Este sitio utiliza una cantidad mínima de datos técnicos almacenados en tu navegador (session storage), únicamente para recordar durante tu visita los valores del simulador de préstamo (monto y plazo) al pasar al formulario de solicitud.",
     "cookiesP2": "Estos datos se eliminan automáticamente al cerrar el navegador y nunca se envían a ningún servidor.",
     "cookiesP3": "El sitio no utiliza cookies de seguimiento ni publicitarias de terceros."
+  },
+  "contractEmail": {
+    "subject": "Tu oferta de préstamo Posojilnica — {ref}",
+    "greeting": "Hola, {name}:",
+    "intro": "Gracias por enviar tu solicitud a Posojilnica. Adjunto encontrarás la oferta de préstamo calculada, preparada a partir de los datos que nos proporcionaste.",
+    "summaryTitle": "Resumen de tu solicitud",
+    "amountLabel": "Monto",
+    "durationLabel": "Plazo de pago",
+    "monthlyLabel": "Cuota mensual",
+    "instructions": "Revisa cuidadosamente el documento adjunto. Para la firma y los siguientes pasos, contáctanos en podpora@posojilnica.com — si es necesario, también podemos contactarte por teléfono.",
+    "closing": "Saludos cordiales,\nEquipo de Posojilnica"
   }
 }

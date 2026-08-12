@@ -85,7 +85,8 @@
     "successText": "Hvala! Naša ekipa vas bo kontaktirala v najkrajšem možnem času.",
     "errorTitle": "Prišlo je do napake",
     "errorText": "Vloge ni bilo mogoče poslati. Poskusite znova ali nas kontaktirajte neposredno.",
-    "required": "To polje je obvezno."
+    "required": "To polje je obvezno.",
+    "successContractNote": "Podrobno ponudbo posojila v obliki PDF smo poslali na vaš e-poštni naslov."
   },
   "contactForm": {
     "title": "Kontaktirajte nas",
@@ -164,5 +165,16 @@
     "cookiesP1": "To spletno mesto uporablja minimalno količino tehničnih podatkov, shranjenih v vašem brskalniku (session storage), izključno zato, da si med vašim obiskom zapomni vrednosti iz simulatorja posojila (znesek in dobo odplačevanja), ko preidete na obrazec za vlogo.",
     "cookiesP2": "Ti podatki se samodejno izbrišejo, ko zaprete brskalnik, in nikoli niso poslani na noben strežnik.",
     "cookiesP3": "Spletno mesto ne uporablja sledilnih ali oglaševalskih piškotkov tretjih oseb."
+  },
+  "contractEmail": {
+    "subject": "Vaša ponudba posojila Posojilnica — {ref}",
+    "greeting": "Pozdravljeni, {name},",
+    "intro": "Hvala za oddano vlogo pri Posojilnica. V priponki najdete izračunano ponudbo posojila, pripravljeno na podlagi podatkov, ki ste jih posredovali.",
+    "summaryTitle": "Povzetek vaše vloge",
+    "amountLabel": "Znesek",
+    "durationLabel": "Doba odplačevanja",
+    "monthlyLabel": "Mesečni obrok",
+    "instructions": "Dokument v priponki natančno preglejte. Za podpis in nadaljnje korake nas kontaktirajte na podpora@posojilnica.com — po potrebi vas lahko kontaktiramo tudi telefonsko.",
+    "closing": "Lep pozdrav,\nEkipa Posojilnica"
   }
 }

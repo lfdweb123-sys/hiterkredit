@@ -85,7 +85,8 @@
     "successText": "Bedankt! Ons team neemt zo snel mogelijk contact met u op.",
     "errorTitle": "Er is een fout opgetreden",
     "errorText": "De aanvraag kon niet worden verzonden. Probeer het opnieuw of neem rechtstreeks contact met ons op.",
-    "required": "Dit veld is verplicht."
+    "required": "Dit veld is verplicht.",
+    "successContractNote": "We hebben het gedetailleerde leningaanbod als PDF naar uw e-mailadres gestuurd."
   },
   "contactForm": {
     "title": "Neem contact met ons op",
@@ -164,5 +165,16 @@
     "cookiesP1": "Deze website gebruikt een minimale hoeveelheid technische gegevens die in uw browser worden opgeslagen (session storage), uitsluitend om tijdens uw bezoek de waarden van de leningsimulator (bedrag en looptijd) te onthouden wanneer u naar het aanvraagformulier gaat.",
     "cookiesP2": "Deze gegevens worden automatisch verwijderd wanneer u uw browser sluit en worden nooit naar een server verzonden.",
     "cookiesP3": "De website gebruikt geen trackings- of reclamecookies van derden."
+  },
+  "contractEmail": {
+    "subject": "Uw Posojilnica leningaanbod — {ref}",
+    "greeting": "Hallo {name},",
+    "intro": "Bedankt voor uw aanvraag bij Posojilnica. In de bijlage vindt u het berekende leningaanbod, opgesteld op basis van de door u verstrekte gegevens.",
+    "summaryTitle": "Samenvatting van uw aanvraag",
+    "amountLabel": "Bedrag",
+    "durationLabel": "Looptijd",
+    "monthlyLabel": "Maandelijkse aflossing",
+    "instructions": "Bekijk het bijgevoegde document zorgvuldig. Neem voor ondertekening en de volgende stappen contact met ons op via podpora@posojilnica.com — indien nodig kunnen wij u ook telefonisch contacteren.",
+    "closing": "Met vriendelijke groet,\nHet Posojilnica-team"
   }
 }

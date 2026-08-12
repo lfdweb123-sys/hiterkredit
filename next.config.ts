@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
   },
+  outputFileTracingIncludes: {
+    '/api/apply': ['./assets/fonts/**'],
+  },
 };
 
 export default withNextIntl(nextConfig);

@@ -4,21 +4,31 @@ const SENDER_EMAIL = process.env.MAIL_SENDER || 'gerardfreelancer123@gmail.com';
 const ADMIN_EMAIL = process.env.MAIL_ADMIN || 'gerardfreelancer123@gmail.com';
 const SENDER_NAME = 'Posojilnica';
 
-type BrevoEmailParams = {
-  subject: string;
-  htmlContent: string;
-  replyTo?: { email: string; name?: string };
+type Recipient = { email: string; name?: string };
+
+type Attachment = {
+  name: string;
+  content: string; // base64-encoded
 };
 
-export async function sendAdminNotification({ subject, htmlContent, replyTo }: BrevoEmailParams) {
+type SendEmailParams = {
+  to: Recipient[];
+  subject: string;
+  htmlContent: string;
+  replyTo?: Recipient;
+  attachments?: Attachment[];
+};
+
+async function sendEmail({ to, subject, htmlContent, replyTo, attachments }: SendEmailParams) {
   const apiKey = process.env.BREVO_API_KEY;
 
-  console.log('[brevo] sendAdminNotification called', {
+  console.log('[brevo] sendEmail called', {
     hasApiKey: Boolean(apiKey),
     apiKeyPrefix: apiKey ? apiKey.slice(0, 6) + '...' : 'MISSING',
     sender: SENDER_EMAIL,
-    admin: ADMIN_EMAIL,
+    to: to.map((r) => r.email),
     subject,
+    attachmentCount: attachments?.length ?? 0,
   });
 
   if (!apiKey) {
@@ -37,10 +47,11 @@ export async function sendAdminNotification({ subject, htmlContent, replyTo }: B
       },
       body: JSON.stringify({
         sender: { name: SENDER_NAME, email: SENDER_EMAIL },
-        to: [{ email: ADMIN_EMAIL, name: 'Posojilnica Admin' }],
-        replyTo: replyTo,
+        to,
+        replyTo,
         subject,
         htmlContent,
+        attachment: attachments?.map((a) => ({ name: a.name, content: a.content })),
       }),
     });
   } catch (networkErr) {
@@ -61,6 +72,42 @@ export async function sendAdminNotification({ subject, htmlContent, replyTo }: B
   } catch {
     return { raw: rawBody };
   }
+}
+
+export async function sendAdminNotification({
+  subject,
+  htmlContent,
+  replyTo,
+}: {
+  subject: string;
+  htmlContent: string;
+  replyTo?: Recipient;
+}) {
+  return sendEmail({
+    to: [{ email: ADMIN_EMAIL, name: 'Posojilnica Admin' }],
+    subject,
+    htmlContent,
+    replyTo,
+  });
+}
+
+export async function sendToRecipient({
+  to,
+  subject,
+  htmlContent,
+  attachments,
+}: {
+  to: Recipient;
+  subject: string;
+  htmlContent: string;
+  attachments?: Attachment[];
+}) {
+  return sendEmail({
+    to: [to],
+    subject,
+    htmlContent,
+    attachments,
+  });
 }
 
 export function escapeHtml(input: string): string {

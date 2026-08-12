@@ -85,7 +85,8 @@
     "successText": "Ďakujeme! Náš tím vás bude kontaktovať v čo najkratšom čase.",
     "errorTitle": "Vyskytla sa chyba",
     "errorText": "Žiadosť sa nepodarilo odoslať. Skúste to znova alebo nás kontaktujte priamo.",
-    "required": "Toto pole je povinné."
+    "required": "Toto pole je povinné.",
+    "successContractNote": "Podrobnú ponuku pôžičky vo formáte PDF sme odoslali na vašu e-mailovú adresu."
   },
   "contactForm": {
     "title": "Kontaktujte nás",
@@ -164,5 +165,16 @@
     "cookiesP1": "Táto stránka používa minimálne množstvo technických údajov uložených vo vašom prehliadači (session storage), a to výlučne na to, aby si počas vašej návštevy zapamätala hodnoty zo simulátora pôžičky (sumu a dobu splácania), keď prejdete na formulár žiadosti.",
     "cookiesP2": "Tieto údaje sa automaticky vymažú, keď zatvoríte prehliadač, a nikdy nie sú odoslané na žiadny server.",
     "cookiesP3": "Stránka nepoužíva sledovacie ani reklamné cookies tretích strán."
+  },
+  "contractEmail": {
+    "subject": "Vaša ponuka pôžičky Posojilnica — {ref}",
+    "greeting": "Dobrý deň, {name},",
+    "intro": "Ďakujeme za podanú žiadosť u Posojilnica. V prílohe nájdete vypočítanú ponuku pôžičky pripravenú na základe údajov, ktoré ste nám poskytli.",
+    "summaryTitle": "Zhrnutie vašej žiadosti",
+    "amountLabel": "Suma",
+    "durationLabel": "Doba splácania",
+    "monthlyLabel": "Mesačná splátka",
+    "instructions": "Dokument v prílohe si pozorne preštudujte. Ohľadom podpisu a ďalších krokov nás kontaktujte na podpora@posojilnica.com — v prípade potreby vás môžeme kontaktovať aj telefonicky.",
+    "closing": "S pozdravom,\nTím Posojilnica"
   }
 }

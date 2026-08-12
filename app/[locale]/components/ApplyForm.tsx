@@ -55,6 +55,7 @@ export default function ApplyForm() {
         </div>
         <h2 className="font-display text-2xl font-bold text-[var(--color-ink)]">{t('successTitle')}</h2>
         <p className="mt-2 text-[var(--color-ink-soft)]">{t('successText')}</p>
+        <p className="mt-3 text-sm text-[var(--color-sky-deep)] font-medium">{t('successContractNote')}</p>
       </div>
     );
   }

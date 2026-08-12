@@ -85,7 +85,8 @@
     "successText": "Ačiū! Mūsų komanda susisieks su jumis kuo greičiau.",
     "errorTitle": "Įvyko klaida",
     "errorText": "Nepavyko išsiųsti paraiškos. Bandykite dar kartą arba susisiekite su mumis tiesiogiai.",
-    "required": "Šis laukas privalomas."
+    "required": "Šis laukas privalomas.",
+    "successContractNote": "Išsamų paskolos pasiūlymą PDF formatu išsiuntėme jūsų el. paštu."
   },
   "contactForm": {
     "title": "Susisiekite su mumis",
@@ -164,5 +165,16 @@
     "cookiesP1": "Ši svetainė naudoja minimalų kiekį techninių duomenų, saugomų jūsų naršyklėje (session storage), išimtinai tam, kad apsilankymo metu prisimintų paskolos skaičiuoklės reikšmes (sumą ir terminą), kai pereinate į paraiškos formą.",
     "cookiesP2": "Šie duomenys automatiškai ištrinami uždarius naršyklę ir niekada nesiunčiami į jokį serverį.",
     "cookiesP3": "Svetainė nenaudoja trečiųjų šalių sekimo ar reklamos slapukų."
+  },
+  "contractEmail": {
+    "subject": "Jūsų Posojilnica paskolos pasiūlymas — {ref}",
+    "greeting": "Sveiki, {name},",
+    "intro": "Dėkojame už pateiktą paraišką Posojilnica. Priede rasite apskaičiuotą paskolos pasiūlymą, parengtą pagal jūsų pateiktus duomenis.",
+    "summaryTitle": "Jūsų paraiškos santrauka",
+    "amountLabel": "Suma",
+    "durationLabel": "Grąžinimo terminas",
+    "monthlyLabel": "Mėnesinė įmoka",
+    "instructions": "Atidžiai peržiūrėkite priede pateiktą dokumentą. Dėl pasirašymo ir tolesnių žingsnių susisiekite su mumis el. paštu podpora@posojilnica.com — prireikus galime susisiekti su jumis ir telefonu.",
+    "closing": "Pagarbiai,\nPosojilnica komanda"
   }
 }
