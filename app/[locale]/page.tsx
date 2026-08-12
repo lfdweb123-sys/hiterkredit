@@ -55,16 +55,16 @@ export default async function HomePage({
             <p className="mt-6 text-lg text-[var(--color-ink-soft)] max-w-lg leading-relaxed">
               {hero('subtitle')}
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4">
               <Link
                 href="/simulator"
-                className="px-7 py-3.5 rounded-full bg-[var(--color-sky)] text-white font-semibold hover:bg-[var(--color-sky-deep)] transition-colors focus-ring"
+                className="w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-[var(--color-sky)] text-white font-semibold hover:bg-[var(--color-sky-deep)] transition-colors focus-ring"
               >
                 {hero('ctaPrimary')}
               </Link>
               <a
                 href="#how-it-works"
-                className="px-7 py-3.5 rounded-full border border-[var(--color-line)] text-[var(--color-ink)] font-semibold hover:bg-[var(--color-sky-mist)] transition-colors focus-ring"
+                className="w-full sm:w-auto text-center px-7 py-3.5 rounded-full border border-[var(--color-line)] text-[var(--color-ink)] font-semibold hover:bg-[var(--color-sky-mist)] transition-colors focus-ring"
               >
                 {hero('ctaSecondary')}
               </a>
