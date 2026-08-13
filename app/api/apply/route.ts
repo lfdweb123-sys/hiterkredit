@@ -88,7 +88,7 @@ export async function POST(req: NextRequest) {
       throw new Error(`PDF generation failed: ${(pdfErr as Error)?.message}`);
     }
     const pdfBase64 = bufferToBase64(pdfBytes);
-    const attachmentName = `Posojilnica-${contractData.reference}.pdf`;
+    const attachmentName = `FondsLink-${contractData.reference}.pdf`;
 
     const emailText = getContractEmailText(safeLocale);
 
@@ -123,7 +123,7 @@ export async function POST(req: NextRequest) {
 
     // --- Notify the admin, with the same contract attached for records ---
     const adminHtml = `
-      <h2>Nová žiadosť o pôžičku — Posojilnica</h2>
+      <h2>Nová žiadosť o pôžičku — FondsLink</h2>
       <p><strong>Referencia:</strong> ${escapeHtml(contractData.reference)}</p>
       <p><strong>Meno a priezvisko:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
       <p><strong>E-mail:</strong> ${escapeHtml(email)}</p>

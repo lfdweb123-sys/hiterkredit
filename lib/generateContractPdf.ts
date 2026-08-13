@@ -28,7 +28,7 @@ export async function generateContractPdf(data: ContractData): Promise<Uint8Arra
   const fontBold = await doc.embedFont(boldBytes, { subset: true });
 
   doc.setTitle(`${t.title} — ${data.reference}`);
-  doc.setAuthor('Posojilnica');
+  doc.setAuthor('FondsLink');
   doc.setSubject(t.title);
 
   let cursor: Cursor = { page: doc.addPage([PAGE_WIDTH, PAGE_HEIGHT]), y: PAGE_HEIGHT - MARGIN };
@@ -103,8 +103,8 @@ export async function generateContractPdf(data: ContractData): Promise<Uint8Arra
 
   // ---- Header ----
   cursor.page.drawRectangle({ x: 0, y: PAGE_HEIGHT - 70, width: PAGE_WIDTH, height: 70, color: SKY });
-  cursor.page.drawText('Posojilnica', { x: MARGIN, y: PAGE_HEIGHT - 44, size: 20, font: fontBold, color: rgb(1, 1, 1) });
-  cursor.page.drawText('posojilnica.com', { x: MARGIN, y: PAGE_HEIGHT - 60, size: 9, font: fontRegular, color: rgb(1, 1, 1) });
+  cursor.page.drawText('FondsLink', { x: MARGIN, y: PAGE_HEIGHT - 44, size: 20, font: fontBold, color: rgb(1, 1, 1) });
+  cursor.page.drawText('fondslink.com', { x: MARGIN, y: PAGE_HEIGHT - 60, size: 9, font: fontRegular, color: rgb(1, 1, 1) });
   cursor.y = PAGE_HEIGHT - 100;
 
   cursor.page.drawText(t.title, { x: MARGIN, y: cursor.y, size: 17, font: fontBold, color: INK });
@@ -152,33 +152,41 @@ export async function generateContractPdf(data: ContractData): Promise<Uint8Arra
   drawSectionTitle(t.sec4Title);
   drawParagraph(t.sec4Text);
 
-  // ---- Section 5: Disbursement ----
+  // ---- Section 5: Guarantee and security ----
   drawSectionTitle(t.sec5Title);
-  drawParagraph(t.sec5Text);
+  drawParagraph(t.sec5P1);
+  drawParagraph(t.sec5P2);
+  drawParagraph(t.sec5P3);
+  drawParagraph(t.sec5P4);
+  drawParagraph(t.sec5P5);
+
+  // ---- Section 6: Disbursement ----
+  drawSectionTitle(t.sec6Title);
+  drawParagraph(t.sec6Text);
   drawKeyValueRow(t.plannedAmountLabel, formatMoney(data.amount, data.locale));
   drawKeyValueRow(t.accountLabel, t.accountValue);
   cursor.y -= 6;
 
-  // ---- Section 6: Repayment ----
-  drawSectionTitle(t.sec6Title);
-  drawParagraph(t.sec6Text);
+  // ---- Section 7: Repayment ----
+  drawSectionTitle(t.sec7Title);
+  drawParagraph(t.sec7Text);
   drawKeyValueRow(t.firstInstallmentLabel, formatDate(data.firstInstallmentDate, data.locale));
   drawKeyValueRow(t.lastInstallmentLabel, formatDate(data.lastInstallmentDate, data.locale));
   cursor.y -= 6;
 
-  // ---- Section 7-10 ----
-  drawSectionTitle(t.sec7Title);
-  drawParagraph(t.sec7Text);
+  // ---- Section 8-11 ----
   drawSectionTitle(t.sec8Title);
   drawParagraph(t.sec8Text);
   drawSectionTitle(t.sec9Title);
   drawParagraph(t.sec9Text);
   drawSectionTitle(t.sec10Title);
   drawParagraph(t.sec10Text);
-
-  // ---- Section 11: Acceptance ----
   drawSectionTitle(t.sec11Title);
   drawParagraph(t.sec11Text);
+
+  // ---- Section 12: Acceptance ----
+  drawSectionTitle(t.sec12Title);
+  drawParagraph(t.sec12Text);
   cursor.y -= 8;
   drawKeyValueRow(t.borrowerNameLabel, data.borrower.fullName);
   drawKeyValueRow(t.dateLabel, formatDate(data.issueDate, data.locale));
@@ -203,11 +211,11 @@ export async function generateContractPdf(data: ContractData): Promise<Uint8Arra
   cursor.y -= 20;
   cursor.page.drawText(t.lenderTitle, { x: MARGIN, y: cursor.y, size: 12.5, font: fontBold, color: SKY_DEEP });
   cursor.y -= 20;
-  drawKeyValueRow(t.companyLabel, 'Posojilnica');
-  drawKeyValueRow(t.websiteLabel, 'posojilnica.com');
+  drawKeyValueRow(t.companyLabel, 'FondsLink');
+  drawKeyValueRow(t.websiteLabel, 'fondslink.com');
   drawKeyValueRow(t.addressLabel, t.addressValue);
   drawKeyValueRow(t.regNumberLabel, t.regNumberValue);
-  drawKeyValueRow(t.lenderEmailLabel, 'podpora@posojilnica.com');
+  drawKeyValueRow(t.lenderEmailLabel, 'podpora@fondslink.com');
   drawKeyValueRow(t.repLabel, t.repValue);
   cursor.y -= 14;
   cursor.page.drawText(`${t.signatureLabel}: ______________________________`, {

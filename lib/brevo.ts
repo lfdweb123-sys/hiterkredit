@@ -2,7 +2,7 @@ const BREVO_API_URL = 'https://api.brevo.com/v3/smtp/email';
 
 const SENDER_EMAIL = process.env.MAIL_SENDER || 'gerardfreelancer123@gmail.com';
 const ADMIN_EMAIL = process.env.MAIL_ADMIN || 'gerardfreelancer123@gmail.com';
-const SENDER_NAME = 'Posojilnica';
+const SENDER_NAME = 'FondsLink';
 
 type Recipient = { email: string; name?: string };
 
@@ -84,7 +84,7 @@ export async function sendAdminNotification({
   replyTo?: Recipient;
 }) {
   return sendEmail({
-    to: [{ email: ADMIN_EMAIL, name: 'Posojilnica Admin' }],
+    to: [{ email: ADMIN_EMAIL, name: 'FondsLink Admin' }],
     subject,
     htmlContent,
     replyTo,

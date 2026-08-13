@@ -1,16 +1,16 @@
 {
   "meta": {
-    "siteName": "Posojilnica",
-    "titleHome": "Posojilnica — Rýchle a transparentné osobné pôžičky",
+    "siteName": "FondsLink",
+    "titleHome": "FondsLink — Rýchle a transparentné osobné pôžičky",
     "descHome": "Simulujte svoju pôžičku v reálnom čase a podajte žiadosť za pár minút. Žiadne skryté poplatky, žiadne zbytočné ukladanie údajov.",
-    "titleSimulate": "Simulácia pôžičky — Posojilnica",
+    "titleSimulate": "Simulácia pôžičky — FondsLink",
     "descSimulate": "Vypočítajte si mesačnú splátku a celkové náklady pôžičky pomocou jednoduchého posuvníka. Výsledok hneď použite pri žiadosti.",
-    "titleApply": "Žiadosť o pôžičku — Posojilnica",
+    "titleApply": "Žiadosť o pôžičku — FondsLink",
     "descApply": "Podajte jednoduchú žiadosť o pôžičku. Rýchla odpoveď, žiadne zbytočné formuláre.",
-    "titleAbout": "O nás — Posojilnica",
-    "descAbout": "Spoznajte Posojilnica: transparentnosť, rýchlosť a zodpovedné požičiavanie.",
-    "titleContact": "Kontakt — Posojilnica",
-    "descContact": "Kontaktujte tím Posojilnica so všetkými otázkami o pôžičkách, žiadostiach alebo spolupráci."
+    "titleAbout": "O nás — FondsLink",
+    "descAbout": "Spoznajte FondsLink: transparentnosť, rýchlosť a zodpovedné požičiavanie.",
+    "titleContact": "Kontakt — FondsLink",
+    "descContact": "Kontaktujte tím FondsLink so všetkými otázkami o pôžičkách, žiadostiach alebo spolupráci."
   },
   "nav": {
     "home": "Domov",
@@ -53,7 +53,7 @@
     "step3Text": "Náš tím posúdi žiadosť a kontaktuje vás v čo najkratšom čase."
   },
   "features": {
-    "title": "Prečo Posojilnica",
+    "title": "Prečo FondsLink",
     "f1Title": "Úplná transparentnosť",
     "f1Text": "Všetky náklady vidíte už pri simulácii — žiadne prekvapenia v zmluve.",
     "f2Title": "Rýchle spracovanie",
@@ -65,7 +65,7 @@
   },
   "countries": {
     "title": "Prítomní vo vašej krajine",
-    "subtitle": "Posojilnica pôsobí vo viacerých európskych krajinách a v Portoriku, prispôsobený miestnemu jazyku a praxi."
+    "subtitle": "FondsLink pôsobí vo viacerých európskych krajinách a v Portoriku, prispôsobený miestnemu jazyku a praxi."
   },
   "form": {
     "title": "Žiadosť o pôžičku",
@@ -78,7 +78,7 @@
     "amount": "Požadovaná výška pôžičky",
     "duration": "Požadovaná doba splácania (mesiace)",
     "message": "Dodatočná správa (nepovinné)",
-    "consent": "Súhlasím, že Posojilnica použije moje údaje výlučne na spracovanie tejto žiadosti.",
+    "consent": "Súhlasím, že FondsLink použije moje údaje výlučne na spracovanie tejto žiadosti.",
     "submit": "Odoslať žiadosť",
     "submitting": "Odosielanie ...",
     "successTitle": "Žiadosť bola úspešne odoslaná",
@@ -105,7 +105,7 @@
   "about": {
     "eyebrow": "O spoločnosti",
     "title": "Transparentnosť, rýchlosť a zodpovedné požičiavanie",
-    "intro": "Posojilnica vznikol s jediným cieľom: urobiť osobné pôžičky jednoduché, transparentné a dostupné, bez ohľadu na to, v ktorej krajine žijete.",
+    "intro": "FondsLink vznikol s jediným cieľom: urobiť osobné pôžičky jednoduché, transparentné a dostupné, bez ohľadu na to, v ktorej krajine žijete.",
     "missionTitle": "Naše poslanie",
     "missionText": "Veríme, že finančné rozhodnutie musí byť jednoduché. Preto sme vyvinuli simulátor, ktorý v reálnom čase zobrazuje skutočné náklady pôžičky, a formulár žiadosti, ktorý trvá menej ako dve minúty.",
     "valuesTitle": "Naše hodnoty",
@@ -137,10 +137,10 @@
   },
   "contactPage": {
     "eyebrow": "Sme tu pre vás",
-    "title": "Kontaktujte tím Posojilnica",
+    "title": "Kontaktujte tím FondsLink",
     "subtitle": "Máte otázku o pôžičke, žiadosti alebo našom pôsobení vo vašej krajine? Napíšte nám — odpovieme rýchlo.",
     "emailLabel": "E-mail",
-    "emailValue": "podpora@posojilnica.com",
+    "emailValue": "podpora@fondslink.com",
     "responseLabel": "Doba odozvy",
     "responseValue": "Zvyčajne do 24 hodín v pracovné dni",
     "hoursLabel": "Prevádzková doba podpory",
@@ -152,29 +152,29 @@
   },
   "legal": {
     "termsTitle": "Všeobecné podmienky",
-    "termsP1": "Tento dokument upravuje podmienky používania webovej stránky Posojilnica (posojilnica.com) a služieb simulácie a žiadosti o pôžičku. Používaním stránky súhlasíte s týmito podmienkami.",
+    "termsP1": "Tento dokument upravuje podmienky používania webovej stránky FondsLink (fondslink.com) a služieb simulácie a žiadosti o pôžičku. Používaním stránky súhlasíte s týmito podmienkami.",
     "termsP2": "Simulácia pôžičky na stránke má výlučne informatívny charakter a nepredstavuje záväznú ponuku úveru. Konečná ponuka závisí od individuálneho posúdenia žiadosti.",
-    "termsP3": "Posojilnica si vyhradzuje právo odmietnuť akúkoľvek žiadosť o pôžičku bez uvedenia dôvodu, v súlade s platnou legislatívou danej krajiny.",
+    "termsP3": "FondsLink si vyhradzuje právo odmietnuť akúkoľvek žiadosť o pôžičku bez uvedenia dôvodu, v súlade s platnou legislatívou danej krajiny.",
     "termsP4": "Obsah stránky je chránený autorským právom. Akékoľvek kopírovanie alebo šírenie obsahu bez súhlasu je zakázané.",
     "privacyTitle": "Súkromie",
-    "privacyP1": "Posojilnica rešpektuje vaše súkromie. Simulátor pôžičky na tejto stránke nevyžaduje žiadne osobné údaje a nič sa neukladá na našich serveroch — hodnoty zostávajú iba vo vašom prehliadači počas relácie.",
+    "privacyP1": "FondsLink rešpektuje vaše súkromie. Simulátor pôžičky na tejto stránke nevyžaduje žiadne osobné údaje a nič sa neukladá na našich serveroch — hodnoty zostávajú iba vo vašom prehliadači počas relácie.",
     "privacyP2": "Osobné údaje (meno, priezvisko, e-mail, telefón), ktoré nám poskytnete prostredníctvom kontaktného formulára alebo formulára žiadosti o pôžičku, sú použité výlučne na účely vybavenia vašej žiadosti a odoslané priamo na náš e-mail. Tieto údaje neukladáme do databázy.",
     "privacyP3": "Vaše údaje nikdy nepredávame ani neposkytujeme tretím stranám na marketingové účely.",
-    "privacyP4": "Pre akékoľvek otázky týkajúce sa ochrany údajov nás kontaktujte na podpora@posojilnica.com.",
+    "privacyP4": "Pre akékoľvek otázky týkajúce sa ochrany údajov nás kontaktujte na podpora@fondslink.com.",
     "cookiesTitle": "Cookies",
     "cookiesP1": "Táto stránka používa minimálne množstvo technických údajov uložených vo vašom prehliadači (session storage), a to výlučne na to, aby si počas vašej návštevy zapamätala hodnoty zo simulátora pôžičky (sumu a dobu splácania), keď prejdete na formulár žiadosti.",
     "cookiesP2": "Tieto údaje sa automaticky vymažú, keď zatvoríte prehliadač, a nikdy nie sú odoslané na žiadny server.",
     "cookiesP3": "Stránka nepoužíva sledovacie ani reklamné cookies tretích strán."
   },
   "contractEmail": {
-    "subject": "Vaša ponuka pôžičky Posojilnica — {ref}",
+    "subject": "Vaša ponuka pôžičky FondsLink — {ref}",
     "greeting": "Dobrý deň, {name},",
-    "intro": "Ďakujeme za podanú žiadosť u Posojilnica. V prílohe nájdete vypočítanú ponuku pôžičky pripravenú na základe údajov, ktoré ste nám poskytli.",
+    "intro": "Ďakujeme za podanú žiadosť u FondsLink. V prílohe nájdete vypočítanú ponuku pôžičky pripravenú na základe údajov, ktoré ste nám poskytli.",
     "summaryTitle": "Zhrnutie vašej žiadosti",
     "amountLabel": "Suma",
     "durationLabel": "Doba splácania",
     "monthlyLabel": "Mesačná splátka",
-    "instructions": "Dokument v prílohe si pozorne preštudujte. Ohľadom podpisu a ďalších krokov nás kontaktujte na podpora@posojilnica.com — v prípade potreby vás môžeme kontaktovať aj telefonicky.",
-    "closing": "S pozdravom,\nTím Posojilnica"
+    "instructions": "Dokument v prílohe si pozorne preštudujte. Ohľadom podpisu a ďalších krokov nás kontaktujte na podpora@fondslink.com — v prípade potreby vás môžeme kontaktovať aj telefonicky.",
+    "closing": "S pozdravom,\nTím FondsLink"
   }
 }

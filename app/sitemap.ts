@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { locales } from '@/i18n/config';
 
-const SITE_URL = 'https://www.posojilnica.com';
+const SITE_URL = 'https://www.fondslink.com';
 const paths = ['', '/simulator', '/apply', '/about', '/legal/terms', '/legal/privacy', '/legal/cookies'];
 
 export default function sitemap(): MetadataRoute.Sitemap {

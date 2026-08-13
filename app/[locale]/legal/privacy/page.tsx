@@ -27,11 +27,11 @@ export default async function PrivacyPage({
         <p>{t('privacyP2')}</p>
         <p>{t('privacyP3')}</p>
         <p>
-          {t('privacyP4').split('podpora@posojilnica.com')[0]}
-          <a href="mailto:podpora@posojilnica.com" className="text-[var(--color-sky-deep)] font-medium">
-            podpora@posojilnica.com
+          {t('privacyP4').split('podpora@fondslink.com')[0]}
+          <a href="mailto:podpora@fondslink.com" className="text-[var(--color-sky-deep)] font-medium">
+            podpora@fondslink.com
           </a>
-          {t('privacyP4').split('podpora@posojilnica.com')[1]}
+          {t('privacyP4').split('podpora@fondslink.com')[1]}
         </p>
       </div>
     </section>

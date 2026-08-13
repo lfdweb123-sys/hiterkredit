@@ -30,16 +30,20 @@ export type ContractText = {
   sec4Title: string;
   sec4Text: string;
   sec5Title: string;
-  sec5Text: string;
+  sec5P1: string;
+  sec5P2: string;
+  sec5P3: string;
+  sec5P4: string;
+  sec5P5: string;
+  sec6Title: string;
+  sec6Text: string;
   plannedAmountLabel: string;
   accountLabel: string;
   accountValue: string;
-  sec6Title: string;
-  sec6Text: string;
-  firstInstallmentLabel: string;
-  lastInstallmentLabel: string;
   sec7Title: string;
   sec7Text: string;
+  firstInstallmentLabel: string;
+  lastInstallmentLabel: string;
   sec8Title: string;
   sec8Text: string;
   sec9Title: string;
@@ -48,6 +52,8 @@ export type ContractText = {
   sec10Text: string;
   sec11Title: string;
   sec11Text: string;
+  sec12Title: string;
+  sec12Text: string;
   borrowerNameLabel: string;
   signatureLabel: string;
   lenderTitle: string;
@@ -79,8 +85,7 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     monthsUnit: 'mesecev',
     purposeLabel: 'Navedeni namen',
     purposeValue: 'Osebno financiranje',
-    sec2Note:
-      'Dokončna odobritev kredita je pogojena s presojo kreditne sposobnosti posojilojemalca in izpolnjevanjem vseh veljavnih zakonskih pogojev.',
+    sec2Note: 'Dokončna odobritev kredita je pogojena s presojo kreditne sposobnosti posojilojemalca in izpolnjevanjem vseh veljavnih zakonskih pogojev.',
     sec3Title: '3. FINANČNI POGOJI',
     nominalRateLabel: 'Nominalna letna obrestna mera',
     aprLabel: 'Efektivna letna obrestna mera (EOM)',
@@ -92,49 +97,46 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     installmentAmountLabel: 'Znesek posameznega obroka',
     frequencyLabel: 'Pogostost odplačil',
     frequencyValue: 'Mesečno',
-    sec3Note:
-      'Noben znesek se ne sme predstaviti kot obvezen, ne da bi bil predhodno opredeljen, utemeljen in vključen v predpogodbene informacije, kadar to zahteva zakonodaja.',
+    sec3Note: 'Noben znesek se ne sme predstaviti kot obvezen, ne da bi bil predhodno opredeljen, utemeljen in vključen v predpogodbene informacije, kadar to zahteva zakonodaja.',
     sec4Title: '4. STROŠKI',
-    sec4Text:
-      'Vsak morebitni strošek mora biti jasno naveden pred sklenitvijo pogodbe, skupaj z zneskom ali metodo njegove določitve. Stroški se ne smejo umetno poimenovati kot »stroški izplačila«, »taksa«, »obvezno zavarovanje« ali druga dajatev zgolj z namenom pridobitve predhodnega plačila posojilojemalca. Ta ponudba ne vključuje nobenega predhodnega plačila ali provizije pred izplačilom kredita.',
-    sec5Title: '5. IZPLAČILO KREDITA',
-    sec5Text:
-      'Po dokončni potrditvi dosjeja in izpolnitvi vseh zakonsko predpisanih formalnosti se znesek kredita nakaže na bančni račun, ki ga navede posojilojemalec. Za izplačilo kredita ni potrebno nobeno predhodno plačilo.',
+    sec4Text: 'Vsak morebitni strošek mora biti jasno naveden pred sklenitvijo pogodbe, skupaj z zneskom ali metodo njegove določitve. Stroški se ne smejo umetno poimenovati kot »stroški izplačila«, »taksa«, »obvezno zavarovanje« ali druga dajatev zgolj z namenom pridobitve predhodnega plačila posojilojemalca. Ta ponudba ne vključuje nobenega predhodnega plačila ali provizije pred izplačilom kredita.',
+    sec5Title: '5. GARANCIJA IN ZAVAROVANJE KREDITA',
+    sec5P1: 'Ta kredit se lahko odobri z zavarovanjem ali brez njega, odvisno od značilnosti kreditnega produkta, ocene kreditne sposobnosti posojilojemalca in zahtev, ki veljajo za zadevni kredit.',
+    sec5P2: 'Kadar se zahteva zavarovanje, to predstavlja sredstvo za zavarovanje izpolnitve obveznosti odplačila in ima lahko obliko zavarovanja na denarnih sredstvih, zastave finančnih sredstev, zavarovanja na premičnini ali nepremičnini oziroma osebnega poroštva, kadar je taka oblika zavarovanja za zadevni kredit dovoljena.',
+    sec5P3: 'Vsak znesek, uporabljen kot zavarovanje, mora biti jasno opredeljen kot tak in se ne sme predstaviti kot taksa, provizija za izplačilo ali drug prikrit strošek. Pogoji hrambe, blokade in vračila tega zneska se posojilojemalcu sporočijo pred sklenitvijo pogodbe.',
+    sec5P4: 'Posojilodajalec lahko zavarovanje unovči le v primeru neplačila posojilojemalca ali v drugih okoliščinah, določenih v pogodbi in dovoljenih z veljavno zakonodajo, ob upoštevanju predpisanih postopkov in rokov. Ko so zavarovane obveznosti v celoti izpolnjene, se zavarovanje sprosti oziroma vrne.',
+    sec5P5: 'Noben strošek se ne sme poimenovati »strošek zavarovanja« ali »strošek izplačila« zgolj z namenom pridobitve predhodnega plačila, ki ne ustreza dejanski obveznosti. Kadar veljavni predpisi prepovedujejo predhodna plačila v zvezi s pridobitvijo kredita, se nobena določba te pogodbe ne sme razlagati, kot da tako plačilo nalaga.',
+    sec6Title: '6. IZPLAČILO KREDITA',
+    sec6Text: 'Po dokončni potrditvi dosjeja in izpolnitvi vseh zakonsko predpisanih formalnosti se znesek kredita nakaže na bančni račun, ki ga navede posojilojemalec. Za izplačilo kredita ni potrebno nobeno predhodno plačilo.',
     plannedAmountLabel: 'Predvideni znesek izplačila',
     accountLabel: 'Račun upravičenca',
-    accountValue: '[bo dopolnjeno po preverjanju identitete posojilojemalca]',
-    sec6Title: '6. ODPLAČEVANJE',
-    sec6Text:
-      'Posojilojemalec se zavezuje, da bo kredit odplačal v skladu s spodaj navedenim okvirnim načrtom odplačil, izračunanim na podlagi zaprošenega zneska in dobe odplačevanja.',
+    accountValue: 'Bančni podatki posojilojemalca bodo preverjeni in navedeni pred nakazilom sredstev.',
+    sec7Title: '7. ODPLAČEVANJE',
+    sec7Text: 'Posojilojemalec se zavezuje, da bo kredit odplačal v skladu s spodaj navedenim okvirnim načrtom odplačil, izračunanim na podlagi zaprošenega zneska in dobe odplačevanja.',
     firstInstallmentLabel: 'Predviden datum prvega obroka',
     lastInstallmentLabel: 'Predviden datum zadnjega obroka',
-    sec7Title: '7. PREDČASNO ODPLAČILO',
-    sec7Text:
-      'Posojilojemalec lahko, kadar so izpolnjeni zakonski pogoji, uveljavlja pravice v zvezi s predčasnim odplačilom kredita. Morebitna nadomestila ali stroški, povezani s predčasnim odplačilom, morajo biti skladni z veljavnimi predpisi.',
-    sec8Title: '8. ZAMUDA PRI PLAČILU',
-    sec8Text:
-      'V primeru zamude ali neplačila veljajo posledice, določene v pogodbi in v veljavni zakonodaji. Posojilojemalcu se ne sme zaračunati noben nepredviden ali nepooblaščen strošek.',
-    sec9Title: '9. PRAVICA DO ODSTOPA',
-    sec9Text:
-      'Kadar kredit spada v okvir veljavnega režima potrošniškega kreditiranja, ima posojilojemalec pravico do odstopa od pogodbe v skladu z veljavno zakonodajo. Postopek, rok in način uveljavljanja te pravice morajo biti posojilojemalcu jasno sporočeni pred sklenitvijo pogodbe ali ob njej.',
-    sec10Title: '10. PREDPOGODBENE INFORMACIJE',
-    sec10Text:
-      'Pred sklenitvijo pogodbe mora posojilojemalec na trajnem nosilcu podatkov prejeti vse informacije, potrebne za primerjavo in razumevanje ponudbe, vključno z zneskom kredita, dobo odplačevanja, obrestno mero, EOM, skupnimi stroški, zneskom obrokov in drugimi veljavnimi stroški.',
-    sec11Title: '11. SPREJETJE',
-    sec11Text:
-      'Posojilojemalec potrjuje, da je prejel potrebne informacije o ponudbi in da je imel možnost seznaniti se z veljavnimi pogoji pred sklenitvijo pogodbe.',
+    sec8Title: '8. PREDČASNO ODPLAČILO',
+    sec8Text: 'Posojilojemalec lahko, kadar so izpolnjeni zakonski pogoji, uveljavlja pravice v zvezi s predčasnim odplačilom kredita. Morebitna nadomestila ali stroški, povezani s predčasnim odplačilom, morajo biti skladni z veljavnimi predpisi.',
+    sec9Title: '9. ZAMUDA PRI PLAČILU',
+    sec9Text: 'V primeru zamude ali neplačila veljajo posledice, določene v pogodbi in v veljavni zakonodaji. Posojilojemalcu se ne sme zaračunati noben nepredviden ali nepooblaščen strošek.',
+    sec10Title: '10. PRAVICA DO ODSTOPA',
+    sec10Text: 'Kadar kredit spada v okvir veljavnega režima potrošniškega kreditiranja, ima posojilojemalec pravico do odstopa od pogodbe v skladu z veljavno zakonodajo. Postopek, rok in način uveljavljanja te pravice morajo biti posojilojemalcu jasno sporočeni pred sklenitvijo pogodbe ali ob njej.',
+    sec11Title: '11. PREDPOGODBENE INFORMACIJE',
+    sec11Text: 'Pred sklenitvijo pogodbe mora posojilojemalec na trajnem nosilcu podatkov prejeti vse informacije, potrebne za primerjavo in razumevanje ponudbe, vključno z zneskom kredita, dobo odplačevanja, obrestno mero, EOM, skupnimi stroški, zneskom obrokov in drugimi veljavnimi stroški.',
+    sec12Title: '12. SPREJETJE',
+    sec12Text: 'Posojilojemalec potrjuje, da je prejel potrebne informacije o ponudbi in da je imel možnost seznaniti se z veljavnimi pogoji pred sklenitvijo pogodbe.',
     borrowerNameLabel: 'Ime posojilojemalca',
     signatureLabel: 'Podpis',
     lenderTitle: 'POSOJILODAJALEC',
     companyLabel: 'Naziv družbe',
     websiteLabel: 'Spletno mesto',
     addressLabel: 'Naslov',
-    addressValue: '[dopolni se z uradnim registriranim naslovom družbe]',
+    addressValue: 'FondsLink deluje kot spletna kreditna platforma (fondslink.com); poslovni naslov bo naveden v končni pogodbeni dokumentaciji.',
     regNumberLabel: 'Matična številka / številka dovoljenja',
-    regNumberValue: '[dopolni se pred dokončno sklenitvijo pogodbe]',
+    regNumberValue: 'Podatki o registraciji oziroma dovoljenju bodo posojilojemalcu sporočeni pred podpisom končne pogodbe, skladno z zahtevami pristojnega nadzornega organa.',
     lenderEmailLabel: 'E-pošta',
     repLabel: 'Pooblaščeni predstavnik',
-    repValue: 'Ekipa Posojilnica',
+    repValue: 'Ekipa FondsLink',
   },
   sk: {
     title: 'ZMLUVA O SPOTREBITEĽSKOM ÚVERE',
@@ -152,8 +154,7 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     monthsUnit: 'mesiacov',
     purposeLabel: 'Uvedený účel',
     purposeValue: 'Osobné financovanie',
-    sec2Note:
-      'Konečné poskytnutie úveru je podmienené posúdením bonity dlžníka a splnením všetkých platných zákonných podmienok.',
+    sec2Note: 'Konečné poskytnutie úveru je podmienené posúdením bonity dlžníka a splnením všetkých platných zákonných podmienok.',
     sec3Title: '3. FINANČNÉ PODMIENKY',
     nominalRateLabel: 'Nominálna ročná úroková sadzba',
     aprLabel: 'Ročná percentuálna miera nákladov (RPMN)',
@@ -165,49 +166,46 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     installmentAmountLabel: 'Výška jednej splátky',
     frequencyLabel: 'Frekvencia splátok',
     frequencyValue: 'Mesačne',
-    sec3Note:
-      'Žiadna suma nesmie byť prezentovaná ako povinná bez toho, aby bola vopred určená, odôvodnená a zahrnutá do predzmluvných informácií, ak to vyžaduje legislatíva.',
+    sec3Note: 'Žiadna suma nesmie byť prezentovaná ako povinná bez toho, aby bola vopred určená, odôvodnená a zahrnutá do predzmluvných informácií, ak to vyžaduje legislatíva.',
     sec4Title: '4. POPLATKY',
-    sec4Text:
-      'Akýkoľvek prípadný poplatok musí byť jasne uvedený pred uzavretím zmluvy spolu s jeho výškou alebo spôsobom jej určenia. Poplatky nesmú byť umelo označované ako „poplatok za uvoľnenie prostriedkov“, „daň“, „povinné poistenie“ alebo iný poplatok len s cieľom získať platbu od dlžníka vopred. Táto ponuka nezahŕňa žiadnu platbu vopred ani províziu pred vyplatením úveru.',
-    sec5Title: '5. VYPLATENIE ÚVERU',
-    sec5Text:
-      'Po konečnom schválení spisu a splnení všetkých zákonom požadovaných formalít sa suma úveru poukáže na bankový účet uvedený dlžníkom. Na vyplatenie úveru sa nevyžaduje žiadna platba vopred.',
+    sec4Text: 'Akýkoľvek prípadný poplatok musí byť jasne uvedený pred uzavretím zmluvy spolu s jeho výškou alebo spôsobom jej určenia. Poplatky nesmú byť umelo označované ako „poplatok za uvoľnenie prostriedkov“, „daň“, „povinné poistenie“ alebo iný poplatok len s cieľom získať platbu od dlžníka vopred. Táto ponuka nezahŕňa žiadnu platbu vopred ani províziu pred vyplatením úveru.',
+    sec5Title: '5. ZÁRUKA A ZABEZPEČENIE ÚVERU',
+    sec5P1: 'Tento úver môže byť poskytnutý so zabezpečením alebo bez neho, v závislosti od charakteristík úverového produktu, posúdenia bonity dlžníka a požiadaviek platných pre daný úver.',
+    sec5P2: 'Ak sa vyžaduje zabezpečenie, predstavuje záruku určenú na zabezpečenie splnenia záväzku splácania a môže mať formu zábezpeky na peňažných prostriedkoch, záložného práva k finančným aktívam, zabezpečenia na hnuteľnom alebo nehnuteľnom majetku alebo osobnej záruky, ak je takýto druh zabezpečenia pre daný úver povolený.',
+    sec5P3: 'Akákoľvek suma použitá ako zabezpečenie musí byť jasne označená ako taká a nesmie byť prezentovaná ako daň, poplatok za vyplatenie alebo iný skrytý poplatok. Podmienky úschovy, blokovania a vrátenia tejto sumy sa dlžníkovi oznámia pred uzavretím zmluvy.',
+    sec5P4: 'Veriteľ môže zabezpečenie realizovať iba v prípade zlyhania dlžníka alebo za iných okolností stanovených zmluvou a povolených platnou legislatívou, pri dodržaní predpísaných postupov a lehôt. Po úplnom splnení zabezpečených záväzkov sa zabezpečenie uvoľní alebo vráti.',
+    sec5P5: 'Žiadny poplatok nesmie byť označený ako „poplatok za zabezpečenie“ alebo „poplatok za vyplatenie“ len s cieľom získať platbu vopred, ktorá nezodpovedá skutočnému záväzku. Ak platné predpisy zakazujú platby vopred súvisiace so získaním úveru, žiadne ustanovenie tejto zmluvy sa nesmie vykladať tak, že takúto platbu ukladá.',
+    sec6Title: '6. VYPLATENIE ÚVERU',
+    sec6Text: 'Po konečnom schválení spisu a splnení všetkých zákonom požadovaných formalít sa suma úveru poukáže na bankový účet uvedený dlžníkom. Na vyplatenie úveru sa nevyžaduje žiadna platba vopred.',
     plannedAmountLabel: 'Plánovaná suma vyplatenia',
     accountLabel: 'Účet príjemcu',
-    accountValue: '[doplní sa po overení totožnosti dlžníka]',
-    sec6Title: '6. SPLÁCANIE',
-    sec6Text:
-      'Dlžník sa zaväzuje splácať úver podľa nižšie uvedeného orientačného splátkového kalendára vypočítaného na základe požadovanej sumy a doby splácania.',
+    accountValue: 'Bankové údaje dlžníka budú overené a uvedené pred prevodom finančných prostriedkov.',
+    sec7Title: '7. SPLÁCANIE',
+    sec7Text: 'Dlžník sa zaväzuje splácať úver podľa nižšie uvedeného orientačného splátkového kalendára vypočítaného na základe požadovanej sumy a doby splácania.',
     firstInstallmentLabel: 'Predpokladaný dátum prvej splátky',
     lastInstallmentLabel: 'Predpokladaný dátum poslednej splátky',
-    sec7Title: '7. PREDČASNÉ SPLATENIE',
-    sec7Text:
-      'Dlžník môže, pokiaľ sú splnené zákonné podmienky, využiť práva týkajúce sa predčasného splatenia úveru. Prípadné kompenzácie alebo poplatky spojené s predčasným splatením musia byť v súlade s platnými predpismi.',
-    sec8Title: '8. OMEŠKANIE PLATIEB',
-    sec8Text:
-      'V prípade omeškania alebo nezaplatenia platia dôsledky uvedené v zmluve a v platnej legislatíve. Dlžníkovi nemôže byť účtovaný žiadny neplánovaný alebo neautorizovaný poplatok.',
-    sec9Title: '9. PRÁVO NA ODSTÚPENIE',
-    sec9Text:
-      'Ak úver patrí do režimu spotrebiteľského úveru, dlžník má právo na odstúpenie od zmluvy v súlade s platnou legislatívou. Postup, lehota a spôsob uplatnenia tohto práva musia byť dlžníkovi jasne oznámené pred uzavretím zmluvy alebo pri jej uzavretí.',
-    sec10Title: '10. PREDZMLUVNÉ INFORMÁCIE',
-    sec10Text:
-      'Pred uzavretím zmluvy musí dlžník na trvalom nosiči dostať všetky informácie potrebné na porovnanie a pochopenie ponuky, vrátane výšky úveru, doby splácania, úrokovej sadzby, RPMN, celkových nákladov, výšky splátok a ďalších platných poplatkov.',
-    sec11Title: '11. PRIJATIE',
-    sec11Text:
-      'Dlžník potvrdzuje, že dostal potrebné informácie o ponuke a mal možnosť oboznámiť sa s platnými podmienkami pred uzavretím zmluvy.',
+    sec8Title: '8. PREDČASNÉ SPLATENIE',
+    sec8Text: 'Dlžník môže, pokiaľ sú splnené zákonné podmienky, využiť práva týkajúce sa predčasného splatenia úveru. Prípadné kompenzácie alebo poplatky spojené s predčasným splatením musia byť v súlade s platnými predpismi.',
+    sec9Title: '9. OMEŠKANIE PLATIEB',
+    sec9Text: 'V prípade omeškania alebo nezaplatenia platia dôsledky uvedené v zmluve a v platnej legislatíve. Dlžníkovi nemôže byť účtovaný žiadny neplánovaný alebo neautorizovaný poplatok.',
+    sec10Title: '10. PRÁVO NA ODSTÚPENIE',
+    sec10Text: 'Ak úver patrí do režimu spotrebiteľského úveru, dlžník má právo na odstúpenie od zmluvy v súlade s platnou legislatívou. Postup, lehota a spôsob uplatnenia tohto práva musia byť dlžníkovi jasne oznámené pred uzavretím zmluvy alebo pri jej uzavretí.',
+    sec11Title: '11. PREDZMLUVNÉ INFORMÁCIE',
+    sec11Text: 'Pred uzavretím zmluvy musí dlžník na trvalom nosiči dostať všetky informácie potrebné na porovnanie a pochopenie ponuky, vrátane výšky úveru, doby splácania, úrokovej sadzby, RPMN, celkových nákladov, výšky splátok a ďalších platných poplatkov.',
+    sec12Title: '12. PRIJATIE',
+    sec12Text: 'Dlžník potvrdzuje, že dostal potrebné informácie o ponuke a mal možnosť oboznámiť sa s platnými podmienkami pred uzavretím zmluvy.',
     borrowerNameLabel: 'Meno dlžníka',
     signatureLabel: 'Podpis',
     lenderTitle: 'VERITEĽ',
     companyLabel: 'Obchodné meno',
     websiteLabel: 'Webová stránka',
     addressLabel: 'Adresa',
-    addressValue: '[doplní sa oficiálnou registrovanou adresou spoločnosti]',
+    addressValue: 'FondsLink pôsobí ako online úverová platforma (fondslink.com); sídlo spoločnosti bude uvedené v konečnej zmluvnej dokumentácii.',
     regNumberLabel: 'IČO / číslo povolenia',
-    regNumberValue: '[doplní sa pred konečným uzavretím zmluvy]',
+    regNumberValue: 'Údaje o registrácii alebo povolení budú dlžníkovi oznámené pred podpisom konečnej zmluvy, v súlade s požiadavkami príslušného dohľadového orgánu.',
     lenderEmailLabel: 'E-mail',
     repLabel: 'Poverený zástupca',
-    repValue: 'Tím Posojilnica',
+    repValue: 'Tím FondsLink',
   },
   lt: {
     title: 'VARTOJIMO KREDITO SUTARTIS',
@@ -225,8 +223,7 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     monthsUnit: 'mėn.',
     purposeLabel: 'Nurodyta paskirtis',
     purposeValue: 'Asmeninis finansavimas',
-    sec2Note:
-      'Galutinis paskolos suteikimas priklauso nuo skolininko mokumo vertinimo ir visų taikomų teisinių sąlygų įvykdymo.',
+    sec2Note: 'Galutinis paskolos suteikimas priklauso nuo skolininko mokumo vertinimo ir visų taikomų teisinių sąlygų įvykdymo.',
     sec3Title: '3. FINANSINĖS SĄLYGOS',
     nominalRateLabel: 'Nominali metinė palūkanų norma',
     aprLabel: 'Bendra metinė kredito kainos norma (BVKKMN)',
@@ -238,49 +235,46 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     installmentAmountLabel: 'Vienos įmokos dydis',
     frequencyLabel: 'Mokėjimų dažnumas',
     frequencyValue: 'Kas mėnesį',
-    sec3Note:
-      'Jokia suma negali būti pateikiama kaip privaloma, jeigu ji nebuvo iš anksto nustatyta, pagrįsta ir įtraukta į ikisutartinę informaciją, kai to reikalauja teisės aktai.',
+    sec3Note: 'Jokia suma negali būti pateikiama kaip privaloma, jeigu ji nebuvo iš anksto nustatyta, pagrįsta ir įtraukta į ikisutartinę informaciją, kai to reikalauja teisės aktai.',
     sec4Title: '4. MOKESČIAI',
-    sec4Text:
-      'Bet koks galimas mokestis turi būti aiškiai nurodytas prieš sudarant sutartį, kartu su jo suma arba jos nustatymo metodu. Mokesčiai negali būti dirbtinai vadinami „lėšų išmokėjimo mokesčiu“, „mokesčiu“, „privalomu draudimu“ ar kitu mokėjimu vien tam, kad būtų gautas išankstinis mokėjimas iš skolininko. Šis pasiūlymas neapima jokio išankstinio mokėjimo ar komisinio prieš išmokant paskolą.',
-    sec5Title: '5. PASKOLOS IŠMOKĖJIMAS',
-    sec5Text:
-      'Galutinai patvirtinus bylą ir įvykdžius visus teisės aktų reikalaujamus formalumus, paskolos suma pervedama į skolininko nurodytą banko sąskaitą. Paskolai išmokėti joks išankstinis mokėjimas nereikalingas.',
+    sec4Text: 'Bet koks galimas mokestis turi būti aiškiai nurodytas prieš sudarant sutartį, kartu su jo suma arba jos nustatymo metodu. Mokesčiai negali būti dirbtinai vadinami „lėšų išmokėjimo mokesčiu“, „mokesčiu“, „privalomu draudimu“ ar kitu mokėjimu vien tam, kad būtų gautas išankstinis mokėjimas iš skolininko. Šis pasiūlymas neapima jokio išankstinio mokėjimo ar komisinio prieš išmokant paskolą.',
+    sec5Title: '5. PASKOLOS UŽTIKRINIMO PRIEMONĖS IR GARANTIJA',
+    sec5P1: 'Ši paskola gali būti suteikta su užtikrinimo priemone arba be jos, priklausomai nuo kredito produkto ypatybių, skolininko mokumo vertinimo ir konkrečiai paskolai taikomų reikalavimų.',
+    sec5P2: 'Kai reikalaujama užtikrinimo priemonės, ji yra skirta užtikrinti grąžinimo įsipareigojimų vykdymą ir gali būti piniginių lėšų įkeitimas, finansinio turto įkeitimas, kilnojamojo ar nekilnojamojo turto įkeitimas arba asmens laidavimas, kai tokia užtikrinimo forma yra leidžiama konkrečiai paskolai.',
+    sec5P3: 'Bet kokia suma, naudojama kaip užtikrinimo priemonė, turi būti aiškiai įvardyta kaip tokia ir negali būti pateikiama kaip mokestis, išmokėjimo komisinis ar kitas užslėptas mokestis. Šios sumos laikymo, blokavimo ir grąžinimo sąlygos skolininkui pranešamos prieš sudarant sutartį.',
+    sec5P4: 'Kreditorius gali realizuoti užtikrinimo priemonę tik skolininkui nevykdant įsipareigojimų arba kitomis sutartyje numatytomis ir taikomais teisės aktais leidžiamomis aplinkybėmis, laikydamasis nustatytų procedūrų ir terminų. Kai užtikrintos prievolės visiškai įvykdytos, užtikrinimo priemonė atlaisvinama arba grąžinama.',
+    sec5P5: 'Joks mokestis negali būti vadinamas „užtikrinimo mokesčiu“ ar „išmokėjimo mokesčiu“ vien tam, kad būtų gautas išankstinis mokėjimas, neatitinkantis realios prievolės. Kai taikomi teisės aktai draudžia išankstinius mokėjimus, susijusius su paskolos gavimu, jokia šios sutarties nuostata negali būti aiškinama kaip nustatanti tokį mokėjimą.',
+    sec6Title: '6. PASKOLOS IŠMOKĖJIMAS',
+    sec6Text: 'Galutinai patvirtinus bylą ir įvykdžius visus teisės aktų reikalaujamus formalumus, paskolos suma pervedama į skolininko nurodytą banko sąskaitą. Paskolai išmokėti joks išankstinis mokėjimas nereikalingas.',
     plannedAmountLabel: 'Numatoma išmokėjimo suma',
     accountLabel: 'Gavėjo sąskaita',
-    accountValue: '[bus papildyta patikrinus skolininko tapatybę]',
-    sec6Title: '6. GRĄŽINIMAS',
-    sec6Text:
-      'Skolininkas įsipareigoja grąžinti paskolą pagal žemiau pateiktą preliminarų grafiką, apskaičiuotą pagal prašomą sumą ir terminą.',
+    accountValue: 'Skolininko banko duomenys bus patikrinti ir nurodyti prieš pervedant lėšas.',
+    sec7Title: '7. GRĄŽINIMAS',
+    sec7Text: 'Skolininkas įsipareigoja grąžinti paskolą pagal žemiau pateiktą preliminarų grafiką, apskaičiuotą pagal prašomą sumą ir terminą.',
     firstInstallmentLabel: 'Numatoma pirmos įmokos data',
     lastInstallmentLabel: 'Numatoma paskutinės įmokos data',
-    sec7Title: '7. IŠANKSTINIS GRĄŽINIMAS',
-    sec7Text:
-      'Skolininkas gali, kai tenkinamos teisinės sąlygos, pasinaudoti teisėmis, susijusiomis su išankstiniu paskolos grąžinimu. Galimos kompensacijos ar mokesčiai, susiję su išankstiniu grąžinimu, turi atitikti taikomas taisykles.',
-    sec8Title: '8. PAVĖLUOTI MOKĖJIMAI',
-    sec8Text:
-      'Vėlavimo ar nemokėjimo atveju taikomos sutartyje ir galiojančiuose teisės aktuose numatytos pasekmės. Skolininkui negali būti taikomas joks nenumatytas ar nepatvirtintas mokestis.',
-    sec9Title: '9. TEISĖ ATSISAKYTI SUTARTIES',
-    sec9Text:
-      'Kai paskolai taikomas vartojimo kredito režimas, skolininkas turi teisę atsisakyti sutarties pagal taikomus teisės aktus. Šios teisės įgyvendinimo tvarka, terminas ir būdas turi būti aiškiai pranešti skolininkui prieš sudarant sutartį arba jos sudarymo metu.',
-    sec10Title: '10. IKISUTARTINĖ INFORMACIJA',
-    sec10Text:
-      'Prieš skolininkui įsipareigojant, jam patvarioje laikmenoje turi būti pateikta visa informacija, reikalinga pasiūlymui palyginti ir suprasti, įskaitant paskolos sumą, terminą, palūkanų normą, BVKKMN, bendrą kainą, įmokų dydį ir kitus taikomus mokesčius.',
-    sec11Title: '11. SUTIKIMAS',
-    sec11Text:
-      'Skolininkas patvirtina gavęs reikiamą informaciją apie pasiūlymą ir turėjęs galimybę susipažinti su taikomomis sąlygomis prieš sudarant sutartį.',
+    sec8Title: '8. IŠANKSTINIS GRĄŽINIMAS',
+    sec8Text: 'Skolininkas gali, kai tenkinamos teisinės sąlygos, pasinaudoti teisėmis, susijusiomis su išankstiniu paskolos grąžinimu. Galimos kompensacijos ar mokesčiai, susiję su išankstiniu grąžinimu, turi atitikti taikomas taisykles.',
+    sec9Title: '9. PAVĖLUOTI MOKĖJIMAI',
+    sec9Text: 'Vėlavimo ar nemokėjimo atveju taikomos sutartyje ir galiojančiuose teisės aktuose numatytos pasekmės. Skolininkui negali būti taikomas joks nenumatytas ar nepatvirtintas mokestis.',
+    sec10Title: '10. TEISĖ ATSISAKYTI SUTARTIES',
+    sec10Text: 'Kai paskolai taikomas vartojimo kredito režimas, skolininkas turi teisę atsisakyti sutarties pagal taikomus teisės aktus. Šios teisės įgyvendinimo tvarka, terminas ir būdas turi būti aiškiai pranešti skolininkui prieš sudarant sutartį arba jos sudarymo metu.',
+    sec11Title: '11. IKISUTARTINĖ INFORMACIJA',
+    sec11Text: 'Prieš skolininkui įsipareigojant, jam patvarioje laikmenoje turi būti pateikta visa informacija, reikalinga pasiūlymui palyginti ir suprasti, įskaitant paskolos sumą, terminą, palūkanų normą, BVKKMN, bendrą kainą, įmokų dydį ir kitus taikomus mokesčius.',
+    sec12Title: '12. SUTIKIMAS',
+    sec12Text: 'Skolininkas patvirtina gavęs reikiamą informaciją apie pasiūlymą ir turėjęs galimybę susipažinti su taikomomis sąlygomis prieš sudarant sutartį.',
     borrowerNameLabel: 'Skolininko vardas ir pavardė',
     signatureLabel: 'Parašas',
     lenderTitle: 'KREDITORIUS',
     companyLabel: 'Įmonės pavadinimas',
     websiteLabel: 'Svetainė',
     addressLabel: 'Adresas',
-    addressValue: '[bus papildytas oficialiu registruotu įmonės adresu]',
+    addressValue: 'FondsLink veikia kaip internetinė kreditavimo platforma (fondslink.com); įmonės buveinės adresas bus nurodytas galutiniuose sutarties dokumentuose.',
     regNumberLabel: 'Įmonės kodas / licencijos numeris',
-    regNumberValue: '[bus papildytas prieš galutinį sutarties sudarymą]',
+    regNumberValue: 'Registracijos ar licencijos duomenys skolininkui bus pateikti prieš pasirašant galutinę sutartį, laikantis kompetentingos priežiūros institucijos reikalavimų.',
     lenderEmailLabel: 'El. paštas',
     repLabel: 'Įgaliotas atstovas',
-    repValue: 'Posojilnica komanda',
+    repValue: 'FondsLink komanda',
   },
   es: {
     title: 'CONTRATO DE CRÉDITO AL CONSUMO',
@@ -298,8 +292,7 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     monthsUnit: 'meses',
     purposeLabel: 'Finalidad declarada',
     purposeValue: 'Financiamiento personal',
-    sec2Note:
-      'La concesión definitiva del crédito está sujeta a la evaluación de la solvencia del prestatario y al cumplimiento de todas las condiciones legales aplicables.',
+    sec2Note: 'La concesión definitiva del crédito está sujeta a la evaluación de la solvencia del prestatario y al cumplimiento de todas las condiciones legales aplicables.',
     sec3Title: '3. CONDICIONES FINANCIERAS',
     nominalRateLabel: 'Tasa de interés nominal anual',
     aprLabel: 'Tasa anual equivalente (TAE)',
@@ -311,49 +304,46 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     installmentAmountLabel: 'Monto de cada cuota',
     frequencyLabel: 'Frecuencia de los pagos',
     frequencyValue: 'Mensual',
-    sec3Note:
-      'Ningún monto puede presentarse como obligatorio sin haber sido previamente identificado, justificado e incluido en la información precontractual cuando la normativa lo exija.',
+    sec3Note: 'Ningún monto puede presentarse como obligatorio sin haber sido previamente identificado, justificado e incluido en la información precontractual cuando la normativa lo exija.',
     sec4Title: '4. CARGOS',
-    sec4Text:
-      'Cualquier cargo aplicable debe indicarse claramente antes de la firma del contrato, junto con su monto o el método para determinarlo. Los cargos no pueden calificarse artificialmente como "cargo de desembolso", "impuesto", "seguro obligatorio" u otro concepto con el único fin de obtener un pago anticipado del prestatario. Esta oferta no incluye ningún pago anticipado ni comisión previa al desembolso del crédito.',
-    sec5Title: '5. DESEMBOLSO DEL CRÉDITO',
-    sec5Text:
-      'Tras la aprobación definitiva del expediente y el cumplimiento de todos los trámites legalmente exigidos, el monto del crédito se transfiere a la cuenta bancaria indicada por el prestatario. No se requiere ningún pago anticipado para el desembolso del crédito.',
+    sec4Text: 'Cualquier cargo aplicable debe indicarse claramente antes de la firma del contrato, junto con su monto o el método para determinarlo. Los cargos no pueden calificarse artificialmente como "cargo de desembolso", "impuesto", "seguro obligatorio" u otro concepto con el único fin de obtener un pago anticipado del prestatario. Esta oferta no incluye ningún pago anticipado ni comisión previa al desembolso del crédito.',
+    sec5Title: '5. GARANTÍA Y CAUCIÓN DEL CRÉDITO',
+    sec5P1: 'Este crédito puede concederse con o sin garantía, según las características del producto de crédito, la evaluación de la solvencia del prestatario y los requisitos aplicables al crédito en cuestión.',
+    sec5P2: 'Cuando se exija una garantía, esta constituye una caución destinada a garantizar el cumplimiento de las obligaciones de reembolso y puede consistir en una garantía sobre fondos líquidos, una prenda sobre activos financieros, una garantía sobre un bien mueble o inmueble, o un aval personal, cuando este tipo de garantía esté autorizado para el crédito concernido.',
+    sec5P3: 'Cualquier suma utilizada como garantía debe identificarse claramente como tal y no puede presentarse como un impuesto, una comisión de desembolso u otro cargo disfrazado. Las condiciones de custodia, bloqueo y devolución de dicha suma se comunican al prestatario antes de la firma del contrato.',
+    sec5P4: 'El prestamista solo puede ejecutar la garantía en caso de incumplimiento del prestatario o en las demás circunstancias previstas en el contrato y autorizadas por la normativa aplicable, respetando los procedimientos y plazos exigidos. Una vez cumplidas íntegramente las obligaciones garantizadas, la garantía se libera o se devuelve.',
+    sec5P5: 'Ningún cargo puede calificarse de «comisión de garantía» o «cargo de desembolso» con el único fin de obtener un pago anticipado que no corresponda a una obligación real. Cuando la normativa aplicable prohíba los pagos anticipados vinculados a la obtención de un crédito, ninguna disposición de este contrato podrá interpretarse como una exigencia de dicho pago.',
+    sec6Title: '6. DESEMBOLSO DEL CRÉDITO',
+    sec6Text: 'Tras la aprobación definitiva del expediente y el cumplimiento de todos los trámites legalmente exigidos, el monto del crédito se transfiere a la cuenta bancaria indicada por el prestatario. No se requiere ningún pago anticipado para el desembolso del crédito.',
     plannedAmountLabel: 'Monto previsto del desembolso',
     accountLabel: 'Cuenta beneficiaria',
-    accountValue: '[se completará tras la verificación de identidad del prestatario]',
-    sec6Title: '6. REEMBOLSO',
-    sec6Text:
-      'El prestatario se compromete a reembolsar el crédito conforme al calendario orientativo indicado a continuación, calculado según el monto y el plazo solicitados.',
+    accountValue: 'Los datos bancarios del prestatario se verificarán e indicarán antes de la transferencia de los fondos.',
+    sec7Title: '7. REEMBOLSO',
+    sec7Text: 'El prestatario se compromete a reembolsar el crédito conforme al calendario orientativo indicado a continuación, calculado según el monto y el plazo solicitados.',
     firstInstallmentLabel: 'Fecha prevista de la primera cuota',
     lastInstallmentLabel: 'Fecha prevista de la última cuota',
-    sec7Title: '7. REEMBOLSO ANTICIPADO',
-    sec7Text:
-      'El prestatario puede, cuando se cumplan las condiciones legales, ejercer los derechos aplicables al reembolso anticipado del crédito. Las posibles compensaciones o cargos vinculados al reembolso anticipado deben respetar la normativa vigente.',
-    sec8Title: '8. IMPAGOS',
-    sec8Text:
-      'En caso de retraso o impago, se aplican las consecuencias previstas en el contrato y en la legislación vigente. No podrá reclamarse al prestatario ningún cargo no previsto o no autorizado.',
-    sec9Title: '9. DERECHO DE DESISTIMIENTO',
-    sec9Text:
-      'Cuando el crédito esté sujeto al régimen de crédito al consumo aplicable, el prestatario goza del derecho de desistimiento previsto por la normativa aplicable. El procedimiento, el plazo y la forma de ejercer este derecho deben comunicarse claramente al prestatario antes o al momento de la firma del contrato.',
-    sec10Title: '10. INFORMACIÓN PRECONTRACTUAL',
-    sec10Text:
-      'Antes de que el prestatario se comprometa, debe recibir en un soporte duradero la información necesaria para comparar y comprender la oferta, incluyendo el monto del crédito, su plazo, la tasa, la TAE, el costo total, el monto de las cuotas y los demás cargos aplicables.',
-    sec11Title: '11. ACEPTACIÓN',
-    sec11Text:
-      'El prestatario reconoce haber recibido la información necesaria sobre la oferta y haber tenido la oportunidad de conocer las condiciones aplicables antes de comprometerse.',
+    sec8Title: '8. REEMBOLSO ANTICIPADO',
+    sec8Text: 'El prestatario puede, cuando se cumplan las condiciones legales, ejercer los derechos aplicables al reembolso anticipado del crédito. Las posibles compensaciones o cargos vinculados al reembolso anticipado deben respetar la normativa vigente.',
+    sec9Title: '9. IMPAGOS',
+    sec9Text: 'En caso de retraso o impago, se aplican las consecuencias previstas en el contrato y en la legislación vigente. No podrá reclamarse al prestatario ningún cargo no previsto o no autorizado.',
+    sec10Title: '10. DERECHO DE DESISTIMIENTO',
+    sec10Text: 'Cuando el crédito esté sujeto al régimen de crédito al consumo aplicable, el prestatario goza del derecho de desistimiento previsto por la normativa aplicable. El procedimiento, el plazo y la forma de ejercer este derecho deben comunicarse claramente al prestatario antes o al momento de la firma del contrato.',
+    sec11Title: '11. INFORMACIÓN PRECONTRACTUAL',
+    sec11Text: 'Antes de que el prestatario se comprometa, debe recibir en un soporte duradero la información necesaria para comparar y comprender la oferta, incluyendo el monto del crédito, su plazo, la tasa, la TAE, el costo total, el monto de las cuotas y los demás cargos aplicables.',
+    sec12Title: '12. ACEPTACIÓN',
+    sec12Text: 'El prestatario reconoce haber recibido la información necesaria sobre la oferta y haber tenido la oportunidad de conocer las condiciones aplicables antes de comprometerse.',
     borrowerNameLabel: 'Nombre del prestatario',
     signatureLabel: 'Firma',
     lenderTitle: 'EL PRESTAMISTA',
     companyLabel: 'Razón social',
     websiteLabel: 'Sitio web',
     addressLabel: 'Dirección',
-    addressValue: '[se completará con la dirección legal oficial de la empresa]',
+    addressValue: 'FondsLink opera como plataforma de crédito en línea (fondslink.com); la dirección legal se indicará en la documentación contractual definitiva.',
     regNumberLabel: 'Número de registro / licencia',
-    regNumberValue: '[se completará antes de la firma definitiva del contrato]',
+    regNumberValue: 'Los datos de registro o licencia se comunicarán al prestatario antes de la firma del contrato definitivo, conforme a los requisitos de la autoridad de supervisión competente.',
     lenderEmailLabel: 'Correo electrónico',
     repLabel: 'Representante autorizado',
-    repValue: 'Equipo de Posojilnica',
+    repValue: 'Equipo de FondsLink',
   },
   nl: {
     title: 'CONSUMENTENKREDIETOVEREENKOMST',
@@ -371,8 +361,7 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     monthsUnit: 'maanden',
     purposeLabel: 'Opgegeven doel',
     purposeValue: 'Persoonlijke financiering',
-    sec2Note:
-      'De definitieve toekenning van de lening is onderworpen aan de beoordeling van de kredietwaardigheid van de kredietnemer en de naleving van alle toepasselijke wettelijke voorwaarden.',
+    sec2Note: 'De definitieve toekenning van de lening is onderworpen aan de beoordeling van de kredietwaardigheid van de kredietnemer en de naleving van alle toepasselijke wettelijke voorwaarden.',
     sec3Title: '3. FINANCIËLE VOORWAARDEN',
     nominalRateLabel: 'Nominale jaarlijkse rentevoet',
     aprLabel: 'Jaarlijks kostenpercentage (JKP)',
@@ -384,49 +373,46 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     installmentAmountLabel: 'Bedrag per termijn',
     frequencyLabel: 'Frequentie van de terugbetalingen',
     frequencyValue: 'Maandelijks',
-    sec3Note:
-      'Geen enkel bedrag mag als verplicht worden voorgesteld zonder vooraf te zijn vastgesteld, onderbouwd en opgenomen in de precontractuele informatie wanneer de regelgeving dit vereist.',
+    sec3Note: 'Geen enkel bedrag mag als verplicht worden voorgesteld zonder vooraf te zijn vastgesteld, onderbouwd en opgenomen in de precontractuele informatie wanneer de regelgeving dit vereist.',
     sec4Title: '4. KOSTEN',
-    sec4Text:
-      'Eventuele kosten moeten duidelijk worden vermeld vóór het sluiten van de overeenkomst, samen met het bedrag of de methode om dit te bepalen. Kosten mogen niet kunstmatig worden aangeduid als "uitbetalingskosten", "belasting", "verplichte verzekering" of andere heffing enkel om een vooruitbetaling van de kredietnemer te verkrijgen. Dit aanbod omvat geen enkele vooruitbetaling of commissie vóór uitbetaling van de lening.',
-    sec5Title: '5. UITBETALING VAN DE LENING',
-    sec5Text:
-      'Na definitieve goedkeuring van het dossier en het vervullen van alle wettelijk vereiste formaliteiten wordt het leningbedrag overgemaakt naar de door de kredietnemer opgegeven bankrekening. Voor de uitbetaling van de lening is geen vooruitbetaling vereist.',
+    sec4Text: 'Eventuele kosten moeten duidelijk worden vermeld vóór het sluiten van de overeenkomst, samen met het bedrag of de methode om dit te bepalen. Kosten mogen niet kunstmatig worden aangeduid als "uitbetalingskosten", "belasting", "verplichte verzekering" of andere heffing enkel om een vooruitbetaling van de kredietnemer te verkrijgen. Dit aanbod omvat geen enkele vooruitbetaling of commissie vóór uitbetaling van de lening.',
+    sec5Title: '5. WAARBORG EN ZEKERHEID VAN DE LENING',
+    sec5P1: 'Deze lening kan met of zonder zekerheid worden toegekend, afhankelijk van de kenmerken van het kredietproduct, de beoordeling van de kredietwaardigheid van de kredietnemer en de voorwaarden die op de betreffende lening van toepassing zijn.',
+    sec5P2: 'Wanneer een zekerheid wordt vereist, vormt deze een waarborg ter garantie van de nakoming van de terugbetalingsverplichtingen en kan deze de vorm aannemen van een zekerheid op liquide middelen, een verpanding van financiële activa, een zekerheid op een roerend of onroerend goed, of een persoonlijke borgstelling, wanneer dit type zekerheid voor de betreffende lening is toegestaan.',
+    sec5P3: 'Elk bedrag dat als zekerheid wordt gebruikt, moet duidelijk als zodanig worden aangeduid en mag niet worden voorgesteld als een belasting, uitbetalingscommissie of andere verkapte kosten. De voorwaarden voor bewaring, blokkering en teruggave van dit bedrag worden vóór het sluiten van de overeenkomst aan de kredietnemer meegedeeld.',
+    sec5P4: 'De kredietgever mag de zekerheid enkel uitwinnen bij wanbetaling door de kredietnemer of in de andere omstandigheden bepaald in de overeenkomst en toegestaan door de toepasselijke regelgeving, met inachtneming van de voorgeschreven procedures en termijnen. Zodra de gewaarborgde verplichtingen volledig zijn nagekomen, wordt de zekerheid vrijgegeven of teruggegeven.',
+    sec5P5: 'Geen enkele kost mag worden aangeduid als "waarborgkosten" of "uitbetalingskosten" met als enig doel een vooruitbetaling te verkrijgen die niet overeenstemt met een werkelijke verplichting. Wanneer de toepasselijke regelgeving vooruitbetalingen in verband met het verkrijgen van een lening verbiedt, mag geen enkele bepaling van deze overeenkomst worden geïnterpreteerd als een verplichting tot een dergelijke betaling.',
+    sec6Title: '6. UITBETALING VAN DE LENING',
+    sec6Text: 'Na definitieve goedkeuring van het dossier en het vervullen van alle wettelijk vereiste formaliteiten wordt het leningbedrag overgemaakt naar de door de kredietnemer opgegeven bankrekening. Voor de uitbetaling van de lening is geen vooruitbetaling vereist.',
     plannedAmountLabel: 'Gepland uitbetalingsbedrag',
     accountLabel: 'Begunstigde rekening',
-    accountValue: '[aan te vullen na verificatie van de identiteit van de kredietnemer]',
-    sec6Title: '6. TERUGBETALING',
-    sec6Text:
-      'De kredietnemer verbindt zich ertoe de lening terug te betalen volgens het onderstaande indicatieve aflossingsschema, berekend op basis van het aangevraagde bedrag en de looptijd.',
+    accountValue: 'De bankgegevens van de kredietnemer worden geverifieerd en vermeld vóór de overmaking van de fondsen.',
+    sec7Title: '7. TERUGBETALING',
+    sec7Text: 'De kredietnemer verbindt zich ertoe de lening terug te betalen volgens het onderstaande indicatieve aflossingsschema, berekend op basis van het aangevraagde bedrag en de looptijd.',
     firstInstallmentLabel: 'Verwachte datum van de eerste termijn',
     lastInstallmentLabel: 'Verwachte datum van de laatste termijn',
-    sec7Title: '7. VERVROEGDE TERUGBETALING',
-    sec7Text:
-      'De kredietnemer kan, wanneer aan de wettelijke voorwaarden is voldaan, gebruikmaken van de rechten met betrekking tot vervroegde terugbetaling van de lening. Eventuele vergoedingen of kosten in verband met vervroegde terugbetaling moeten voldoen aan de toepasselijke regelgeving.',
-    sec8Title: '8. BETALINGSACHTERSTAND',
-    sec8Text:
-      'In geval van achterstand of niet-betaling gelden de gevolgen zoals bepaald in de overeenkomst en de toepasselijke wetgeving. Er kunnen geen onvoorziene of niet-geautoriseerde kosten aan de kredietnemer in rekening worden gebracht.',
-    sec9Title: '9. HERROEPINGSRECHT',
-    sec9Text:
-      'Wanneer de lening onder het toepasselijke regime voor consumentenkrediet valt, geniet de kredietnemer het herroepingsrecht zoals bepaald door de toepasselijke regelgeving. De procedure, termijn en wijze van uitoefening van dit recht moeten duidelijk aan de kredietnemer worden meegedeeld vóór of bij het sluiten van de overeenkomst.',
-    sec10Title: '10. PRECONTRACTUELE INFORMATIE',
-    sec10Text:
-      'Voordat de kredietnemer zich verbindt, moet hij op een duurzame drager alle informatie ontvangen die nodig is om het aanbod te vergelijken en te begrijpen, waaronder het leningbedrag, de looptijd, de rentevoet, het JKP, de totale kosten, het bedrag van de termijnen en de overige toepasselijke kosten.',
-    sec11Title: '11. AANVAARDING',
-    sec11Text:
-      'De kredietnemer erkent de nodige informatie over het aanbod te hebben ontvangen en de gelegenheid te hebben gehad kennis te nemen van de toepasselijke voorwaarden vóór het aangaan van de verbintenis.',
+    sec8Title: '8. VERVROEGDE TERUGBETALING',
+    sec8Text: 'De kredietnemer kan, wanneer aan de wettelijke voorwaarden is voldaan, gebruikmaken van de rechten met betrekking tot vervroegde terugbetaling van de lening. Eventuele vergoedingen of kosten in verband met vervroegde terugbetaling moeten voldoen aan de toepasselijke regelgeving.',
+    sec9Title: '9. BETALINGSACHTERSTAND',
+    sec9Text: 'In geval van achterstand of niet-betaling gelden de gevolgen zoals bepaald in de overeenkomst en de toepasselijke wetgeving. Er kunnen geen onvoorziene of niet-geautoriseerde kosten aan de kredietnemer in rekening worden gebracht.',
+    sec10Title: '10. HERROEPINGSRECHT',
+    sec10Text: 'Wanneer de lening onder het toepasselijke regime voor consumentenkrediet valt, geniet de kredietnemer het herroepingsrecht zoals bepaald door de toepasselijke regelgeving. De procedure, termijn en wijze van uitoefening van dit recht moeten duidelijk aan de kredietnemer worden meegedeeld vóór of bij het sluiten van de overeenkomst.',
+    sec11Title: '11. PRECONTRACTUELE INFORMATIE',
+    sec11Text: 'Voordat de kredietnemer zich verbindt, moet hij op een duurzame drager alle informatie ontvangen die nodig is om het aanbod te vergelijken en te begrijpen, waaronder het leningbedrag, de looptijd, de rentevoet, het JKP, de totale kosten, het bedrag van de termijnen en de overige toepasselijke kosten.',
+    sec12Title: '12. AANVAARDING',
+    sec12Text: 'De kredietnemer erkent de nodige informatie over het aanbod te hebben ontvangen en de gelegenheid te hebben gehad kennis te nemen van de toepasselijke voorwaarden vóór het aangaan van de verbintenis.',
     borrowerNameLabel: 'Naam van de kredietnemer',
     signatureLabel: 'Handtekening',
     lenderTitle: 'DE KREDIETGEVER',
     companyLabel: 'Bedrijfsnaam',
     websiteLabel: 'Website',
     addressLabel: 'Adres',
-    addressValue: '[aan te vullen met het officiële geregistreerde adres van de onderneming]',
+    addressValue: 'FondsLink opereert als een online kredietplatform (fondslink.com); het maatschappelijke adres wordt vermeld in de definitieve contractuele documentatie.',
     regNumberLabel: 'Registratienummer / vergunningsnummer',
-    regNumberValue: '[aan te vullen vóór definitieve ondertekening van de overeenkomst]',
+    regNumberValue: 'De registratie- of vergunningsgegevens worden vóór ondertekening van de definitieve overeenkomst aan de kredietnemer meegedeeld, in overeenstemming met de vereisten van de bevoegde toezichthouder.',
     lenderEmailLabel: 'E-mail',
     repLabel: 'Gemachtigde vertegenwoordiger',
-    repValue: 'Posojilnica-team',
+    repValue: 'FondsLink-team',
   },
   en: {
     title: 'CONSUMER CREDIT AGREEMENT',
@@ -444,8 +430,7 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     monthsUnit: 'months',
     purposeLabel: 'Stated purpose',
     purposeValue: 'Personal financing',
-    sec2Note:
-      'Final approval of the loan is subject to an assessment of the borrower\u2019s creditworthiness and compliance with all applicable legal conditions.',
+    sec2Note: 'Final approval of the loan is subject to an assessment of the borrower\u2019s creditworthiness and compliance with all applicable legal conditions.',
     sec3Title: '3. FINANCIAL CONDITIONS',
     nominalRateLabel: 'Nominal annual interest rate',
     aprLabel: 'Annual percentage rate of charge (APR)',
@@ -457,48 +442,45 @@ export const CONTRACT_TEXT: Record<string, ContractText> = {
     installmentAmountLabel: 'Amount of each instalment',
     frequencyLabel: 'Repayment frequency',
     frequencyValue: 'Monthly',
-    sec3Note:
-      'No amount may be presented as mandatory unless it has been previously identified, justified, and included in the pre-contractual information where required by law.',
+    sec3Note: 'No amount may be presented as mandatory unless it has been previously identified, justified, and included in the pre-contractual information where required by law.',
     sec4Title: '4. FEES',
-    sec4Text:
-      'Any applicable fee must be clearly disclosed before the contract is concluded, together with its amount or the method for determining it. Fees may not be artificially labelled as a "disbursement fee", "tax", "mandatory insurance" or other charge for the sole purpose of obtaining an advance payment from the borrower. This offer includes no advance payment or commission prior to disbursement of the loan.',
-    sec5Title: '5. DISBURSEMENT OF THE LOAN',
-    sec5Text:
-      'After final approval of the file and completion of all legally required formalities, the loan amount is transferred to the bank account indicated by the borrower. No advance payment is required for disbursement of the loan.',
+    sec4Text: 'Any applicable fee must be clearly disclosed before the contract is concluded, together with its amount or the method for determining it. Fees may not be artificially labelled as a "disbursement fee", "tax", "mandatory insurance" or other charge for the sole purpose of obtaining an advance payment from the borrower. This offer includes no advance payment or commission prior to disbursement of the loan.',
+    sec5Title: '5. GUARANTEE AND SECURITY FOR THE LOAN',
+    sec5P1: 'This loan may be granted with or without security, depending on the characteristics of the credit product, the assessment of the borrower\u2019s creditworthiness, and the requirements applicable to the loan in question.',
+    sec5P2: 'Where security is required, it constitutes a guarantee intended to secure performance of the repayment obligations and may take the form of security over liquid funds, a pledge over financial assets, security over movable or immovable property, or a personal guarantee, where this type of security is permitted for the loan concerned.',
+    sec5P3: 'Any sum used as security must be clearly identified as such and may not be presented as a tax, disbursement fee, or other disguised charge. The conditions for holding, blocking, and returning this sum are communicated to the borrower before the contract is concluded.',
+    sec5P4: 'The lender may only enforce the security in the event of default by the borrower or in the other circumstances provided for in the contract and permitted by applicable legislation, subject to the required procedures and time limits. Once the secured obligations have been fully performed, the security is released or returned.',
+    sec5P5: 'No cost may be labelled a "guarantee fee" or "disbursement fee" for the sole purpose of obtaining an advance payment that does not correspond to a real obligation. Where applicable regulations prohibit advance payments linked to obtaining a loan, no provision of this contract may be interpreted as imposing such a payment.',
+    sec6Title: '6. DISBURSEMENT OF THE LOAN',
+    sec6Text: 'After final approval of the file and completion of all legally required formalities, the loan amount is transferred to the bank account indicated by the borrower. No advance payment is required for disbursement of the loan.',
     plannedAmountLabel: 'Planned disbursement amount',
     accountLabel: 'Beneficiary account',
-    accountValue: '[to be completed after verification of the borrower\u2019s identity]',
-    sec6Title: '6. REPAYMENT',
-    sec6Text:
-      'The borrower undertakes to repay the loan according to the indicative schedule below, calculated based on the requested amount and term.',
+    accountValue: 'The borrower\u2019s bank details will be verified and stated before the funds are transferred.',
+    sec7Title: '7. REPAYMENT',
+    sec7Text: 'The borrower undertakes to repay the loan according to the indicative schedule below, calculated based on the requested amount and term.',
     firstInstallmentLabel: 'Expected date of first instalment',
     lastInstallmentLabel: 'Expected date of last instalment',
-    sec7Title: '7. EARLY REPAYMENT',
-    sec7Text:
-      'Where the legal conditions are met, the borrower may exercise the rights applicable to early repayment of the loan. Any compensation or fees linked to early repayment must comply with applicable regulations.',
-    sec8Title: '8. LATE PAYMENTS',
-    sec8Text:
-      'In the event of late or non-payment, the consequences set out in the contract and applicable legislation shall apply. No unforeseen or unauthorised fee may be charged to the borrower.',
-    sec9Title: '9. RIGHT OF WITHDRAWAL',
-    sec9Text:
-      'Where the loan falls under the applicable consumer credit regime, the borrower benefits from the right of withdrawal provided for by applicable regulations. The procedure, time limit and method for exercising this right must be clearly communicated to the borrower before or at the time the contract is concluded.',
-    sec10Title: '10. PRE-CONTRACTUAL INFORMATION',
-    sec10Text:
-      'Before the borrower is bound, the information necessary to compare and understand the offer must be provided on a durable medium, including the loan amount, term, rate, APR, total cost, instalment amount and other applicable costs.',
-    sec11Title: '11. ACCEPTANCE',
-    sec11Text:
-      'The borrower acknowledges having received the necessary information about the offer and having had the opportunity to review the applicable conditions before entering into the agreement.',
+    sec8Title: '8. EARLY REPAYMENT',
+    sec8Text: 'Where the legal conditions are met, the borrower may exercise the rights applicable to early repayment of the loan. Any compensation or fees linked to early repayment must comply with applicable regulations.',
+    sec9Title: '9. LATE PAYMENTS',
+    sec9Text: 'In the event of late or non-payment, the consequences set out in the contract and applicable legislation shall apply. No unforeseen or unauthorised fee may be charged to the borrower.',
+    sec10Title: '10. RIGHT OF WITHDRAWAL',
+    sec10Text: 'Where the loan falls under the applicable consumer credit regime, the borrower benefits from the right of withdrawal provided for by applicable regulations. The procedure, time limit and method for exercising this right must be clearly communicated to the borrower before or at the time the contract is concluded.',
+    sec11Title: '11. PRE-CONTRACTUAL INFORMATION',
+    sec11Text: 'Before the borrower is bound, the information necessary to compare and understand the offer must be provided on a durable medium, including the loan amount, term, rate, APR, total cost, instalment amount and other applicable costs.',
+    sec12Title: '12. ACCEPTANCE',
+    sec12Text: 'The borrower acknowledges having received the necessary information about the offer and having had the opportunity to review the applicable conditions before entering into the agreement.',
     borrowerNameLabel: 'Name of the borrower',
     signatureLabel: 'Signature',
     lenderTitle: 'THE LENDER',
     companyLabel: 'Company name',
     websiteLabel: 'Website',
     addressLabel: 'Address',
-    addressValue: '[to be completed with the company\u2019s official registered address]',
+    addressValue: 'FondsLink operates as an online lending platform (fondslink.com); the registered business address will be stated in the final contractual documentation.',
     regNumberLabel: 'Registration / licence number',
-    regNumberValue: '[to be completed before final execution of the contract]',
+    regNumberValue: 'Registration or licence details will be communicated to the borrower before signing the final contract, in accordance with the requirements of the competent supervisory authority.',
     lenderEmailLabel: 'Email',
     repLabel: 'Authorised representative',
-    repValue: 'Posojilnica Team',
+    repValue: 'FondsLink Team',
   },
 };

@@ -14,7 +14,7 @@ export async function generateMetadata({
   return {
     title: t('titleContact'),
     description: t('descContact'),
-    alternates: { canonical: `https://www.posojilnica.com/${locale}/contact` },
+    alternates: { canonical: `https://www.fondslink.com/${locale}/contact` },
   };
 }
 

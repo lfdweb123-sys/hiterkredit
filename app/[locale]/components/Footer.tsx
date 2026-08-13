@@ -48,8 +48,8 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2.5 text-sm text-white/80">
             <li>
-              <a href="mailto:podpora@posojilnica.com" className="hover:text-white transition-colors">
-                podpora@posojilnica.com
+              <a href="mailto:podpora@fondslink.com" className="hover:text-white transition-colors">
+                podpora@fondslink.com
               </a>
             </li>
           </ul>
@@ -58,7 +58,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-5 md:px-8 py-6 flex flex-col md:flex-row gap-3 md:items-center md:justify-between text-xs text-white/50">
-          <p>© {year} Posojilnica. {t('rights')}</p>
+          <p>© {year} FondsLink. {t('rights')}</p>
           <p className="max-w-xl">{t('riskNote')}</p>
         </div>
       </div>

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "siteName": "Posojilnica",
-    "titleHome": "Posojilnica — Fast, transparent personal loans",
+    "siteName": "FondsLink",
+    "titleHome": "FondsLink — Fast, transparent personal loans",
     "descHome": "Simulate your loan in real time and submit your application in minutes. No hidden fees, no unnecessary data storage.",
-    "titleSimulate": "Loan simulator — Posojilnica",
+    "titleSimulate": "Loan simulator — FondsLink",
     "descSimulate": "Work out your monthly repayment and total loan cost with a simple slider. Use the result straight away in your application.",
-    "titleApply": "Loan application — Posojilnica",
+    "titleApply": "Loan application — FondsLink",
     "descApply": "Submit a simple loan application. Fast response, no unnecessary paperwork.",
-    "titleAbout": "About us — Posojilnica",
-    "descAbout": "Get to know Posojilnica: transparency, speed and responsible lending.",
-    "titleContact": "Contact — Posojilnica",
-    "descContact": "Get in touch with the Posojilnica team for any question about loans, applications or partnerships."
+    "titleAbout": "About us — FondsLink",
+    "descAbout": "Get to know FondsLink: transparency, speed and responsible lending.",
+    "titleContact": "Contact — FondsLink",
+    "descContact": "Get in touch with the FondsLink team for any question about loans, applications or partnerships."
   },
   "nav": {
     "home": "Home",
@@ -53,7 +53,7 @@
     "step3Text": "Our team reviews your application and gets back to you as quickly as possible."
   },
   "features": {
-    "title": "Why Posojilnica",
+    "title": "Why FondsLink",
     "f1Title": "Full transparency",
     "f1Text": "You see every cost right from the simulator — no surprises in the contract.",
     "f2Title": "Fast processing",
@@ -65,7 +65,7 @@
   },
   "countries": {
     "title": "Available in your country",
-    "subtitle": "Posojilnica operates across several European countries and Puerto Rico, adapted to local language and practice."
+    "subtitle": "FondsLink operates across several European countries and Puerto Rico, adapted to local language and practice."
   },
   "form": {
     "title": "Loan application",
@@ -78,7 +78,7 @@
     "amount": "Desired loan amount",
     "duration": "Desired repayment term (months)",
     "message": "Additional message (optional)",
-    "consent": "I agree that Posojilnica will use my data solely to process this application.",
+    "consent": "I agree that FondsLink will use my data solely to process this application.",
     "submit": "Submit application",
     "submitting": "Sending ...",
     "successTitle": "Application submitted successfully",
@@ -105,7 +105,7 @@
   "about": {
     "eyebrow": "About the company",
     "title": "Transparency, speed and responsible lending",
-    "intro": "Posojilnica was founded with one goal: to make personal loans simple, transparent and accessible, wherever you live.",
+    "intro": "FondsLink was founded with one goal: to make personal loans simple, transparent and accessible, wherever you live.",
     "missionTitle": "Our mission",
     "missionText": "We believe a financial decision should be simple. That's why we built a simulator that shows the real cost of a loan in real time, and an application form that takes under two minutes.",
     "valuesTitle": "Our values",
@@ -137,10 +137,10 @@
   },
   "contactPage": {
     "eyebrow": "We're here for you",
-    "title": "Contact the Posojilnica team",
+    "title": "Contact the FondsLink team",
     "subtitle": "Got a question about a loan, an application, or how we operate in your country? Write to us — we reply quickly.",
     "emailLabel": "Email",
-    "emailValue": "podpora@posojilnica.com",
+    "emailValue": "podpora@fondslink.com",
     "responseLabel": "Response time",
     "responseValue": "Usually within 24 hours on business days",
     "hoursLabel": "Support hours",
@@ -152,29 +152,29 @@
   },
   "legal": {
     "termsTitle": "Terms & conditions",
-    "termsP1": "This document governs the terms of use of the Posojilnica website (posojilnica.com) and its loan simulation and application services. By using the site, you agree to these terms.",
+    "termsP1": "This document governs the terms of use of the FondsLink website (fondslink.com) and its loan simulation and application services. By using the site, you agree to these terms.",
     "termsP2": "The loan simulator on the website is for information purposes only and does not constitute a binding credit offer. The actual offer depends on an individual assessment of the application.",
-    "termsP3": "Posojilnica reserves the right to decline any loan application without stating a reason, in accordance with the applicable legislation of each country.",
+    "termsP3": "FondsLink reserves the right to decline any loan application without stating a reason, in accordance with the applicable legislation of each country.",
     "termsP4": "The content of the website is protected by copyright. Copying or distributing the content without permission is prohibited.",
     "privacyTitle": "Privacy",
-    "privacyP1": "Posojilnica respects your privacy. The loan simulator on this site requires no personal data, and nothing is stored on our servers — the figures remain only in your browser during your session.",
+    "privacyP1": "FondsLink respects your privacy. The loan simulator on this site requires no personal data, and nothing is stored on our servers — the figures remain only in your browser during your session.",
     "privacyP2": "Personal data (first name, last name, email, phone) that you provide through the contact form or the loan application form is used solely to process your application and is sent directly to our email. We do not store this data in a database.",
     "privacyP3": "We never sell or share your data with third parties for marketing purposes.",
-    "privacyP4": "For any questions about data protection, contact us at podpora@posojilnica.com.",
+    "privacyP4": "For any questions about data protection, contact us at podpora@fondslink.com.",
     "cookiesTitle": "Cookies",
     "cookiesP1": "This website uses a minimal amount of technical data stored in your browser (session storage), solely to remember the loan simulator figures (amount and term) during your visit when you move to the application form.",
     "cookiesP2": "This data is automatically deleted when you close your browser and is never sent to any server.",
     "cookiesP3": "The website does not use third-party tracking or advertising cookies."
   },
   "contractEmail": {
-    "subject": "Your Posojilnica loan offer — {ref}",
+    "subject": "Your FondsLink loan offer — {ref}",
     "greeting": "Hello {name},",
-    "intro": "Thank you for submitting your application to Posojilnica. Attached is the calculated loan offer, prepared from the details you provided.",
+    "intro": "Thank you for submitting your application to FondsLink. Attached is the calculated loan offer, prepared from the details you provided.",
     "summaryTitle": "Summary of your application",
     "amountLabel": "Amount",
     "durationLabel": "Repayment term",
     "monthlyLabel": "Monthly instalment",
-    "instructions": "Please review the attached document carefully. For signature and next steps, contact us at podpora@posojilnica.com — we may also reach out to you by phone if needed.",
-    "closing": "Best regards,\nThe Posojilnica Team"
+    "instructions": "Please review the attached document carefully. For signature and next steps, contact us at podpora@fondslink.com — we may also reach out to you by phone if needed.",
+    "closing": "Best regards,\nThe FondsLink Team"
   }
 }

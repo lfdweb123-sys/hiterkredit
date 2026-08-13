@@ -1,16 +1,16 @@
 {
   "meta": {
-    "siteName": "Posojilnica",
-    "titleHome": "Posojilnica — Préstamos personales rápidos y transparentes",
+    "siteName": "FondsLink",
+    "titleHome": "FondsLink — Préstamos personales rápidos y transparentes",
     "descHome": "Simula tu préstamo en tiempo real y envía tu solicitud en minutos. Sin cargos ocultos, sin almacenamiento innecesario de datos.",
-    "titleSimulate": "Simulador de préstamo — Posojilnica",
+    "titleSimulate": "Simulador de préstamo — FondsLink",
     "descSimulate": "Calcula tu cuota mensual y el costo total del préstamo con un control deslizante simple. Usa el resultado directamente en tu solicitud.",
-    "titleApply": "Solicitud de préstamo — Posojilnica",
+    "titleApply": "Solicitud de préstamo — FondsLink",
     "descApply": "Envía una solicitud de préstamo sencilla. Respuesta rápida, sin formularios innecesarios.",
-    "titleAbout": "Sobre nosotros — Posojilnica",
-    "descAbout": "Conoce Posojilnica: transparencia, rapidez y préstamos responsables.",
-    "titleContact": "Contacto — Posojilnica",
-    "descContact": "Contacta al equipo de Posojilnica para cualquier pregunta sobre préstamos, solicitudes o colaboraciones."
+    "titleAbout": "Sobre nosotros — FondsLink",
+    "descAbout": "Conoce FondsLink: transparencia, rapidez y préstamos responsables.",
+    "titleContact": "Contacto — FondsLink",
+    "descContact": "Contacta al equipo de FondsLink para cualquier pregunta sobre préstamos, solicitudes o colaboraciones."
   },
   "nav": {
     "home": "Inicio",
@@ -53,7 +53,7 @@
     "step3Text": "Nuestro equipo revisa tu solicitud y te contacta lo antes posible."
   },
   "features": {
-    "title": "Por qué Posojilnica",
+    "title": "Por qué FondsLink",
     "f1Title": "Transparencia total",
     "f1Text": "Ves todos los costos desde el simulador — sin sorpresas en el contrato.",
     "f2Title": "Procesamiento rápido",
@@ -65,7 +65,7 @@
   },
   "countries": {
     "title": "Presentes en tu país",
-    "subtitle": "Posojilnica opera en varios países europeos y en Puerto Rico, adaptado al idioma y las prácticas locales."
+    "subtitle": "FondsLink opera en varios países europeos y en Puerto Rico, adaptado al idioma y las prácticas locales."
   },
   "form": {
     "title": "Solicitud de préstamo",
@@ -78,7 +78,7 @@
     "amount": "Monto de préstamo deseado",
     "duration": "Plazo de pago deseado (meses)",
     "message": "Mensaje adicional (opcional)",
-    "consent": "Acepto que Posojilnica use mis datos exclusivamente para procesar esta solicitud.",
+    "consent": "Acepto que FondsLink use mis datos exclusivamente para procesar esta solicitud.",
     "submit": "Enviar solicitud",
     "submitting": "Enviando ...",
     "successTitle": "Solicitud enviada con éxito",
@@ -105,7 +105,7 @@
   "about": {
     "eyebrow": "Sobre la empresa",
     "title": "Transparencia, rapidez y préstamos responsables",
-    "intro": "Posojilnica se fundó con un solo objetivo: hacer que los préstamos personales sean simples, transparentes y accesibles, sin importar en qué país vivas.",
+    "intro": "FondsLink se fundó con un solo objetivo: hacer que los préstamos personales sean simples, transparentes y accesibles, sin importar en qué país vivas.",
     "missionTitle": "Nuestra misión",
     "missionText": "Creemos que una decisión financiera debe ser simple. Por eso desarrollamos un simulador que muestra el costo real del préstamo en tiempo real, y un formulario de solicitud que toma menos de dos minutos.",
     "valuesTitle": "Nuestros valores",
@@ -137,10 +137,10 @@
   },
   "contactPage": {
     "eyebrow": "Estamos aquí para ti",
-    "title": "Contacta al equipo de Posojilnica",
+    "title": "Contacta al equipo de FondsLink",
     "subtitle": "¿Tienes una pregunta sobre un préstamo, una solicitud o nuestra operación en tu país? Escríbenos — respondemos rápido.",
     "emailLabel": "Correo electrónico",
-    "emailValue": "podpora@posojilnica.com",
+    "emailValue": "podpora@fondslink.com",
     "responseLabel": "Tiempo de respuesta",
     "responseValue": "Normalmente en 24 horas en días laborables",
     "hoursLabel": "Horario de atención",
@@ -152,29 +152,29 @@
   },
   "legal": {
     "termsTitle": "Términos y condiciones",
-    "termsP1": "Este documento regula las condiciones de uso del sitio web Posojilnica (posojilnica.com) y de los servicios de simulación y solicitud de préstamo. Al usar el sitio, aceptas estos términos.",
+    "termsP1": "Este documento regula las condiciones de uso del sitio web FondsLink (fondslink.com) y de los servicios de simulación y solicitud de préstamo. Al usar el sitio, aceptas estos términos.",
     "termsP2": "El simulador de préstamo disponible en el sitio tiene un carácter meramente informativo y no constituye una oferta de crédito vinculante. La oferta final depende de la evaluación individual de la solicitud.",
-    "termsP3": "Posojilnica se reserva el derecho de rechazar cualquier solicitud de préstamo sin indicar motivo, conforme a la legislación vigente en cada país.",
+    "termsP3": "FondsLink se reserva el derecho de rechazar cualquier solicitud de préstamo sin indicar motivo, conforme a la legislación vigente en cada país.",
     "termsP4": "El contenido del sitio está protegido por derechos de autor. Queda prohibida la copia o distribución del contenido sin autorización.",
     "privacyTitle": "Privacidad",
-    "privacyP1": "Posojilnica respeta tu privacidad. El simulador de préstamo de este sitio no requiere ningún dato personal y nada se almacena en nuestros servidores — los valores permanecen solo en tu navegador durante la sesión.",
+    "privacyP1": "FondsLink respeta tu privacidad. El simulador de préstamo de este sitio no requiere ningún dato personal y nada se almacena en nuestros servidores — los valores permanecen solo en tu navegador durante la sesión.",
     "privacyP2": "Los datos personales (nombre, apellido, correo electrónico, teléfono) que nos proporcionas a través del formulario de contacto o de solicitud de préstamo se utilizan exclusivamente para procesar tu solicitud y se envían directamente a nuestro correo. No almacenamos estos datos en una base de datos.",
     "privacyP3": "Nunca vendemos ni compartimos tus datos con terceros con fines de marketing.",
-    "privacyP4": "Para cualquier pregunta sobre protección de datos, contáctanos en podpora@posojilnica.com.",
+    "privacyP4": "Para cualquier pregunta sobre protección de datos, contáctanos en podpora@fondslink.com.",
     "cookiesTitle": "Cookies",
     "cookiesP1": "Este sitio utiliza una cantidad mínima de datos técnicos almacenados en tu navegador (session storage), únicamente para recordar durante tu visita los valores del simulador de préstamo (monto y plazo) al pasar al formulario de solicitud.",
     "cookiesP2": "Estos datos se eliminan automáticamente al cerrar el navegador y nunca se envían a ningún servidor.",
     "cookiesP3": "El sitio no utiliza cookies de seguimiento ni publicitarias de terceros."
   },
   "contractEmail": {
-    "subject": "Tu oferta de préstamo Posojilnica — {ref}",
+    "subject": "Tu oferta de préstamo FondsLink — {ref}",
     "greeting": "Hola, {name}:",
-    "intro": "Gracias por enviar tu solicitud a Posojilnica. Adjunto encontrarás la oferta de préstamo calculada, preparada a partir de los datos que nos proporcionaste.",
+    "intro": "Gracias por enviar tu solicitud a FondsLink. Adjunto encontrarás la oferta de préstamo calculada, preparada a partir de los datos que nos proporcionaste.",
     "summaryTitle": "Resumen de tu solicitud",
     "amountLabel": "Monto",
     "durationLabel": "Plazo de pago",
     "monthlyLabel": "Cuota mensual",
-    "instructions": "Revisa cuidadosamente el documento adjunto. Para la firma y los siguientes pasos, contáctanos en podpora@posojilnica.com — si es necesario, también podemos contactarte por teléfono.",
-    "closing": "Saludos cordiales,\nEquipo de Posojilnica"
+    "instructions": "Revisa cuidadosamente el documento adjunto. Para la firma y los siguientes pasos, contáctanos en podpora@fondslink.com — si es necesario, también podemos contactarte por teléfono.",
+    "closing": "Saludos cordiales,\nEquipo de FondsLink"
   }
 }

@@ -14,7 +14,7 @@ export async function generateMetadata({
   return {
     title: t('titleApply'),
     description: t('descApply'),
-    alternates: { canonical: `https://www.posojilnica.com/${locale}/apply` },
+    alternates: { canonical: `https://www.fondslink.com/${locale}/apply` },
   };
 }
 

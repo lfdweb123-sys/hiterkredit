@@ -16,7 +16,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const SITE_URL = 'https://www.posojilnica.com';
+const SITE_URL = 'https://www.fondslink.com';
 
 export async function generateMetadata({
   params,
@@ -96,10 +96,10 @@ export default async function LocaleLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
-    name: 'Posojilnica',
+    name: 'FondsLink',
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.png`,
-    email: 'podpora@posojilnica.com',
+    email: 'podpora@fondslink.com',
     areaServed: ['SI', 'SK', 'LT', 'PR', 'NL', 'BE', 'IE'],
     availableLanguage: ['sl', 'sk', 'lt', 'es', 'nl', 'en'],
   };

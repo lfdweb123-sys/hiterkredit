@@ -1,7 +1,7 @@
-# Posojilnica
+# FondsLink
 
 Site multilingue de simulation et de demande de prêt personnel, déployé sur
-Vercel. Domaine cible : https://www.posojilnica.com
+Vercel. Domaine cible : https://www.fondslink.com
 
 ## Langues
 
@@ -47,4 +47,4 @@ npm run dev
 
 Le projet est prêt pour un déploiement direct sur Vercel (framework Next.js
 détecté automatiquement). Penser à configurer le domaine personnalisé
-www.posojilnica.com dans les réglages du projet Vercel.
+www.fondslink.com dans les réglages du projet Vercel.

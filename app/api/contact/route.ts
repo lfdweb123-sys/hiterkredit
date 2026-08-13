@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
     }
 
     const html = `
-      <h2>Nová kontaktná správa — Posojilnica</h2>
+      <h2>Nová kontaktná správa — FondsLink</h2>
       <p><strong>Meno:</strong> ${escapeHtml(name)}</p>
       <p><strong>E-mail:</strong> ${escapeHtml(email)}</p>
       <p><strong>Predmet:</strong> ${escapeHtml(subject || '—')}</p>

@@ -18,7 +18,7 @@ export const IMAGES = {
     height: 900,
   },
   aboutTeam: {
-    src: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1400&auto=format&fit=crop',
+    src: 'https://images.unsplash.com/photo-1661956602868-6ae368943878?q=80&w=1400&auto=format&fit=crop',
     width: 1400,
     height: 1050,
   },
