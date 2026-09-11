@@ -63,11 +63,13 @@ export default async function HomePage({
                 {hero('ctaPrimary')}
               </Link>
               
+              {/* FIXED: Added opening <Link> tag and replaced </a> with </Link> */}
+              <Link
                 href="#how-it-works"
                 className="w-full sm:w-auto text-center px-7 py-3.5 rounded-[10px] border border-[var(--color-line)] text-[var(--color-ink)] font-semibold hover:bg-[var(--color-sky-mist)] transition-colors focus-ring"
               >
                 {hero('ctaSecondary')}
-              </a>
+              </Link>
             </div>
             <div className="mt-10 pt-6 border-t border-[var(--color-line)] flex flex-wrap gap-x-8 gap-y-3 text-sm text-[var(--color-ink-soft)]">
               <TrustItem label={hero('trust1')} />
