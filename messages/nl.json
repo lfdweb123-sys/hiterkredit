@@ -1,39 +1,4 @@
 {
-  "hero": {
-    "heroRatingScore": "4.9/5",
-    "heroTestimonial": "\"Aanbod binnen 24u geaccepteerd, geld snel ontvangen\" — Thomas & Clara"
-  },
-  "howItWorks": {
-    "subtitle": "Een 100% digitaal traject, ontworpen om direct, transparant en zonder onnodig papierwerk te zijn.",
-    "step1Note": "Zonder enige verplichting",
-    "step2Note": "Beveiligde 256-bit overdracht",
-    "step3Note": "Snelle uitbetaling van de fondsen"
-  },
-  "features": {
-    "subtitle": "Wij combineren de kracht van moderne financiële technologie met verantwoorde, gecertificeerde persoonlijke begeleiding.",
-    "imageCaption1": "Live opvolging van je aanvraag en beveiligde elektronische handtekening",
-    "imageCaption2": "Erkende financiële experts aan je zijde bij elke stap"
-  },
-  "testimonial": {
-    "eyebrow": "Geverifieerde klantbeoordelingen",
-    "score": "4.9",
-    "reviewCount": "+1.200 klantbeoordelingen",
-    "quote": "Vlot en snel proces, mijn aanvraag werd binnen 24 uur behandeld. Uitstekende service.",
-    "author": "Marc L., Lyon — financiering van € 12.000"
-  },
-  "countries": {
-    "eyebrow": "Actief in heel Europa"
-  },
-  "regulatory": {
-    "title": "Erkend & gereguleerd",
-    "subtitle": "In elk rechtsgebied voldoen onze aanbiedingen aan de vereisten van de financiële toezichthouders.",
-    "badgeText": "Erkend en onder toezicht voor de Europese Economische Ruimte (EER)",
-    "ctaTitle": "Klaar om je project waar te maken?",
-    "ctaSubtitle": "Ontvang je schatting in 2 minuten en start met een gerust hart."
-  },
-  "disclaimer": {
-    "text": "Een lening verplicht je en moet worden terugbetaald. Controleer je terugbetalingscapaciteit voordat je je verbindt."
-  },
   "meta": {
     "siteName": "FondsLink",
     "titleHome": "FondsLink — Snelle en transparante persoonlijke leningen",
@@ -63,7 +28,9 @@
     "ctaSecondary": "Hoe het werkt",
     "trust1": "Antwoord binnen 24 uur",
     "trust2": "Geen verborgen kosten",
-    "trust3": "Gegevens worden niet opgeslagen"
+    "trust3": "Gegevens worden niet opgeslagen",
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Aanbod binnen 24u geaccepteerd, geld snel ontvangen\" — Thomas & Clara"
   },
   "simulator": {
     "title": "Bereken uw aflossing",
@@ -85,7 +52,11 @@
     "step2Title": "Dien uw aanvraag in",
     "step2Text": "Vul een kort formulier in — de berekende gegevens worden automatisch overgenomen.",
     "step3Title": "Ontvang een antwoord",
-    "step3Text": "Ons team beoordeelt uw aanvraag en neemt zo snel mogelijk contact met u op."
+    "step3Text": "Ons team beoordeelt uw aanvraag en neemt zo snel mogelijk contact met u op.",
+    "subtitle": "Een 100% digitaal traject, ontworpen om direct, transparant en zonder onnodig papierwerk te zijn.",
+    "step1Note": "Zonder enige verplichting",
+    "step2Note": "Beveiligde 256-bit overdracht",
+    "step3Note": "Snelle uitbetaling van de fondsen"
   },
   "features": {
     "title": "Waarom FondsLink",
@@ -96,11 +67,15 @@
     "f3Title": "Gegevensbeveiliging",
     "f3Text": "Wij bewaren uw persoonsgegevens niet langer dan nodig is voor de verwerking van uw aanvraag.",
     "f4Title": "Persoonlijke ondersteuning",
-    "f4Text": "Ons team staat klaar om al uw vragen over de lening te beantwoorden."
+    "f4Text": "Ons team staat klaar om al uw vragen over de lening te beantwoorden.",
+    "subtitle": "Wij combineren de kracht van moderne financiële technologie met verantwoorde, gecertificeerde persoonlijke begeleiding.",
+    "imageCaption1": "Live opvolging van je aanvraag en beveiligde elektronische handtekening",
+    "imageCaption2": "Erkende financiële experts aan je zijde bij elke stap"
   },
   "countries": {
     "title": "Actief in uw land",
-    "subtitle": "FondsLink is actief in meerdere Europese landen en Puerto Rico, aangepast aan de lokale taal en gebruiken."
+    "subtitle": "FondsLink is actief in meerdere Europese landen en Puerto Rico, aangepast aan de lokale taal en gebruiken.",
+    "eyebrow": "Actief in heel Europa"
   },
   "form": {
     "title": "Leningaanvraag",
@@ -211,5 +186,22 @@
     "monthlyLabel": "Maandelijkse aflossing",
     "instructions": "Bekijk het bijgevoegde document zorgvuldig. Neem voor ondertekening en de volgende stappen contact met ons op via podpora@fondslink.com — indien nodig kunnen wij u ook telefonisch contacteren.",
     "closing": "Met vriendelijke groet,\nHet FondsLink-team"
+  },
+  "testimonial": {
+    "eyebrow": "Geverifieerde klantbeoordelingen",
+    "score": "4.9",
+    "reviewCount": "+1.200 klantbeoordelingen",
+    "quote": "Vlot en snel proces, mijn aanvraag werd binnen 24 uur behandeld. Uitstekende service.",
+    "author": "Marc L., Lyon — financiering van € 12.000"
+  },
+  "regulatory": {
+    "title": "Erkend & gereguleerd",
+    "subtitle": "In elk rechtsgebied voldoen onze aanbiedingen aan de vereisten van de financiële toezichthouders.",
+    "badgeText": "Erkend en onder toezicht voor de Europese Economische Ruimte (EER)",
+    "ctaTitle": "Klaar om je project waar te maken?",
+    "ctaSubtitle": "Ontvang je schatting in 2 minuten en start met een gerust hart."
+  },
+  "disclaimer": {
+    "text": "Een lening verplicht je en moet worden terugbetaald. Controleer je terugbetalingscapaciteit voordat je je verbindt."
   }
 }
