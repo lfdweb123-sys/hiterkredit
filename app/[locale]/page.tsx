@@ -80,46 +80,28 @@ export default async function HomePage({
     { icon: Globe2, label: hero('trust3') },
   ];
 
+  // Couleurs utilisées par WaveDivider — toutes reprises de vos jetons d'origine
+  // (--color-sky-mist, --color-ink) ou de vos classes Tailwind d'origine (blanc, amber-50).
   const c = {
-    paper: 'var(--color-paper)',
+    white: '#ffffff',
+    mist: 'var(--color-sky-mist)',
     ink: 'var(--color-ink)',
-    goldPale: 'var(--color-gold-pale)',
-    warningBg: 'var(--color-warning-bg)',
+    amber50: '#fffbeb',
   };
 
   return (
     <>
       {/* =========================================================
-          STYLES — jetons de design, polices, animations, survols
+          STYLES — uniquement typographie + animations.
+          Aucune variable de couleur n'est redéfinie ici : vos jetons
+          --color-sky / --color-ink / --color-line / --color-success /
+          --color-warning restent exactement ceux de votre globals.css.
           ========================================================= */}
       <style
         dangerouslySetInnerHTML={{
           __html: `
             @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
-            :root {
-              --color-ink: #10182b;
-              --color-ink-soft: #5b6172;
-              --color-paper: #f6f4ef;
-              --color-paper-raised: #ffffff;
-              --color-line: #e2ded2;
-              --color-gold: #a9812f;
-              --color-gold-deep: #8a6a22;
-              --color-gold-pale: #f1e6c9;
-              --color-teal: #1e4b43;
-              --color-teal-pale: #e4eeea;
-              --color-warning-bg: #fbf3df;
-              --color-warning-text: #7a5b12;
-
-              --color-sky: var(--color-gold);
-              --color-sky-deep: var(--color-gold-deep);
-              --color-sky-pale: var(--color-gold-pale);
-              --color-sky-mist: var(--color-paper);
-              --color-success: var(--color-teal);
-              --color-warning: var(--color-gold-deep);
-            }
-
-            body { background: var(--color-paper); color: var(--color-ink); font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif; }
             .font-display { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; }
             .font-ledger { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
 
@@ -137,10 +119,10 @@ export default async function HomePage({
             .hover-underline:hover::after, .hover-underline:focus-visible::after { right:0; }
 
             .ledger-row { position: relative; transition: background-color .35s ease, padding-left .35s ease; }
-            .ledger-row:hover { background-color: var(--color-gold-pale); padding-left: .5rem; }
+            .ledger-row:hover { background-color: var(--color-sky-pale); padding-left: .5rem; }
 
             .btn-sweep { position: relative; overflow: hidden; isolation: isolate; }
-            .btn-sweep::before { content:''; position:absolute; inset:0; background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,.22) 45%, transparent 70%); transform: translateX(-120%); transition: transform .6s cubic-bezier(.16,1,.3,1); z-index:1; }
+            .btn-sweep::before { content:''; position:absolute; inset:0; background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,.28) 45%, transparent 70%); transform: translateX(-120%); transition: transform .6s cubic-bezier(.16,1,.3,1); z-index:1; }
             .btn-sweep:hover::before, .btn-sweep:focus-visible::before { transform: translateX(120%); }
 
             .lift-on-hover { transition: transform .45s cubic-bezier(.16,1,.3,1), border-color .45s ease; }
@@ -152,7 +134,7 @@ export default async function HomePage({
             .rule-grow { transform-origin:left; transform: scaleX(.35); transition: transform .45s cubic-bezier(.16,1,.3,1); }
             .group\\/step:hover .rule-grow { transform: scaleX(1); }
 
-            .focus-ring:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 2px; }
+            .focus-ring:focus-visible { outline: 2px solid var(--color-sky-deep); outline-offset: 2px; }
 
             .hero-blob { border-radius: 62% 38% 55% 45% / 48% 42% 58% 52%; }
           `,
@@ -162,12 +144,12 @@ export default async function HomePage({
       {/* ============================================================= */}
       {/* HERO                                                           */}
       {/* ============================================================= */}
-      <section className="relative overflow-hidden bg-[var(--color-paper)]">
+      <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-5 md:px-8 pt-16 md:pt-24 pb-14 md:pb-20 grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-14 items-start">
           <div>
             <div data-reveal data-reveal-dir="up">
               <p className="inline-flex items-center gap-2.5 text-sm text-[var(--color-ink-soft)] mb-6">
-                <span className="h-px w-7 bg-[var(--color-gold)]" />
+                <span className="h-px w-7 bg-[var(--color-sky)]" />
                 {hero('eyebrow')}
               </p>
               <h1 className="font-display text-[2.6rem] md:text-6xl lg:text-[3.75rem] font-medium leading-[1.06] text-[var(--color-ink)] tracking-[-0.01em]">
@@ -182,13 +164,13 @@ export default async function HomePage({
               <div className="mt-9 flex flex-col sm:flex-row flex-wrap gap-4">
                 <Link
                   href="/simulator"
-                  className="btn-sweep w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-[var(--color-ink)] text-white font-medium hover:bg-[var(--color-gold-deep)] transition-colors duration-300 focus-ring"
+                  className="btn-sweep w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-[var(--color-sky)] text-white font-medium hover:bg-[var(--color-sky-deep)] transition-colors duration-300 focus-ring"
                 >
                   {hero('ctaPrimary')}
                 </Link>
                 <Link
                   href="#how-it-works"
-                  className="hover-underline w-full sm:w-auto text-center px-7 py-3.5 rounded-full border border-[var(--color-line)] text-[var(--color-ink)] font-medium hover:border-[var(--color-ink)] transition-colors duration-300 focus-ring"
+                  className="hover-underline w-full sm:w-auto text-center px-7 py-3.5 rounded-full border border-[var(--color-line)] text-[var(--color-ink)] font-medium hover:bg-[var(--color-sky-mist)] transition-colors duration-300 focus-ring"
                 >
                   {hero('ctaSecondary')}
                 </Link>
@@ -199,7 +181,7 @@ export default async function HomePage({
               <div className="mt-12 flex flex-wrap divide-x divide-[var(--color-line)] border-t border-[var(--color-line)] pt-6">
                 {trustItems.map(({ icon: Icon, label }, i) => (
                   <div key={i} className="flex items-center gap-2.5 pr-6 pl-6 first:pl-0 py-1">
-                    <Icon size={16} className="text-[var(--color-gold-deep)] shrink-0" />
+                    <Icon size={16} className="text-[var(--color-sky-deep)] shrink-0" />
                     <span className="text-sm text-[var(--color-ink-soft)]">{label}</span>
                   </div>
                 ))}
@@ -209,7 +191,7 @@ export default async function HomePage({
 
           <div className="relative">
             <div data-reveal data-reveal-dir="right" data-reveal-delay="100">
-              <div className="absolute -inset-8 -z-10 hidden md:block hero-blob bg-[var(--color-gold-pale)]" />
+              <div className="absolute -inset-8 -z-10 hidden md:block hero-blob bg-[var(--color-sky-pale)]" />
 
               <div className="rounded-[1.75rem] overflow-hidden mb-6 hidden md:block ring-1 ring-[var(--color-line)]">
                 <Image
@@ -217,23 +199,19 @@ export default async function HomePage({
                   alt={hero('title')}
                   width={IMAGES.heroFamily.width}
                   height={IMAGES.heroFamily.height}
-                  className="w-full h-52 object-cover grayscale-[15%]"
+                  className="w-full h-52 object-cover"
                   priority
                 />
               </div>
 
-              <div className="rounded-[1.75rem] bg-[var(--color-ink)] p-1.5">
-                <div className="rounded-[1.4rem] bg-[var(--color-paper-raised)] p-1">
-                  <LoanSimulator compact />
-                </div>
-              </div>
+              <LoanSimulator compact />
 
-              <div className="mt-6 ledger-row flex items-center gap-3 rounded-2xl bg-[var(--color-paper-raised)] border border-[var(--color-line)] p-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-gold-pale)] text-[var(--color-gold-deep)] font-display font-semibold">
+              <div className="mt-6 ledger-row flex items-center gap-3 rounded-2xl bg-white border border-[var(--color-line)] p-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-sky-pale)] text-[var(--color-sky-deep)] font-display font-semibold">
                   TC
                 </div>
                 <div>
-                  <div className="flex items-center gap-1 text-[var(--color-gold-deep)]">
+                  <div className="flex items-center gap-1 text-[var(--color-warning,#F59E0B)]">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star key={i} size={13} fill="currentColor" strokeWidth={0} />
                     ))}
@@ -251,7 +229,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      <WaveDivider top={c.paper} bottom={c.ink} />
+      <WaveDivider top={c.white} bottom={c.ink} />
 
       {/* ============================================================= */}
       {/* COMMENT ÇA MARCHE                                              */}
@@ -278,23 +256,23 @@ export default async function HomePage({
                 data-reveal-delay={String(i * 120)}
                 className="group/step"
               >
-                <span className="font-ledger text-sm text-[var(--color-gold)]">{step.num}</span>
+                <span className="font-ledger text-sm text-[var(--color-sky)]">{step.num}</span>
                 <div className="rule-grow mt-3 mb-5 h-px w-full bg-white/15" />
                 <h3 className="font-display text-xl font-medium text-white">{step.title}</h3>
                 <p className="mt-2.5 text-white/60 leading-relaxed">{step.text}</p>
-                <p className="mt-4 text-sm font-medium text-[var(--color-gold)]">{step.note}</p>
+                <p className="mt-4 text-sm font-medium text-[var(--color-sky)]">{step.note}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <WaveDivider top={c.ink} bottom={c.paper} />
+      <WaveDivider top={c.ink} bottom={c.white} />
 
       {/* ============================================================= */}
       {/* FONCTIONNALITÉS                                                */}
       {/* ============================================================= */}
-      <section className="py-16 md:py-24 bg-[var(--color-paper)]">
+      <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
             <div data-reveal data-reveal-dir="up">
@@ -320,7 +298,7 @@ export default async function HomePage({
                   height={IMAGES.featuresSecurity.height}
                   className="w-full h-40 object-cover"
                 />
-                <span className="absolute bottom-3 left-3 right-3 rounded-xl bg-[var(--color-ink)]/70 backdrop-blur-sm px-3 py-2 text-xs font-medium text-white">
+                <span className="absolute bottom-3 left-3 right-3 rounded-xl bg-black/50 backdrop-blur-sm px-3 py-2 text-xs font-medium text-white">
                   {features('imageCaption1')}
                 </span>
               </div>
@@ -332,7 +310,7 @@ export default async function HomePage({
                   height={IMAGES.aboutTeam.height}
                   className="w-full h-40 object-cover"
                 />
-                <span className="absolute bottom-3 left-3 right-3 rounded-xl bg-[var(--color-ink)]/70 backdrop-blur-sm px-3 py-2 text-xs font-medium text-white">
+                <span className="absolute bottom-3 left-3 right-3 rounded-xl bg-black/50 backdrop-blur-sm px-3 py-2 text-xs font-medium text-white">
                   {features('imageCaption2')}
                 </span>
               </div>
@@ -348,7 +326,7 @@ export default async function HomePage({
             ].map((f, i) => (
               <div key={i} data-reveal data-reveal-dir="up" data-reveal-delay={String(i * 90)}>
                 <div className="ledger-row group/icon flex items-start gap-6 py-7 border-b border-[var(--color-line)]">
-                  <div className="w-11 h-11 shrink-0 rounded-2xl bg-[var(--color-gold-pale)] flex items-center justify-center text-[var(--color-gold-deep)]">
+                  <div className="w-11 h-11 shrink-0 rounded-2xl bg-[var(--color-sky-pale)] flex items-center justify-center text-[var(--color-sky-deep)]">
                     <f.icon size={20} className="icon-rotate" />
                   </div>
                   <div>
@@ -366,19 +344,19 @@ export default async function HomePage({
         </div>
       </section>
 
-      <WaveDivider top={c.paper} bottom={c.goldPale} />
+      <WaveDivider top={c.white} bottom={c.mist} />
 
       {/* ============================================================= */}
       {/* TÉMOIGNAGE                                                     */}
       {/* ============================================================= */}
-      <section className="bg-[var(--color-gold-pale)] py-16 md:py-20">
+      <section className="bg-[var(--color-sky-mist)] py-16 md:py-20">
         <div data-reveal data-reveal-dir="up" className="mx-auto max-w-3xl px-5 md:px-8 text-center">
-          <p className="inline-flex items-center gap-2.5 text-sm text-[var(--color-gold-deep)] mb-6">
-            <span className="h-px w-7 bg-[var(--color-gold-deep)]" />
+          <p className="inline-flex items-center gap-2.5 text-sm text-[var(--color-sky-deep)] mb-6">
+            <span className="h-px w-7 bg-[var(--color-sky-deep)]" />
             {testimonial('eyebrow')}
           </p>
           <div className="flex items-center justify-center gap-2 mb-5">
-            <div className="flex text-[var(--color-gold-deep)]">
+            <div className="flex text-[var(--color-warning,#F59E0B)]">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} size={17} fill="currentColor" strokeWidth={0} />
               ))}
@@ -395,7 +373,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      <WaveDivider top={c.goldPale} bottom={c.ink} />
+      <WaveDivider top={c.mist} bottom={c.ink} />
 
       {/* ============================================================= */}
       {/* PAYS                                                           */}
@@ -404,7 +382,7 @@ export default async function HomePage({
         <div className="mx-auto max-w-3xl px-5 md:px-8">
           <div data-reveal data-reveal-dir="up" className="text-center mb-14">
             <p className="inline-flex items-center gap-2.5 text-sm text-white/50 mb-5">
-              <span className="h-px w-7 bg-[var(--color-gold)]" />
+              <span className="h-px w-7 bg-[var(--color-sky)]" />
               {countries('eyebrow')}
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white">
@@ -428,19 +406,19 @@ export default async function HomePage({
         </div>
       </section>
 
-      <WaveDivider top={c.ink} bottom={c.paper} />
+      <WaveDivider top={c.ink} bottom={c.white} />
 
       {/* ============================================================= */}
       {/* CONFORMITÉ RÉGLEMENTAIRE                                       */}
       {/* ============================================================= */}
-      <section className="py-16 md:py-20 bg-[var(--color-paper)]">
+      <section className="py-16 md:py-20">
         <div data-reveal data-reveal-dir="up" className="mx-auto max-w-3xl px-5 md:px-8 text-center">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-[var(--color-ink)]">
             {regulatory('title')}
           </h2>
           <p className="mt-3 text-[var(--color-ink-soft)]">{regulatory('subtitle')}</p>
           <div className="mt-8 inline-flex items-center gap-3 rounded-2xl border border-[var(--color-line)] px-6 py-4 lift-on-hover">
-            <BadgeCheck size={26} className="text-[var(--color-gold-deep)] shrink-0" />
+            <BadgeCheck size={26} className="text-[var(--color-sky-deep)] shrink-0" />
             <span className="text-sm font-medium text-[var(--color-ink)] text-left">
               {regulatory('badgeText')}
             </span>
@@ -451,7 +429,7 @@ export default async function HomePage({
       {/* ============================================================= */}
       {/* CTA FINAL                                                      */}
       {/* ============================================================= */}
-      <section className="py-16 md:py-20 bg-[var(--color-paper)]">
+      <section className="py-16 md:py-20">
         <div data-reveal data-reveal-dir="up" className="mx-auto max-w-4xl px-5 md:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-medium text-[var(--color-ink)]">
             {regulatory('ctaTitle')}
@@ -460,14 +438,14 @@ export default async function HomePage({
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href="/simulator"
-              className="btn-sweep px-8 py-4 rounded-full bg-[var(--color-ink)] text-white font-medium hover:bg-[var(--color-gold-deep)] transition-colors duration-300 focus-ring inline-flex items-center gap-2"
+              className="btn-sweep px-8 py-4 rounded-full bg-[var(--color-sky)] text-white font-medium hover:bg-[var(--color-sky-deep)] transition-colors duration-300 focus-ring inline-flex items-center gap-2"
             >
               {nav('cta')}
               <ArrowRight size={18} />
             </Link>
             <Link
               href="/apply"
-              className="hover-underline px-8 py-4 rounded-full border border-[var(--color-line)] text-[var(--color-ink)] font-medium hover:border-[var(--color-ink)] transition-colors duration-300 focus-ring"
+              className="hover-underline px-8 py-4 rounded-full border border-[var(--color-line)] text-[var(--color-ink)] font-medium hover:bg-[var(--color-sky-mist)] transition-colors duration-300 focus-ring"
             >
               {nav('apply')}
             </Link>
@@ -475,13 +453,13 @@ export default async function HomePage({
         </div>
       </section>
 
-      <WaveDivider top={c.paper} bottom={c.warningBg} />
+      <WaveDivider top={c.white} bottom={c.amber50} />
 
       {/* ============================================================= */}
       {/* AVERTISSEMENT                                                  */}
       {/* ============================================================= */}
-      <section className="bg-[var(--color-warning-bg)] py-5">
-        <div className="mx-auto max-w-5xl px-5 md:px-8 flex items-start gap-3 text-xs text-[var(--color-warning-text)]">
+      <section className="bg-amber-50 py-5">
+        <div className="mx-auto max-w-5xl px-5 md:px-8 flex items-start gap-3 text-xs text-amber-900">
           <TriangleAlert size={16} className="shrink-0 mt-0.5" />
           <p>{disclaimer('text')}</p>
         </div>
