@@ -1,4 +1,39 @@
 {
+  "hero": {
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Aanbod binnen 24u geaccepteerd, geld snel ontvangen\" — Thomas & Clara"
+  },
+  "howItWorks": {
+    "subtitle": "Een 100% digitaal traject, ontworpen om direct, transparant en zonder onnodig papierwerk te zijn.",
+    "step1Note": "Zonder enige verplichting",
+    "step2Note": "Beveiligde 256-bit overdracht",
+    "step3Note": "Snelle uitbetaling van de fondsen"
+  },
+  "features": {
+    "subtitle": "Wij combineren de kracht van moderne financiële technologie met verantwoorde, gecertificeerde persoonlijke begeleiding.",
+    "imageCaption1": "Live opvolging van je aanvraag en beveiligde elektronische handtekening",
+    "imageCaption2": "Erkende financiële experts aan je zijde bij elke stap"
+  },
+  "testimonial": {
+    "eyebrow": "Geverifieerde klantbeoordelingen",
+    "score": "4.9",
+    "reviewCount": "+1.200 klantbeoordelingen",
+    "quote": "Vlot en snel proces, mijn aanvraag werd binnen 24 uur behandeld. Uitstekende service.",
+    "author": "Marc L., Lyon — financiering van € 12.000"
+  },
+  "countries": {
+    "eyebrow": "Actief in heel Europa"
+  },
+  "regulatory": {
+    "title": "Erkend & gereguleerd",
+    "subtitle": "In elk rechtsgebied voldoen onze aanbiedingen aan de vereisten van de financiële toezichthouders.",
+    "badgeText": "Erkend en onder toezicht voor de Europese Economische Ruimte (EER)",
+    "ctaTitle": "Klaar om je project waar te maken?",
+    "ctaSubtitle": "Ontvang je schatting in 2 minuten en start met een gerust hart."
+  },
+  "disclaimer": {
+    "text": "Een lening verplicht je en moet worden terugbetaald. Controleer je terugbetalingscapaciteit voordat je je verbindt."
+  },
   "meta": {
     "siteName": "FondsLink",
     "titleHome": "FondsLink — Snelle en transparante persoonlijke leningen",
