@@ -468,32 +468,40 @@ export default async function HomePage({
       {/* =========================================================
           SCRIPT — active la révélation au scroll (aucune dépendance)
           ========================================================= */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function () {
-              function reveal() {
-                document.querySelectorAll('[data-reveal]').forEach(function (el) {
-                  el.classList.add('is-visible');
-                });
+<script
+  key={locale}
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function () {
+        function run() {
+          function reveal() {
+            document.querySelectorAll('[data-reveal]').forEach(function (el) {
+              el.classList.add('is-visible');
+            });
+          }
+          if (!('IntersectionObserver' in window)) { reveal(); return; }
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                var el = entry.target;
+                var delay = el.getAttribute('data-reveal-delay') || '0';
+                el.style.transitionDelay = delay + 'ms';
+                el.classList.add('is-visible');
+                io.unobserve(el);
               }
-              if (!('IntersectionObserver' in window)) { reveal(); return; }
-              var io = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                  if (entry.isIntersecting) {
-                    var el = entry.target;
-                    var delay = el.getAttribute('data-reveal-delay') || '0';
-                    el.style.transitionDelay = delay + 'ms';
-                    el.classList.add('is-visible');
-                    io.unobserve(el);
-                  }
-                });
-              }, { threshold: 0.15, rootMargin: '0px 0px -64px 0px' });
-              document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
-            })();
-          `,
-        }}
-      />
+            });
+          }, { threshold: 0.15, rootMargin: '0px 0px -64px 0px' });
+          document.querySelectorAll('[data-reveal]:not(.is-visible)').forEach(function (el) { io.observe(el); });
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', run);
+        } else {
+          run();
+        }
+      })();
+    `,
+  }}
+/>
     </>
   );
 }
