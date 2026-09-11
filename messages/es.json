@@ -1,39 +1,4 @@
 {
-  "hero": {
-    "heroRatingScore": "4.9/5",
-    "heroTestimonial": "\"Oferta aceptada en 24h, fondos recibidos rápido\" — Thomas & Clara"
-  },
-  "howItWorks": {
-    "subtitle": "Un proceso 100% digital, diseñado para ser directo, transparente y sin papeleo innecesario.",
-    "step1Note": "Sin ningún compromiso",
-    "step2Note": "Transmisión segura de 256 bits",
-    "step3Note": "Desembolso rápido de fondos"
-  },
-  "features": {
-    "subtitle": "Combinamos el poder de la tecnología financiera moderna con un acompañamiento humano responsable y certificado.",
-    "imageCaption1": "Seguimiento en tiempo real de tu solicitud y firma electrónica segura",
-    "imageCaption2": "Expertos financieros acreditados a tu lado en cada etapa"
-  },
-  "testimonial": {
-    "eyebrow": "Opiniones de clientes verificadas",
-    "score": "4.9",
-    "reviewCount": "+1.200 opiniones de clientes",
-    "quote": "Proceso ágil y rápido, mi solicitud se gestionó en menos de 24 horas. Servicio impecable.",
-    "author": "Marc L., Lyon — financiación de 12.000 €"
-  },
-  "countries": {
-    "eyebrow": "Presentes en toda Europa"
-  },
-  "regulatory": {
-    "title": "Autorizados y regulados",
-    "subtitle": "En cada jurisdicción, nuestras ofertas cumplen los requisitos de las autoridades de supervisión financiera.",
-    "badgeText": "Autorizado y supervisado para el Espacio Económico Europeo (EEE)",
-    "ctaTitle": "¿Listo para hacer realidad tu proyecto?",
-    "ctaSubtitle": "Obtén tu estimación en 2 minutos y empieza con tranquilidad."
-  },
-  "disclaimer": {
-    "text": "Un crédito te compromete y debe ser reembolsado. Comprueba tu capacidad de reembolso antes de comprometerte."
-  },
   "meta": {
     "siteName": "FondsLink",
     "titleHome": "FondsLink — Préstamos personales rápidos y transparentes",
@@ -63,7 +28,9 @@
     "ctaSecondary": "Cómo funciona",
     "trust1": "Respuesta en 24 horas",
     "trust2": "Sin costos ocultos",
-    "trust3": "Los datos no se almacenan"
+    "trust3": "Los datos no se almacenan",
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Oferta aceptada en 24h, fondos recibidos rápido\" — Thomas & Clara"
   },
   "simulator": {
     "title": "Calcula tu cuota",
@@ -85,7 +52,11 @@
     "step2Title": "Envía tu solicitud",
     "step2Text": "Completa un formulario breve — los datos calculados se transfieren automáticamente.",
     "step3Title": "Recibe una respuesta",
-    "step3Text": "Nuestro equipo revisa tu solicitud y te contacta lo antes posible."
+    "step3Text": "Nuestro equipo revisa tu solicitud y te contacta lo antes posible.",
+    "subtitle": "Un proceso 100% digital, diseñado para ser directo, transparente y sin papeleo innecesario.",
+    "step1Note": "Sin ningún compromiso",
+    "step2Note": "Transmisión segura de 256 bits",
+    "step3Note": "Desembolso rápido de fondos"
   },
   "features": {
     "title": "Por qué FondsLink",
@@ -96,11 +67,15 @@
     "f3Title": "Seguridad de datos",
     "f3Text": "No conservamos tus datos personales más tiempo del necesario para procesar tu solicitud.",
     "f4Title": "Atención personalizada",
-    "f4Text": "Nuestro equipo está disponible para responder tus preguntas sobre el préstamo."
+    "f4Text": "Nuestro equipo está disponible para responder tus preguntas sobre el préstamo.",
+    "subtitle": "Combinamos el poder de la tecnología financiera moderna con un acompañamiento humano responsable y certificado.",
+    "imageCaption1": "Seguimiento en tiempo real de tu solicitud y firma electrónica segura",
+    "imageCaption2": "Expertos financieros acreditados a tu lado en cada etapa"
   },
   "countries": {
     "title": "Presentes en tu país",
-    "subtitle": "FondsLink opera en varios países europeos y en Puerto Rico, adaptado al idioma y las prácticas locales."
+    "subtitle": "FondsLink opera en varios países europeos y en Puerto Rico, adaptado al idioma y las prácticas locales.",
+    "eyebrow": "Presentes en toda Europa"
   },
   "form": {
     "title": "Solicitud de préstamo",
@@ -211,5 +186,22 @@
     "monthlyLabel": "Cuota mensual",
     "instructions": "Revisa cuidadosamente el documento adjunto. Para la firma y los siguientes pasos, contáctanos en podpora@fondslink.com — si es necesario, también podemos contactarte por teléfono.",
     "closing": "Saludos cordiales,\nEquipo de FondsLink"
+  },
+  "testimonial": {
+    "eyebrow": "Opiniones de clientes verificadas",
+    "score": "4.9",
+    "reviewCount": "+1.200 opiniones de clientes",
+    "quote": "Proceso ágil y rápido, mi solicitud se gestionó en menos de 24 horas. Servicio impecable.",
+    "author": "Marc L., Lyon — financiación de 12.000 €"
+  },
+  "regulatory": {
+    "title": "Autorizados y regulados",
+    "subtitle": "En cada jurisdicción, nuestras ofertas cumplen los requisitos de las autoridades de supervisión financiera.",
+    "badgeText": "Autorizado y supervisado para el Espacio Económico Europeo (EEE)",
+    "ctaTitle": "¿Listo para hacer realidad tu proyecto?",
+    "ctaSubtitle": "Obtén tu estimación en 2 minutos y empieza con tranquilidad."
+  },
+  "disclaimer": {
+    "text": "Un crédito te compromete y debe ser reembolsado. Comprueba tu capacidad de reembolso antes de comprometerte."
   }
 }
