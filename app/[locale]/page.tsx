@@ -30,6 +30,11 @@ export default async function HomePage({
   const features = await getTranslations({ locale, namespace: 'features' });
   const countries = await getTranslations({ locale, namespace: 'countries' });
   const nav = await getTranslations({ locale, namespace: 'nav' });
+  const stats = await getTranslations({ locale, namespace: 'stats' });
+  const platform = await getTranslations({ locale, namespace: 'platform' });
+  const testimonials = await getTranslations({ locale, namespace: 'testimonials' });
+  const faq = await getTranslations({ locale, namespace: 'faq' });
+  const security = await getTranslations({ locale, namespace: 'security' });
 
   const countryList = [
     { flag: '🇸🇮', name: 'Slovenija' },
@@ -40,13 +45,56 @@ export default async function HomePage({
     { flag: '🇮🇪', name: 'Ireland' },
   ];
 
+  const statList = [
+    { value: stats('value1'), label: stats('label1') },
+    { value: stats('value2'), label: stats('label2') },
+    { value: stats('value3'), label: stats('label3') },
+    { value: stats('value4'), label: stats('label4') },
+  ];
+
+  const testimonialList = [
+    {
+      quote: testimonials('quote1'),
+      name: testimonials('name1'),
+      role: testimonials('role1'),
+      avatar: IMAGES.avatar1?.src,
+    },
+    {
+      quote: testimonials('quote2'),
+      name: testimonials('name2'),
+      role: testimonials('role2'),
+      avatar: IMAGES.avatar2?.src,
+    },
+    {
+      quote: testimonials('quote3'),
+      name: testimonials('name3'),
+      role: testimonials('role3'),
+      avatar: IMAGES.avatar3?.src,
+    },
+  ];
+
+  const faqList = [
+    { q: faq('q1'), a: faq('a1') },
+    { q: faq('q2'), a: faq('a2') },
+    { q: faq('q3'), a: faq('a3') },
+    { q: faq('q4'), a: faq('a4') },
+    { q: faq('q5'), a: faq('a5') },
+  ];
+
   return (
     <>
       {/* HERO */}
       <section className="relative overflow-hidden">
+        {/* decorative background */}
+        <div className="pointer-events-none absolute inset-0 -z-20">
+          <div className="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-[var(--color-sky-pale)] blur-3xl opacity-70" />
+          <div className="absolute top-1/2 -left-40 w-[400px] h-[400px] rounded-full bg-[var(--color-sky-mist)] blur-3xl opacity-60" />
+        </div>
+
         <div className="mx-auto max-w-7xl px-5 md:px-8 pt-14 md:pt-20 pb-16 md:pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-rise">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-sky-pale)] text-[var(--color-sky-deep)] text-sm font-semibold mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--color-sky-pale)] text-[var(--color-sky-deep)] text-sm font-semibold mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-sky-deep)]" />
               {hero('eyebrow')}
             </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-[3.4rem] font-bold leading-[1.08] text-[var(--color-ink)]">
@@ -58,7 +106,7 @@ export default async function HomePage({
             <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4">
               <Link
                 href="/simulator"
-                className="w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-[var(--color-sky)] text-white font-semibold hover:bg-[var(--color-sky-deep)] transition-colors focus-ring"
+                className="w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-[var(--color-sky)] text-white font-semibold shadow-lg shadow-[var(--color-sky)]/25 hover:bg-[var(--color-sky-deep)] hover:shadow-xl hover:-translate-y-0.5 transition-all focus-ring"
               >
                 {hero('ctaPrimary')}
               </Link>
@@ -78,7 +126,7 @@ export default async function HomePage({
 
           <div className="relative">
             <div className="absolute -inset-6 bg-[var(--color-sky-pale)] rounded-[2.5rem] -z-10 hidden md:block" />
-            <div className="rounded-3xl overflow-hidden mb-6 hidden md:block">
+            <div className="rounded-3xl overflow-hidden mb-6 hidden md:block shadow-xl">
               <Image
                 src={IMAGES.heroFamily.src}
                 alt={hero('title')}
@@ -93,12 +141,32 @@ export default async function HomePage({
         </div>
       </section>
 
+      {/* STATS BAR */}
+      <section className="border-y border-[var(--color-line)] bg-white">
+        <div className="mx-auto max-w-7xl px-5 md:px-8 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+          {statList.map((s, i) => (
+            <div key={i} className="text-center">
+              <div className="font-display text-3xl md:text-4xl font-bold text-[var(--color-sky-deep)]">
+                {s.value}
+              </div>
+              <div className="mt-1 text-sm text-[var(--color-ink-soft)]">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section id="how-it-works" className="bg-[var(--color-sky-mist)] py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)] text-center">
-            {how('title')}
-          </h2>
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white text-[var(--color-sky-deep)] text-sm font-semibold mb-4">
+              {how('eyebrow')}
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)]">
+              {how('title')}
+            </h2>
+            <p className="mt-4 text-[var(--color-ink-soft)]">{how('subtitle')}</p>
+          </div>
           <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
             <StepCard num="1" title={how('step1Title')} text={how('step1Text')} />
             <StepCard num="2" title={how('step2Title')} text={how('step2Text')} />
@@ -112,11 +180,15 @@ export default async function HomePage({
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-14">
             <div>
+              <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-sky-pale)] text-[var(--color-sky-deep)] text-sm font-semibold mb-4">
+                {features('eyebrow')}
+              </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)]">
                 {features('title')}
               </h2>
+              <p className="mt-4 text-[var(--color-ink-soft)] max-w-md">{features('subtitle')}</p>
             </div>
-            <div className="rounded-3xl overflow-hidden hidden lg:block">
+            <div className="rounded-3xl overflow-hidden hidden lg:block shadow-lg">
               <Image
                 src={IMAGES.featuresSecurity.src}
                 alt={features('title')}
@@ -135,6 +207,68 @@ export default async function HomePage({
         </div>
       </section>
 
+      {/* PLATFORM SHOWCASE (nouvelle section) */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-sky-pale)] text-[var(--color-sky-deep)] text-sm font-semibold mb-4">
+              {platform('eyebrow')}
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)]">
+              {platform('title')}
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <PlatformRow
+              reverse={false}
+              image={IMAGES.platformDashboard?.src ?? IMAGES.heroFamily.src}
+              title={platform('block1Title')}
+              text={platform('block1Text')}
+              bullet1={platform('block1Bullet1')}
+              bullet2={platform('block1Bullet2')}
+            />
+            <PlatformRow
+              reverse={true}
+              image={IMAGES.platformMobile?.src ?? IMAGES.featuresSecurity.src}
+              title={platform('block2Title')}
+              text={platform('block2Text')}
+              bullet1={platform('block2Bullet1')}
+              bullet2={platform('block2Bullet2')}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* SECURITY / TRUST (nouvelle section) */}
+      <section className="py-20 md:py-24 bg-[var(--color-ink)]">
+        <div className="mx-auto max-w-7xl px-5 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first">
+            <Image
+              src={IMAGES.securityIllustration?.src ?? IMAGES.featuresSecurity.src}
+              alt={security('title')}
+              width={IMAGES.featuresSecurity.width}
+              height={IMAGES.featuresSecurity.height}
+              className="w-full h-72 object-cover"
+            />
+          </div>
+          <div>
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white text-sm font-semibold mb-4">
+              {security('eyebrow')}
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-white">
+              {security('title')}
+            </h2>
+            <p className="mt-4 text-white/70 leading-relaxed max-w-lg">{security('text')}</p>
+            <ul className="mt-8 space-y-4">
+              <SecurityItem label={security('point1')} />
+              <SecurityItem label={security('point2')} />
+              <SecurityItem label={security('point3')} />
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* COUNTRIES */}
       <section className="bg-[var(--color-sky)] py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8 text-center">
@@ -144,11 +278,46 @@ export default async function HomePage({
             {countryList.map((c) => (
               <div
                 key={c.name}
-                className="flex items-center gap-2.5 bg-white/10 border border-white/20 rounded-full px-5 py-3 text-white font-medium backdrop-blur-sm"
+                className="flex items-center gap-2.5 bg-white/10 border border-white/20 rounded-full px-5 py-3 text-white font-medium backdrop-blur-sm hover:bg-white/20 transition-colors"
               >
                 <span className="text-xl">{c.flag}</span>
                 <span>{c.name}</span>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS (nouvelle section) */}
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-sky-pale)] text-[var(--color-sky-deep)] text-sm font-semibold mb-4">
+              {testimonials('eyebrow')}
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)]">
+              {testimonials('title')}
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {testimonialList.map((t, i) => (
+              <TestimonialCard key={i} {...t} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ (nouvelle section) */}
+      <section className="py-20 md:py-28 bg-[var(--color-sky-mist)]">
+        <div className="mx-auto max-w-3xl px-5 md:px-8">
+          <div className="text-center mb-14">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)]">
+              {faq('title')}
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {faqList.map((item, i) => (
+              <FaqItem key={i} q={item.q} a={item.a} />
             ))}
           </div>
         </div>
@@ -163,7 +332,7 @@ export default async function HomePage({
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href="/simulator"
-              className="px-8 py-4 rounded-full bg-[var(--color-sky)] text-white font-semibold hover:bg-[var(--color-sky-deep)] transition-colors focus-ring"
+              className="px-8 py-4 rounded-full bg-[var(--color-sky)] text-white font-semibold shadow-lg shadow-[var(--color-sky)]/25 hover:bg-[var(--color-sky-deep)] hover:-translate-y-0.5 transition-all focus-ring"
             >
               {nav('cta')}
             </Link>
@@ -180,6 +349,8 @@ export default async function HomePage({
   );
 }
 
+/* ---------- Sub-components ---------- */
+
 function TrustItem({ label }: { label: string }) {
   return (
     <span className="flex items-center gap-2">
@@ -193,7 +364,7 @@ function TrustItem({ label }: { label: string }) {
 
 function StepCard({ num, title, text }: { num: string; title: string; text: string }) {
   return (
-    <div className="bg-white rounded-3xl p-8 border border-[var(--color-line)]">
+    <div className="bg-white rounded-3xl p-8 border border-[var(--color-line)] hover:shadow-lg transition-shadow">
       <span className="font-display text-4xl font-bold text-[var(--color-sky)]">{num}</span>
       <h3 className="mt-4 font-display text-xl font-bold text-[var(--color-ink)]">{title}</h3>
       <p className="mt-2 text-[var(--color-ink-soft)] leading-relaxed">{text}</p>
@@ -215,11 +386,14 @@ const icons: Record<string, React.ReactNode> = {
   chat: (
     <path d="M4 4H20V16H8L4 20V4Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
   ),
+  check: (
+    <path d="M5 13L9 17L19 7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+  ),
 };
 
 function FeatureCard({ title, text, icon }: { title: string; text: string; icon: string }) {
   return (
-    <div className="rounded-3xl p-7 border border-[var(--color-line)] hover:border-[var(--color-sky)] transition-colors">
+    <div className="rounded-3xl p-7 border border-[var(--color-line)] hover:border-[var(--color-sky)] hover:shadow-md transition-all">
       <div className="w-12 h-12 rounded-2xl bg-[var(--color-sky-pale)] flex items-center justify-center text-[var(--color-sky-deep)]">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
           {icons[icon]}
@@ -228,5 +402,120 @@ function FeatureCard({ title, text, icon }: { title: string; text: string; icon:
       <h3 className="mt-5 font-display text-lg font-bold text-[var(--color-ink)]">{title}</h3>
       <p className="mt-2 text-sm text-[var(--color-ink-soft)] leading-relaxed">{text}</p>
     </div>
+  );
+}
+
+function PlatformRow({
+  reverse,
+  image,
+  title,
+  text,
+  bullet1,
+  bullet2,
+}: {
+  reverse: boolean;
+  image: string;
+  title: string;
+  text: string;
+  bullet1: string;
+  bullet2: string;
+}) {
+  return (
+    <div className={`flex flex-col gap-6 ${reverse ? 'lg:order-last' : ''}`}>
+      <div className="rounded-3xl overflow-hidden shadow-lg">
+        <Image src={image} alt={title} width={640} height={420} className="w-full h-64 object-cover" />
+      </div>
+      <div>
+        <h3 className="font-display text-2xl font-bold text-[var(--color-ink)]">{title}</h3>
+        <p className="mt-3 text-[var(--color-ink-soft)] leading-relaxed">{text}</p>
+        <ul className="mt-5 space-y-3">
+          <li className="flex items-start gap-2.5 text-[var(--color-ink)]">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="flex-shrink-0 mt-0.5">
+              {icons.check}
+              <g stroke="var(--color-success)">{icons.check}</g>
+            </svg>
+            <span>{bullet1}</span>
+          </li>
+          <li className="flex items-start gap-2.5 text-[var(--color-ink)]">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="flex-shrink-0 mt-0.5">
+              <g stroke="var(--color-success)">{icons.check}</g>
+            </svg>
+            <span>{bullet2}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function SecurityItem({ label }: { label: string }) {
+  return (
+    <li className="flex items-start gap-3">
+      <span className="mt-0.5 w-6 h-6 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M5 13L9 17L19 7" stroke="white" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </span>
+      <span className="text-white/85">{label}</span>
+    </li>
+  );
+}
+
+function TestimonialCard({
+  quote,
+  name,
+  role,
+  avatar,
+}: {
+  quote: string;
+  name: string;
+  role: string;
+  avatar?: string;
+}) {
+  return (
+    <div className="bg-white rounded-3xl p-8 border border-[var(--color-line)]">
+      <svg width="28" height="22" viewBox="0 0 28 22" fill="none" className="text-[var(--color-sky-pale)] mb-4">
+        <path
+          d="M0 22V13.6C0 9.86667 0.933333 6.86667 2.8 4.6C4.66667 2.33333 7.13333 0.8 10.2 0L11.6 3.2C9.46667 3.86667 7.83333 4.86667 6.7 6.2C5.56667 7.53333 5 9.13333 5 11H10.2V22H0ZM17.4 22V13.6C17.4 9.86667 18.3333 6.86667 20.2 4.6C22.0667 2.33333 24.5333 0.8 27.6 0L29 3.2C26.8667 3.86667 25.2333 4.86667 24.1 6.2C22.9667 7.53333 22.4 9.13333 22.4 11H27.6V22H17.4Z"
+          fill="var(--color-sky)"
+        />
+      </svg>
+      <p className="text-[var(--color-ink)] leading-relaxed">{quote}</p>
+      <div className="mt-6 flex items-center gap-3">
+        {avatar ? (
+          <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0">
+            <Image src={avatar} alt={name} width={44} height={44} className="w-full h-full object-cover" />
+          </div>
+        ) : (
+          <div className="w-11 h-11 rounded-full bg-[var(--color-sky-pale)] flex items-center justify-center text-[var(--color-sky-deep)] font-bold flex-shrink-0">
+            {name.charAt(0)}
+          </div>
+        )}
+        <div>
+          <div className="font-semibold text-[var(--color-ink)] text-sm">{name}</div>
+          <div className="text-[var(--color-ink-soft)] text-xs">{role}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FaqItem({ q, a }: { q: string; a: string }) {
+  return (
+    <details className="group bg-white rounded-2xl border border-[var(--color-line)] p-6 [&_summary]:cursor-pointer">
+      <summary className="flex items-center justify-between gap-4 font-display font-semibold text-[var(--color-ink)] list-none">
+        {q}
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="flex-shrink-0 transition-transform group-open:rotate-45"
+        >
+          <path d="M12 5V19M5 12H19" stroke="var(--color-sky-deep)" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      </summary>
+      <p className="mt-3 text-[var(--color-ink-soft)] leading-relaxed">{a}</p>
+    </details>
   );
 }
