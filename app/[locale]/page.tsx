@@ -42,7 +42,6 @@ export default async function HomePage({
 
   return (
     <>
-      {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-5 md:px-8 pt-16 md:pt-24 pb-16 md:pb-28 grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10 items-start">
           <div className="animate-rise">
@@ -77,7 +76,6 @@ export default async function HomePage({
             </div>
           </div>
 
-          {/* Composition en registre : photo en fond, carte de simulation au premier plan */}
           <div className="relative lg:pt-6">
             <div className="absolute -top-6 -right-4 w-[72%] aspect-[4/3] rounded-2xl overflow-hidden hidden md:block">
               <Image
@@ -105,7 +103,6 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
       <section id="how-it-works" className="py-20 md:py-28 border-t border-[var(--color-line)]">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)] max-w-lg">
@@ -119,7 +116,6 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* FEATURES */}
       <section className="py-20 md:py-28 bg-[var(--color-sky-mist)]">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
@@ -145,7 +141,6 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* COUNTRIES — grille de tampons, façon passeport */}
       <section className="bg-[var(--color-ink)] py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-white">{countries('title')}</h2>
@@ -165,7 +160,6 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* FINAL CTA */}
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-4xl px-5 md:px-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--color-ink)]">
