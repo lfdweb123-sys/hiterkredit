@@ -176,5 +176,41 @@
     "monthlyLabel": "Monthly instalment",
     "instructions": "Please review the attached document carefully. For signature and next steps, contact us at podpora@fondslink.com — we may also reach out to you by phone if needed.",
     "closing": "Best regards,\nThe FondsLink Team"
+  },
+
+  "hero": {
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Offer accepted in 24h, funds received fast\" — Thomas & Clara"
+  },
+  "howItWorks": {
+    "subtitle": "A fully digital journey, designed to be direct, transparent, and free of unnecessary paperwork.",
+    "step1Note": "No commitment required",
+    "step2Note": "256-bit secure transmission",
+    "step3Note": "Fast funds transfer"
+  },
+  "features": {
+    "subtitle": "We combine the power of modern financial technology with responsible, certified human support.",
+    "imageCaption1": "Real-time tracking of your application and secure e-signature",
+    "imageCaption2": "Licensed financial experts by your side at every step"
+  },
+  "testimonial": {
+    "eyebrow": "Verified customer reviews",
+    "score": "4.9",
+    "reviewCount": "+1,200 customer reviews",
+    "quote": "Smooth and fast process, my application was handled in under 24 hours. Impeccable service.",
+    "author": "Marc L., Lyon — €12,000 financing"
+  },
+  "countries": {
+    "eyebrow": "Present across Europe"
+  },
+  "regulatory": {
+    "title": "Licensed & regulated",
+    "subtitle": "In every jurisdiction, our offers comply with the requirements of financial supervisory authorities.",
+    "badgeText": "Licensed and supervised for the European Economic Area (EEA)",
+    "ctaTitle": "Ready to bring your project to life?",
+    "ctaSubtitle": "Get your estimate in 2 minutes and get started with confidence."
+  },
+  "disclaimer": {
+    "text": "A credit commits you and must be repaid. Check your repayment capacity before you commit."
   }
 }
