@@ -1,39 +1,4 @@
 {
-  "hero": {
-    "heroRatingScore": "4.9/5",
-    "heroTestimonial": "\"Ponudba potrjena v 24 h, sredstva hitro prejeta\" — Thomas & Clara"
-  },
-  "howItWorks": {
-    "subtitle": "100-odstotno digitalen postopek, zasnovan tako, da je neposreden, pregleden in brez nepotrebne birokracije.",
-    "step1Note": "Brez kakršne koli obveznosti",
-    "step2Note": "Varen 256-bitni prenos",
-    "step3Note": "Hitro nakazilo sredstev"
-  },
-  "features": {
-    "subtitle": "Združujemo moč sodobne finančne tehnologije z odgovorno in certificirano človeško podporo.",
-    "imageCaption1": "Sledenje vaši vlogi v realnem času in varen elektronski podpis",
-    "imageCaption2": "Licencirani finančni strokovnjaki so vam na voljo v vsakem koraku"
-  },
-  "testimonial": {
-    "eyebrow": "Preverjena mnenja strank",
-    "score": "4.9",
-    "reviewCount": "+1200 mnenj strank",
-    "quote": "Hiter in pregleden postopek, moja vloga je bila obravnavana v manj kot 24 urah. Brezhibna storitev.",
-    "author": "Marc L., Lyon — financiranje 12.000 €"
-  },
-  "countries": {
-    "eyebrow": "Prisotni po vsej Evropi"
-  },
-  "regulatory": {
-    "title": "Licencirani in regulirani",
-    "subtitle": "V vsaki jurisdikciji naše ponudbe izpolnjujejo zahteve organov finančnega nadzora.",
-    "badgeText": "Licencirani in pod nadzorom za Evropski gospodarski prostor (EGP)",
-    "ctaTitle": "Ste pripravljeni uresničiti svoj projekt?",
-    "ctaSubtitle": "Pridobite oceno v 2 minutah in začnite mirno."
-  },
-  "disclaimer": {
-    "text": "Kredit vas zavezuje in ga je treba odplačati. Pred sklenitvijo preverite svojo zmožnost odplačevanja."
-  },
   "meta": {
     "siteName": "FondsLink",
     "titleHome": "FondsLink — Hitri in pregledni osebni krediti",
@@ -63,7 +28,9 @@
     "ctaSecondary": "Kako deluje",
     "trust1": "Odgovor v 24 urah",
     "trust2": "Brez skritih stroškov",
-    "trust3": "Podatki se ne shranjujejo"
+    "trust3": "Podatki se ne shranjujejo",
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Ponudba potrjena v 24 h, sredstva hitro prejeta\" — Thomas & Clara"
   },
   "simulator": {
     "title": "Izračunajte svoj obrok",
@@ -85,7 +52,11 @@
     "step2Title": "Oddajte vlogo",
     "step2Text": "Izpolnite kratek obrazec — izračunani podatki se samodejno prenesejo.",
     "step3Title": "Prejmite odgovor",
-    "step3Text": "Naša ekipa pregleda vlogo in vas kontaktira v najkrajšem možnem času."
+    "step3Text": "Naša ekipa pregleda vlogo in vas kontaktira v najkrajšem možnem času.",
+    "subtitle": "100-odstotno digitalen postopek, zasnovan tako, da je neposreden, pregleden in brez nepotrebne birokracije.",
+    "step1Note": "Brez kakršne koli obveznosti",
+    "step2Note": "Varen 256-bitni prenos",
+    "step3Note": "Hitro nakazilo sredstev"
   },
   "features": {
     "title": "Zakaj FondsLink",
@@ -96,11 +67,15 @@
     "f3Title": "Varnost podatkov",
     "f3Text": "Vaših osebnih podatkov ne shranjujemo dlje, kot je potrebno za obravnavo vloge.",
     "f4Title": "Podpora po meri",
-    "f4Text": "Naša ekipa vam je na voljo za vsa vprašanja glede posojila."
+    "f4Text": "Naša ekipa vam je na voljo za vsa vprašanja glede posojila.",
+    "subtitle": "Združujemo moč sodobne finančne tehnologije z odgovorno in certificirano človeško podporo.",
+    "imageCaption1": "Sledenje vaši vlogi v realnem času in varen elektronski podpis",
+    "imageCaption2": "Licencirani finančni strokovnjaki so vam na voljo v vsakem koraku"
   },
   "countries": {
     "title": "Prisotni v vaši državi",
-    "subtitle": "FondsLink deluje v več evropskih državah in Portoriku, prilagojen lokalnemu jeziku in praksam."
+    "subtitle": "FondsLink deluje v več evropskih državah in Portoriku, prilagojen lokalnemu jeziku in praksam.",
+    "eyebrow": "Prisotni po vsej Evropi"
   },
   "form": {
     "title": "Vloga za posojilo",
@@ -211,5 +186,22 @@
     "monthlyLabel": "Mesečni obrok",
     "instructions": "Dokument v priponki natančno preglejte. Za podpis in nadaljnje korake nas kontaktirajte na podpora@fondslink.com — po potrebi vas lahko kontaktiramo tudi telefonsko.",
     "closing": "Lep pozdrav,\nEkipa FondsLink"
+  },
+  "testimonial": {
+    "eyebrow": "Preverjena mnenja strank",
+    "score": "4.9",
+    "reviewCount": "+1200 mnenj strank",
+    "quote": "Hiter in pregleden postopek, moja vloga je bila obravnavana v manj kot 24 urah. Brezhibna storitev.",
+    "author": "Marc L., Lyon — financiranje 12.000 €"
+  },
+  "regulatory": {
+    "title": "Licencirani in regulirani",
+    "subtitle": "V vsaki jurisdikciji naše ponudbe izpolnjujejo zahteve organov finančnega nadzora.",
+    "badgeText": "Licencirani in pod nadzorom za Evropski gospodarski prostor (EGP)",
+    "ctaTitle": "Ste pripravljeni uresničiti svoj projekt?",
+    "ctaSubtitle": "Pridobite oceno v 2 minutah in začnite mirno."
+  },
+  "disclaimer": {
+    "text": "Kredit vas zavezuje in ga je treba odplačati. Pred sklenitvijo preverite svojo zmožnost odplačevanja."
   }
 }
