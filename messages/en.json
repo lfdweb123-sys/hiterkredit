@@ -28,7 +28,9 @@
     "ctaSecondary": "How it works",
     "trust1": "Response within 24 hours",
     "trust2": "No hidden costs",
-    "trust3": "Data isn't stored"
+    "trust3": "Data isn't stored",
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Offer accepted in 24h, funds received fast\" — Thomas & Clara"
   },
   "simulator": {
     "title": "Work out your repayment",
@@ -50,7 +52,11 @@
     "step2Title": "Submit your application",
     "step2Text": "Fill in a short form — the calculated figures carry over automatically.",
     "step3Title": "Get a response",
-    "step3Text": "Our team reviews your application and gets back to you as quickly as possible."
+    "step3Text": "Our team reviews your application and gets back to you as quickly as possible.",
+    "subtitle": "A fully digital journey, designed to be direct, transparent, and free of unnecessary paperwork.",
+    "step1Note": "No commitment required",
+    "step2Note": "256-bit secure transmission",
+    "step3Note": "Fast funds transfer"
   },
   "features": {
     "title": "Why FondsLink",
@@ -61,11 +67,15 @@
     "f3Title": "Data security",
     "f3Text": "We don't keep your personal data any longer than needed to process your application.",
     "f4Title": "Tailored support",
-    "f4Text": "Our team is on hand to answer any question about your loan."
+    "f4Text": "Our team is on hand to answer any question about your loan.",
+    "subtitle": "We combine the power of modern financial technology with responsible, certified human support.",
+    "imageCaption1": "Real-time tracking of your application and secure e-signature",
+    "imageCaption2": "Licensed financial experts by your side at every step"
   },
   "countries": {
     "title": "Available in your country",
-    "subtitle": "FondsLink operates across several European countries and Puerto Rico, adapted to local language and practice."
+    "subtitle": "FondsLink operates across several European countries and Puerto Rico, adapted to local language and practice.",
+    "eyebrow": "Present across Europe"
   },
   "form": {
     "title": "Loan application",
@@ -177,31 +187,12 @@
     "instructions": "Please review the attached document carefully. For signature and next steps, contact us at podpora@fondslink.com — we may also reach out to you by phone if needed.",
     "closing": "Best regards,\nThe FondsLink Team"
   },
-
-  "hero": {
-    "heroRatingScore": "4.9/5",
-    "heroTestimonial": "\"Offer accepted in 24h, funds received fast\" — Thomas & Clara"
-  },
-  "howItWorks": {
-    "subtitle": "A fully digital journey, designed to be direct, transparent, and free of unnecessary paperwork.",
-    "step1Note": "No commitment required",
-    "step2Note": "256-bit secure transmission",
-    "step3Note": "Fast funds transfer"
-  },
-  "features": {
-    "subtitle": "We combine the power of modern financial technology with responsible, certified human support.",
-    "imageCaption1": "Real-time tracking of your application and secure e-signature",
-    "imageCaption2": "Licensed financial experts by your side at every step"
-  },
   "testimonial": {
     "eyebrow": "Verified customer reviews",
     "score": "4.9",
     "reviewCount": "+1,200 customer reviews",
     "quote": "Smooth and fast process, my application was handled in under 24 hours. Impeccable service.",
     "author": "Marc L., Lyon — €12,000 financing"
-  },
-  "countries": {
-    "eyebrow": "Present across Europe"
   },
   "regulatory": {
     "title": "Licensed & regulated",
@@ -211,9 +202,6 @@
     "ctaSubtitle": "Get your estimate in 2 minutes and get started with confidence."
   },
   "disclaimer": {
-    "text": "A credit commits you and must be repaid. Check your repayment capacity before you commit."
-  }
-}
     "text": "A credit commits you and must be repaid. Check your repayment capacity before you commit."
   }
 }
