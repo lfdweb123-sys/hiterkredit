@@ -57,19 +57,16 @@ export default async function HomePage({
       quote: testimonials('quote1'),
       name: testimonials('name1'),
       role: testimonials('role1'),
-      avatar: IMAGES.avatar1?.src,
     },
     {
       quote: testimonials('quote2'),
       name: testimonials('name2'),
       role: testimonials('role2'),
-      avatar: IMAGES.avatar2?.src,
     },
     {
       quote: testimonials('quote3'),
       name: testimonials('name3'),
       role: testimonials('role3'),
-      avatar: IMAGES.avatar3?.src,
     },
   ];
 
@@ -222,7 +219,7 @@ export default async function HomePage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <PlatformRow
               reverse={false}
-              image={IMAGES.platformDashboard?.src ?? IMAGES.heroFamily.src}
+              image={IMAGES.heroFamily.src}
               title={platform('block1Title')}
               text={platform('block1Text')}
               bullet1={platform('block1Bullet1')}
@@ -230,7 +227,7 @@ export default async function HomePage({
             />
             <PlatformRow
               reverse={true}
-              image={IMAGES.platformMobile?.src ?? IMAGES.featuresSecurity.src}
+              image={IMAGES.featuresSecurity.src}
               title={platform('block2Title')}
               text={platform('block2Text')}
               bullet1={platform('block2Bullet1')}
@@ -245,7 +242,7 @@ export default async function HomePage({
         <div className="mx-auto max-w-7xl px-5 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first">
             <Image
-              src={IMAGES.securityIllustration?.src ?? IMAGES.featuresSecurity.src}
+              src={IMAGES.featuresSecurity.src}
               alt={security('title')}
               width={IMAGES.featuresSecurity.width}
               height={IMAGES.featuresSecurity.height}
