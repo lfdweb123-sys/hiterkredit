@@ -1,4 +1,40 @@
 {
+
+  "hero": {
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Pasiūlymas patvirtintas per 24 val., lėšos gautos greitai\" — Thomas & Clara"
+  },
+  "howItWorks": {
+    "subtitle": "100% skaitmeninis procesas, sukurtas būti tiesioginiu, skaidriu ir be nereikalingo popierizmo.",
+    "step1Note": "Jokių įsipareigojimų",
+    "step2Note": "Saugus 256 bitų perdavimas",
+    "step3Note": "Greitas lėšų pervedimas"
+  },
+  "features": {
+    "subtitle": "Sujungiame modernių finansinių technologijų galią su atsakingu ir sertifikuotu žmogišku aptarnavimu.",
+    "imageCaption1": "Realaus laiko jūsų prašymo sekimas ir saugus elektroninis parašas",
+    "imageCaption2": "Licencijuoti finansų ekspertai šalia jūsų kiekviename žingsnyje"
+  },
+  "testimonial": {
+    "eyebrow": "Patvirtintos klientų atsiliepimai",
+    "score": "4.9",
+    "reviewCount": "+1200 klientų atsiliepimų",
+    "quote": "Sklandus ir greitas procesas, mano prašymas buvo išnagrinėtas per mažiau nei 24 valandas. Nepriekaištingas aptarnavimas.",
+    "author": "Marc L., Lionas — 12 000 € finansavimas"
+  },
+  "countries": {
+    "eyebrow": "Veikiame visoje Europoje"
+  },
+  "regulatory": {
+    "title": "Licencijuoti ir reguliuojami",
+    "subtitle": "Kiekvienoje jurisdikcijoje mūsų pasiūlymai atitinka finansų priežiūros institucijų reikalavimus.",
+    "badgeText": "Licencijuoti ir prižiūrimi Europos ekonominėje erdvėje (EEE)",
+    "ctaTitle": "Pasiruošę įgyvendinti savo projektą?",
+    "ctaSubtitle": "Gaukite įvertinimą per 2 minutes ir pradėkite ramiai."
+  },
+  "disclaimer": {
+    "text": "Kreditas jus įpareigoja ir turi būti grąžintas. Prieš įsipareigodami patikrinkite savo galimybes grąžinti."
+  },
   "meta": {
     "siteName": "FondsLink",
     "titleHome": "FondsLink — Greitos ir skaidrios paskolos gyventojams",
