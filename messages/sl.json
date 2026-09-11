@@ -1,4 +1,39 @@
 {
+  "hero": {
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Ponudba potrjena v 24 h, sredstva hitro prejeta\" — Thomas & Clara"
+  },
+  "howItWorks": {
+    "subtitle": "100-odstotno digitalen postopek, zasnovan tako, da je neposreden, pregleden in brez nepotrebne birokracije.",
+    "step1Note": "Brez kakršne koli obveznosti",
+    "step2Note": "Varen 256-bitni prenos",
+    "step3Note": "Hitro nakazilo sredstev"
+  },
+  "features": {
+    "subtitle": "Združujemo moč sodobne finančne tehnologije z odgovorno in certificirano človeško podporo.",
+    "imageCaption1": "Sledenje vaši vlogi v realnem času in varen elektronski podpis",
+    "imageCaption2": "Licencirani finančni strokovnjaki so vam na voljo v vsakem koraku"
+  },
+  "testimonial": {
+    "eyebrow": "Preverjena mnenja strank",
+    "score": "4.9",
+    "reviewCount": "+1200 mnenj strank",
+    "quote": "Hiter in pregleden postopek, moja vloga je bila obravnavana v manj kot 24 urah. Brezhibna storitev.",
+    "author": "Marc L., Lyon — financiranje 12.000 €"
+  },
+  "countries": {
+    "eyebrow": "Prisotni po vsej Evropi"
+  },
+  "regulatory": {
+    "title": "Licencirani in regulirani",
+    "subtitle": "V vsaki jurisdikciji naše ponudbe izpolnjujejo zahteve organov finančnega nadzora.",
+    "badgeText": "Licencirani in pod nadzorom za Evropski gospodarski prostor (EGP)",
+    "ctaTitle": "Ste pripravljeni uresničiti svoj projekt?",
+    "ctaSubtitle": "Pridobite oceno v 2 minutah in začnite mirno."
+  },
+  "disclaimer": {
+    "text": "Kredit vas zavezuje in ga je treba odplačati. Pred sklenitvijo preverite svojo zmožnost odplačevanja."
+  },
   "meta": {
     "siteName": "FondsLink",
     "titleHome": "FondsLink — Hitri in pregledni osebni krediti",
