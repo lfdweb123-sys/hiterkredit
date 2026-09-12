@@ -80,7 +80,7 @@ export default async function HomePage({
     { icon: Globe2, label: hero('trust3') },
   ];
 
-  // Couleurs utilisées par WaveDivider — toutes reprises de vos jetons d'origine
+  // Couleurs utilisées par WaveDivider — reprises de vos jetons d'origine
   // (--color-sky-mist, --color-ink) ou de vos classes Tailwind d'origine (blanc, amber-50).
   const c = {
     white: '#ffffff',
@@ -92,10 +92,23 @@ export default async function HomePage({
   return (
     <>
       {/* =========================================================
-          STYLES — uniquement typographie + animations.
+          STYLES — typographie + animations CSS pures.
           Aucune variable de couleur n'est redéfinie ici : vos jetons
-          --color-sky / --color-ink / --color-line / --color-success /
-          --color-warning restent exactement ceux de votre globals.css.
+          --color-sky / --color-ink / --color-line / --color-warning
+          restent exactement ceux de votre globals.css.
+
+          IMPORTANT : la révélation au scroll est faite en CSS pur
+          (animation-timeline: view()), sans aucun JavaScript. Un
+          <script> précédent dépendait du cycle de vie de la page et
+          ne se relançait pas lors d'une navigation interne Next.js
+          (ex. changement de langue), ce qui laissait le contenu à
+          opacity:0 jusqu'à un rechargement manuel. Avec l'approche
+          ci-dessous, [data-reveal] est TOUJOURS visible par défaut
+          (opacity:1) — l'animation n'est qu'un bonus ajouté en
+          amélioration progressive sur les navigateurs qui la
+          supportent (Chrome/Edge récents). Sur les autres
+          navigateurs, le contenu reste simplement visible, sans
+          jamais rester bloqué invisible.
           ========================================================= */}
       <style
         dangerouslySetInnerHTML={{
@@ -105,13 +118,45 @@ export default async function HomePage({
             .font-display { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; }
             .font-ledger { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
 
-            [data-reveal] { opacity: 0; transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
-            [data-reveal][data-reveal-dir="up"] { transform: translateY(22px); }
-            [data-reveal][data-reveal-dir="left"] { transform: translateX(-22px); }
-            [data-reveal][data-reveal-dir="right"] { transform: translateX(22px); }
-            [data-reveal].is-visible { opacity: 1; transform: translate(0,0); }
-            @media (prefers-reduced-motion: reduce) {
-              [data-reveal] { opacity: 1; transform: none; transition: none; }
+            /* Par défaut : toujours visible. Aucune dépendance au JS. */
+            [data-reveal] { opacity: 1; }
+
+            @keyframes reveal-fade-up {
+              from { opacity: 0; transform: translateY(22px); }
+              to { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes reveal-fade-left {
+              from { opacity: 0; transform: translateX(-22px); }
+              to { opacity: 1; transform: translateX(0); }
+            }
+            @keyframes reveal-fade-right {
+              from { opacity: 0; transform: translateX(22px); }
+              to { opacity: 1; transform: translateX(0); }
+            }
+
+            /* Amélioration progressive : animation pilotée par le scroll,
+               uniquement si le navigateur la supporte. */
+            @supports (animation-timeline: view()) {
+              @media (prefers-reduced-motion: no-preference) {
+                [data-reveal] {
+                  opacity: 0;
+                  animation-duration: 1ms; /* ignoré : la durée réelle vient de animation-range */
+                  animation-timing-function: cubic-bezier(.16,1,.3,1);
+                  animation-fill-mode: both;
+                  animation-timeline: view();
+                  animation-range: entry 0% cover 35%;
+                }
+                [data-reveal][data-reveal-dir="up"],
+                [data-reveal]:not([data-reveal-dir]) {
+                  animation-name: reveal-fade-up;
+                }
+                [data-reveal][data-reveal-dir="left"] {
+                  animation-name: reveal-fade-left;
+                }
+                [data-reveal][data-reveal-dir="right"] {
+                  animation-name: reveal-fade-right;
+                }
+              }
             }
 
             .hover-underline { position: relative; text-decoration: none; }
@@ -147,7 +192,7 @@ export default async function HomePage({
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-5 md:px-8 pt-16 md:pt-24 pb-14 md:pb-20 grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-14 items-start">
           <div>
-            <div data-reveal data-reveal-dir="up">
+            <div>
               <p className="inline-flex items-center gap-2.5 text-sm text-[var(--color-ink-soft)] mb-6">
                 <span className="h-px w-7 bg-[var(--color-sky)]" />
                 {hero('eyebrow')}
@@ -160,7 +205,7 @@ export default async function HomePage({
               </p>
             </div>
 
-            <div data-reveal data-reveal-dir="up" data-reveal-delay="120">
+            <div>
               <div className="mt-9 flex flex-col sm:flex-row flex-wrap gap-4">
                 <Link
                   href="/simulator"
@@ -177,7 +222,7 @@ export default async function HomePage({
               </div>
             </div>
 
-            <div data-reveal data-reveal-dir="up" data-reveal-delay="220">
+            <div>
               <div className="mt-12 flex flex-wrap divide-x divide-[var(--color-line)] border-t border-[var(--color-line)] pt-6">
                 {trustItems.map(({ icon: Icon, label }, i) => (
                   <div key={i} className="flex items-center gap-2.5 pr-6 pl-6 first:pl-0 py-1">
@@ -190,7 +235,7 @@ export default async function HomePage({
           </div>
 
           <div className="relative">
-            <div data-reveal data-reveal-dir="right" data-reveal-delay="100">
+            <div>
               <div className="absolute -inset-8 -z-10 hidden md:block hero-blob bg-[var(--color-sky-pale)]" />
 
               <div className="rounded-[1.75rem] overflow-hidden mb-6 hidden md:block ring-1 ring-[var(--color-line)]">
@@ -248,14 +293,8 @@ export default async function HomePage({
               { num: '01', title: how('step1Title'), text: how('step1Text'), note: how('step1Note') },
               { num: '02', title: how('step2Title'), text: how('step2Text'), note: how('step2Note') },
               { num: '03', title: how('step3Title'), text: how('step3Text'), note: how('step3Note') },
-            ].map((step, i) => (
-              <div
-                key={step.num}
-                data-reveal
-                data-reveal-dir="up"
-                data-reveal-delay={String(i * 120)}
-                className="group/step"
-              >
+            ].map((step) => (
+              <div key={step.num} data-reveal data-reveal-dir="up" className="group/step">
                 <span className="font-ledger text-sm text-[var(--color-sky)]">{step.num}</span>
                 <div className="rule-grow mt-3 mb-5 h-px w-full bg-white/15" />
                 <h3 className="font-display text-xl font-medium text-white">{step.title}</h3>
@@ -284,12 +323,7 @@ export default async function HomePage({
               </p>
             </div>
 
-            <div
-              data-reveal
-              data-reveal-dir="left"
-              data-reveal-delay="100"
-              className="hidden lg:flex flex-col gap-4"
-            >
+            <div data-reveal data-reveal-dir="left" className="hidden lg:flex flex-col gap-4">
               <div className="relative rounded-[1.5rem] overflow-hidden lift-on-hover ring-1 ring-[var(--color-line)]">
                 <Image
                   src={IMAGES.featuresSecurity.src}
@@ -324,7 +358,7 @@ export default async function HomePage({
               { title: features('f3Title'), text: features('f3Text'), icon: Lock },
               { title: features('f4Title'), text: features('f4Text'), icon: Headset },
             ].map((f, i) => (
-              <div key={i} data-reveal data-reveal-dir="up" data-reveal-delay={String(i * 90)}>
+              <div key={i} data-reveal data-reveal-dir="up">
                 <div className="ledger-row group/icon flex items-start gap-6 py-7 border-b border-[var(--color-line)]">
                   <div className="w-11 h-11 shrink-0 rounded-2xl bg-[var(--color-sky-pale)] flex items-center justify-center text-[var(--color-sky-deep)]">
                     <f.icon size={20} className="icon-rotate" />
@@ -394,8 +428,8 @@ export default async function HomePage({
           </div>
 
           <div className="border-t border-white/15">
-            {countryList.map((cItem, i) => (
-              <div key={cItem.name} data-reveal data-reveal-dir="up" data-reveal-delay={String(i * 60)}>
+            {countryList.map((cItem) => (
+              <div key={cItem.name} data-reveal data-reveal-dir="up">
                 <div className="flex items-center gap-3.5 py-4 border-b border-white/15 px-2 transition-colors duration-300 hover:bg-white/5">
                   <span className="text-lg">{cItem.flag}</span>
                   <span className="text-white font-medium">{cItem.name}</span>
@@ -464,44 +498,6 @@ export default async function HomePage({
           <p>{disclaimer('text')}</p>
         </div>
       </section>
-
-      {/* =========================================================
-          SCRIPT — active la révélation au scroll (aucune dépendance)
-          ========================================================= */}
-<script
-  key={locale}
-  dangerouslySetInnerHTML={{
-    __html: `
-      (function () {
-        function run() {
-          function reveal() {
-            document.querySelectorAll('[data-reveal]').forEach(function (el) {
-              el.classList.add('is-visible');
-            });
-          }
-          if (!('IntersectionObserver' in window)) { reveal(); return; }
-          var io = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting) {
-                var el = entry.target;
-                var delay = el.getAttribute('data-reveal-delay') || '0';
-                el.style.transitionDelay = delay + 'ms';
-                el.classList.add('is-visible');
-                io.unobserve(el);
-              }
-            });
-          }, { threshold: 0.15, rootMargin: '0px 0px -64px 0px' });
-          document.querySelectorAll('[data-reveal]:not(.is-visible)').forEach(function (el) { io.observe(el); });
-        }
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', run);
-        } else {
-          run();
-        }
-      })();
-    `,
-  }}
-/>
     </>
   );
 }
