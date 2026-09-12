@@ -27,63 +27,53 @@ export default async function ApplyPage({
   const t = await getTranslations({ locale, namespace: 'form' });
 
   return (
-    <>
-      {/* =========================================================
-          STYLES — identiques aux autres pages, pour une cohérence
-          visuelle totale. Aucune variable de couleur n'est redéfinie :
-          vos jetons --color-sky / --color-ink / --color-line restent
-          exactement ceux de votre globals.css. Le contenu reste
-          TOUJOURS visible par défaut (opacity:1) — l'animation au
-          scroll n'est qu'une amélioration progressive en CSS pur,
-          sans aucun JavaScript, donc sans risque qu'elle reste
-          bloquée après un changement de langue.
-          ========================================================= */}
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            [data-reveal] { opacity: 1; }
+    <section className="mx-auto max-w-3xl px-5 md:px-8 py-14 md:py-20 transition-all duration-300">
+      {/* En-tête : Eyebrow avec trait horizontal + Titre de la section */}
+      <div className="text-center mb-10">
+        <div className="inline-flex items-center gap-2 mb-4">
+          <span className="h-px w-8 bg-[var(--color-sky)]"></span>
+          <span className="text-sm font-semibold tracking-wide uppercase text-[var(--color-sky-deep)]">
+            {t('title')}
+          </span>
+          <span className="h-px w-8 bg-[var(--color-sky)]"></span>
+        </div>
+        <h1 className="font-display text-3xl md:text-5xl font-bold text-[var(--color-ink)] tracking-tight">
+          {t('title')}
+        </h1>
+      </div>
 
-            @keyframes reveal-fade-up {
-              from { opacity: 0; transform: translateY(22px); }
-              to { opacity: 1; transform: translateY(0); }
-            }
+      {/* Hero Image premium avec halo lumineux et badge overlay */}
+      <div className="relative mb-12">
+        {/* Halo lumineux en arrière-plan */}
+        <div className="absolute -inset-1 rounded-[2.5rem] bg-gradient-to-r from-[var(--color-sky-pale)] via-[var(--color-sky)]/20 to-[var(--color-sky-pale)] opacity-60 blur-xl transition-all duration-500" />
 
-            @supports (animation-timeline: view()) {
-              @media (prefers-reduced-motion: no-preference) {
-                [data-reveal] {
-                  opacity: 0;
-                  animation-name: reveal-fade-up;
-                  animation-duration: 1ms;
-                  animation-timing-function: cubic-bezier(.16,1,.3,1);
-                  animation-fill-mode: both;
-                  animation-timeline: view();
-                  animation-range: entry 0% cover 35%;
-                }
-              }
-            }
-
-            .lift-on-hover { transition: transform .45s cubic-bezier(.16,1,.3,1), border-color .45s ease; }
-            .lift-on-hover:hover { transform: translateY(-3px); }
-          `,
-        }}
-      />
-
-      <section className="mx-auto max-w-3xl px-5 md:px-8 py-14 md:py-20">
-        <div
-          data-reveal
-          className="rounded-3xl overflow-hidden mb-8 lift-on-hover ring-1 ring-[var(--color-line)]"
-        >
+        <div className="relative group rounded-3xl overflow-hidden border border-[var(--color-sky-pale)] bg-white shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
           <Image
             src={IMAGES.applyHero.src}
             alt={t('title')}
             width={IMAGES.applyHero.width}
             height={IMAGES.applyHero.height}
-            className="w-full h-48 md:h-64 object-cover"
+            className="w-full h-52 md:h-72 object-cover transition-transform duration-700 group-hover:scale-105"
             priority
           />
+
+          {/* Dégradé sombre au bas de l'image */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/60 via-transparent to-transparent opacity-80" />
+
+          {/* Badge de réassurance sur l'image */}
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-5 md:left-5 flex items-center justify-between text-white">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs font-medium">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>Demande officielle 100% sécurisée</span>
+            </div>
+          </div>
         </div>
-        <ApplyForm />
-      </section>
-    </>
+      </div>
+
+      {/* Conteneur du formulaire */}
+      <ApplyForm />
+    </section>
   );
 }
