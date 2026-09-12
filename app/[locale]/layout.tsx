@@ -4,7 +4,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n/config';
-import { routing } from '@/i18n/navigation';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BottomNav from './components/BottomNav';
@@ -39,6 +38,9 @@ export async function generateMetadata({
       template: `%s — ${t('siteName')}`,
     },
     description: t('descHome'),
+    verification: {
+      google: 'Ts-YtItyFwcXUHdUPJ3T4S6HHyOebHl_wbEDsIodinE',
+    },
     alternates: {
       canonical: `${SITE_URL}/${locale}`,
       languages,
