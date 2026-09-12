@@ -97,7 +97,8 @@
     "errorTitle": "Vyskytla sa chyba",
     "errorText": "Žiadosť sa nepodarilo odoslať. Skúste to znova alebo nás kontaktujte priamo.",
     "required": "Toto pole je povinné.",
-    "successContractNote": "Podrobnú ponuku pôžičky vo formáte PDF sme odoslali na vašu e-mailovú adresu."
+    "successContractNote": "Podrobnú ponuku pôžičky vo formáte PDF sme odoslali na vašu e-mailovú adresu.",
+    "badgeOfficial": "Oficiálna a 100% bezpečná žiadosť"
   },
   "contactForm": {
     "title": "Kontaktujte nás",
