@@ -28,9 +28,7 @@ export default async function SimulatorPage({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'hero' });
 
-  return {
-    /* Section principale avec animation d'apparition fluide et padding responsive */
-  } && (
+  return (
     <section className="mx-auto max-w-3xl px-5 md:px-8 py-14 md:py-20 transition-all duration-300">
       {/* En-tête : Eyebrow sous forme de trait avec texte + Titre */}
       <div className="text-center mb-10">
