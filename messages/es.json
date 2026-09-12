@@ -78,6 +78,7 @@
     "eyebrow": "Presentes en toda Europa"
   },
   "form": {
+    "badgeOfficial": "Solicitud oficial 100% segura",
     "title": "Solicitud de préstamo",
     "subtitle": "Completa el formulario a continuación. Todos los campos son obligatorios salvo que se indique lo contrario.",
     "prefilled": "Los datos del simulador se completaron automáticamente. Puedes modificarlos.",
