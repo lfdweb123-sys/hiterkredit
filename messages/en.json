@@ -78,6 +78,7 @@
     "eyebrow": "Present across Europe"
   },
   "form": {
+    "badgeOfficial": "Official & 100% secure application",
     "title": "Loan application",
     "subtitle": "Fill in the form below. All fields are required unless marked otherwise.",
     "prefilled": "The figures from the simulator have been filled in automatically. You can change them.",
