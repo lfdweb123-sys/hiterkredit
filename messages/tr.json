@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "siteName": "FondsLink",
+    "titleHome": "FondsLink — Hızlı, şeffaf bireysel krediler",
+    "descHome": "Kredinizi gerçek zamanlı olarak simüle edin ve başvurunuzu dakikalar içinde gönderin. Gizli ücret yok, gereksiz veri saklama yok.",
+    "titleSimulate": "Kredi simülatörü — FondsLink",
+    "descSimulate": "Basit bir kaydırıcı ile aylık taksitinizi ve toplam kredi maliyetinizi hesaplayın. Sonucu doğrudan başvurunuzda kullanın.",
+    "titleApply": "Kredi başvurusu — FondsLink",
+    "descApply": "Basit bir kredi başvurusu gönderin. Hızlı yanıt, gereksiz evrak işi yok.",
+    "titleAbout": "Hakkımızda — FondsLink",
+    "descAbout": "FondsLink'i tanıyın: şeffaflık, hız ve sorumlu kredi verme.",
+    "titleContact": "İletişim — FondsLink",
+    "descContact": "Krediler, başvurular veya iş birlikleri hakkında her türlü soru için FondsLink ekibiyle iletişime geçin."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "simulate": "Simülatör",
+    "apply": "Başvur",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "cta": "Teklifinizi görün"
+  },
+  "hero": {
+    "badgeSecure": "Hızlı ve %100 güvenli simülasyon",
+    "eyebrow": "Birden fazla ülkede bireysel krediler",
+    "title": "Sizin tutarınız. Sizin vadeniz. Sizin taksitiniz — anında.",
+    "subtitle": "Kaydırıcıyı hareket ettirin ve aylık taksitinizin ne olacağını gerçek zamanlı olarak görün. Kayıt yok, gizli ücret yok.",
+    "ctaPrimary": "Kredinizi hesaplayın",
+    "ctaSecondary": "Nasıl çalışır",
+    "trust1": "24 saat içinde yanıt",
+    "trust2": "Gizli maliyet yok",
+    "trust3": "Veriler saklanmaz",
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "\"Teklif 24 saatte kabul edildi, para hızlıca ulaştı\" — Thomas & Clara"
+  },
+  "simulator": {
+    "title": "Taksitinizi hesaplayın",
+    "subtitle": "Tutarı ve vadeyi ayarlayın — hesaplama anında güncellenir.",
+    "amountLabel": "Kredi tutarı",
+    "durationLabel": "Geri ödeme vadesi",
+    "months": "ay",
+    "monthlyPayment": "Aylık taksit",
+    "totalRepay": "Geri ödenecek toplam tutar",
+    "totalCost": "Toplam kredi maliyeti",
+    "rateNote": "Gösterge niteliğinde yıllık maliyet oranı %6,9 nominal / %7,4 efektif. Gerçek teklif, kişisel değerlendirmenize bağlıdır.",
+    "ctaUseValues": "Bu değerlerle başvuruya devam edin",
+    "disclaimer": "Bu simülasyon yalnızca bilgilendirme amaçlıdır ve bağlayıcı bir teklif teşkil etmez."
+  },
+  "howItWorks": {
+    "title": "Kredinize giden üç adım",
+    "step1Title": "Hesaplayın",
+    "step1Text": "Kaydırıcıda tutarı ve vadeyi ayarlayın ve aylık taksitinizi anında görün.",
+    "step2Title": "Başvurunuzu gönderin",
+    "step2Text": "Kısa bir formu doldurun — hesaplanan değerler otomatik olarak aktarılır.",
+    "step3Title": "Yanıt alın",
+    "step3Text": "Ekibimiz başvurunuzu inceler ve mümkün olan en kısa sürede size geri döner.",
+    "subtitle": "Doğrudan, şeffaf ve gereksiz evrak işinden arındırılmış, tamamen dijital bir süreç.",
+    "step1Note": "Hiçbir taahhüt gerekmez",
+    "step2Note": "256 bit güvenli veri aktarımı",
+    "step3Note": "Hızlı para transferi"
+  },
+  "features": {
+    "title": "Neden FondsLink",
+    "f1Title": "Tam şeffaflık",
+    "f1Text": "Her maliyeti daha simülatörden görürsünüz — sözleşmede sürpriz yok.",
+    "f2Title": "Hızlı işlem",
+    "f2Text": "Basit bir form ve ekibimizden hızlı yanıt süreleri.",
+    "f3Title": "Veri güvenliği",
+    "f3Text": "Kişisel verilerinizi başvurunuzu işlemek için gereken süreden daha uzun tutmuyoruz.",
+    "f4Title": "Kişiye özel destek",
+    "f4Text": "Ekibimiz krediniz hakkındaki her sorunuzu yanıtlamak için hazır.",
+    "subtitle": "Modern finans teknolojisinin gücünü, sorumlu ve sertifikalı insan desteğiyle birleştiriyoruz.",
+    "imageCaption1": "Başvurunuzun gerçek zamanlı takibi ve güvenli e-imza",
+    "imageCaption2": "Her adımda yanınızda lisanslı finans uzmanları"
+  },
+  "countries": {
+    "title": "Sizin ülkenizde de mevcut",
+    "subtitle": "FondsLink, yerel dile ve uygulamalara uyum sağlayarak birçok Avrupa ülkesinde ve Porto Riko'da faaliyet göstermektedir.",
+    "eyebrow": "Avrupa genelinde faaliyette"
+  },
+  "form": {
+    "badgeOfficial": "Resmi ve %100 güvenli başvuru",
+    "title": "Kredi başvurusu",
+    "subtitle": "Aşağıdaki formu doldurun. Aksi belirtilmedikçe tüm alanlar zorunludur.",
+    "prefilled": "Simülatörden gelen değerler otomatik olarak dolduruldu. Bunları değiştirebilirsiniz.",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "email": "E-posta adresi",
+    "phone": "Telefon numarası",
+    "amount": "İstenen kredi tutarı",
+    "duration": "İstenen geri ödeme vadesi (ay)",
+    "message": "Ek mesaj (isteğe bağlı)",
+    "consent": "FondsLink'in verilerimi yalnızca bu başvuruyu işlemek için kullanmasını kabul ediyorum.",
+    "submit": "Başvuruyu gönder",
+    "submitting": "Gönderiliyor...",
+    "successTitle": "Başvuru başarıyla gönderildi",
+    "successText": "Teşekkürler! Ekibimiz en kısa sürede sizinle iletişime geçecek.",
+    "errorTitle": "Bir sorun oluştu",
+    "errorText": "Başvurunuzu gönderemedik. Lütfen tekrar deneyin veya doğrudan bizimle iletişime geçin.",
+    "required": "Bu alan zorunludur.",
+    "successContractNote": "Detaylı kredi teklifini PDF olarak e-posta adresinize gönderdik."
+  },
+  "contactForm": {
+    "title": "Bizimle iletişime geçin",
+    "subtitle": "Bir sorunuz mu var? Bize yazın, en kısa sürede yanıtlayalım.",
+    "name": "Ad soyad",
+    "email": "E-posta adresi",
+    "subject": "Konu",
+    "message": "Mesaj",
+    "submit": "Mesajı gönder",
+    "submitting": "Gönderiliyor...",
+    "successTitle": "Mesaj gönderildi",
+    "successText": "Mesajınız için teşekkürler. En kısa sürede size geri döneceğiz.",
+    "errorTitle": "Mesaj gönderilemedi",
+    "errorText": "Lütfen daha sonra tekrar deneyin."
+  },
+  "about": {
+    "eyebrow": "Şirket hakkında",
+    "title": "Şeffaflık, hız ve sorumlu kredi verme",
+    "intro": "FondsLink, tek bir amaçla kuruldu: nerede yaşarsanız yaşayın, bireysel krediyi basit, şeffaf ve erişilebilir hale getirmek.",
+    "missionTitle": "Misyonumuz",
+    "missionText": "Finansal bir kararın basit olması gerektiğine inanıyoruz. Bu nedenle bir kredinin gerçek maliyetini gerçek zamanlı gösteren bir simülatör ve iki dakikadan kısa süren bir başvuru formu geliştirdik.",
+    "valuesTitle": "Değerlerimiz",
+    "value1Title": "Netlik",
+    "value1Text": "Sizi şaşırtacak gizli ücret veya küçük puntolu şartlar yok.",
+    "value2Title": "Verilerinize saygı",
+    "value2Text": "Yalnızca başvurunuzu işlemek için gereken verileri topluyoruz.",
+    "value3Title": "Sorumluluk",
+    "value3Text": "Sorumlu bir şekilde kredi veriyoruz ve ödeme gücünüzü değerlendirmenizi teşvik ediyoruz.",
+    "presenceTitle": "Faaliyet gösterdiğimiz yerler",
+    "presenceText": "Slovenya, Slovakya, Litvanya, Porto Riko, Hollanda/Flandre, İrlanda, Fransa, Yunanistan, Türkiye, Sırbistan, Romanya, Bulgaristan ve Kuzey Makedonya'da, her birinde yerel dile uyarlanmış şekilde faaliyet gösteriyoruz."
+  },
+  "footer": {
+    "tagline": "Hızlı, şeffaf bireysel krediler.",
+    "linksTitle": "Bağlantılar",
+    "legalTitle": "Yasal",
+    "contactTitle": "İletişim",
+    "terms": "Kullanım koşulları",
+    "privacy": "Gizlilik",
+    "cookies": "Çerezler",
+    "rights": "Tüm hakları saklıdır.",
+    "riskNote": "Bir kredi sizi bağlar ve geri ödenmesi gerekir. Sözleşmeyi imzalamadan önce geri ödeme kapasitenizi dikkatle değerlendirin."
+  },
+  "bottomNav": {
+    "home": "Ana Sayfa",
+    "simulate": "Simülatör",
+    "apply": "Başvur",
+    "about": "Hakkımızda"
+  },
+  "contactPage": {
+    "eyebrow": "Sizin için buradayız",
+    "title": "FondsLink ekibiyle iletişime geçin",
+    "subtitle": "Bir kredi, bir başvuru veya ülkenizde nasıl faaliyet gösterdiğimiz hakkında sorunuz mu var? Bize yazın — hızlı yanıt veriyoruz.",
+    "emailLabel": "E-posta",
+    "emailValue": "podpora@fondslink.com",
+    "responseLabel": "Yanıt süresi",
+    "responseValue": "İş günlerinde genellikle 24 saat içinde",
+    "hoursLabel": "Destek saatleri",
+    "hoursValue": "Pazartesi–Cuma, 09:00–17:00 (CET)"
+  },
+  "trust": {
+    "title": "Yerel mevzuata uygun olarak faaliyet gösteriyoruz",
+    "subtitle": "Her ülkede, ilgili finansal denetim otoritesinin belirlediği kurallara uyuyoruz."
+  },
+  "legal": {
+    "termsTitle": "Kullanım koşulları",
+    "termsP1": "Bu belge, FondsLink web sitesinin (fondslink.com) ve kredi simülasyonu ile başvuru hizmetlerinin kullanım koşullarını düzenler. Siteyi kullanarak bu koşulları kabul etmiş olursunuz.",
+    "termsP2": "Web sitesindeki kredi simülatörü yalnızca bilgilendirme amaçlıdır ve bağlayıcı bir kredi teklifi teşkil etmez. Gerçek teklif, başvurunun kişisel olarak değerlendirilmesine bağlıdır.",
+    "termsP3": "FondsLink, her ülkenin yürürlükteki mevzuatına uygun olarak, herhangi bir kredi başvurusunu gerekçe belirtmeksizin reddetme hakkını saklı tutar.",
+    "termsP4": "Web sitesinin içeriği telif hakkı ile korunmaktadır. İçeriğin izinsiz kopyalanması veya dağıtılması yasaktır.",
+    "privacyTitle": "Gizlilik",
+    "privacyP1": "FondsLink gizliliğinize saygı duyar. Bu sitedeki kredi simülatörü herhangi bir kişisel veri gerektirmez ve sunucularımızda hiçbir şey saklanmaz — değerler yalnızca oturumunuz süresince tarayıcınızda kalır.",
+    "privacyP2": "İletişim formu veya kredi başvuru formu aracılığıyla sağladığınız kişisel veriler (ad, soyad, e-posta, telefon) yalnızca başvurunuzu işlemek için kullanılır ve doğrudan e-postamıza gönderilir. Bu verileri bir veritabanında saklamıyoruz.",
+    "privacyP3": "Verilerinizi asla pazarlama amacıyla üçüncü taraflarla satmıyor veya paylaşmıyoruz.",
+    "privacyP4": "Veri koruma ile ilgili sorularınız için bizimle podpora@fondslink.com adresinden iletişime geçin.",
+    "cookiesTitle": "Çerezler",
+    "cookiesP1": "Bu web sitesi, ziyaretiniz sırasında yalnızca kredi simülatörü değerlerini (tutar ve vade) başvuru formuna geçtiğinizde hatırlamak amacıyla tarayıcınızda saklanan asgari düzeyde teknik veri (oturum depolama) kullanır.",
+    "cookiesP2": "Bu veriler, tarayıcınızı kapattığınızda otomatik olarak silinir ve hiçbir sunucuya gönderilmez.",
+    "cookiesP3": "Web sitesi üçüncü taraf takip veya reklam çerezleri kullanmaz."
+  },
+  "contractEmail": {
+    "subject": "FondsLink kredi teklifiniz — {ref}",
+    "greeting": "Merhaba {name},",
+    "intro": "Başvurunuzu FondsLink'e ilettiğiniz için teşekkür ederiz. Sağladığınız bilgilere göre hazırlanan hesaplanmış kredi teklifi ektedir.",
+    "summaryTitle": "Başvurunuzun özeti",
+    "amountLabel": "Tutar",
+    "durationLabel": "Geri ödeme vadesi",
+    "monthlyLabel": "Aylık taksit",
+    "instructions": "Lütfen ekteki belgeyi dikkatlice inceleyin. İmza ve sonraki adımlar için podpora@fondslink.com adresinden bizimle iletişime geçin — gerekirse sizi telefonla da arayabiliriz.",
+    "closing": "Saygılarımızla,\nFondsLink Ekibi"
+  },
+  "testimonial": {
+    "eyebrow": "Doğrulanmış müşteri yorumları",
+    "score": "4.9",
+    "reviewCount": "+1.200 müşteri yorumu",
+    "quote": "Sorunsuz ve hızlı bir süreç, başvurum 24 saatten kısa sürede işleme alındı. Kusursuz hizmet.",
+    "author": "Marc L., Lyon — 12.000 € finansman"
+  },
+  "testimonials": {
+    "eyebrow": "Müşteri hikayeleri",
+    "title": "Müşterilerimiz ne diyor",
+    "subtitle": "Tüm pazarlarımızdaki başvuru sahiplerinden gerçek deneyimler.",
+    "items": [
+      { "author": "Maja P.", "location": "Ljubljana, Slovenya", "rating": 5, "quote": "Simülatör, başvurmadan önce bana tam olarak aylık taksit tutarını gösterdi. Sürpriz yok, gizli ücret yok." },
+      { "author": "Julien M.", "location": "Lyon, Fransa", "rating": 5, "quote": "Birkaç kredi verenle karşılaştırdım ve FondsLink, kredimin toplam maliyeti konusunda açık ara en net olanıydı." },
+      { "author": "Eleni K.", "location": "Atina, Yunanistan", "rating": 5, "quote": "Başvurum bir günden kısa sürede onaylandı ve para tam zamanında hesabıma geçti." },
+      { "author": "Emre S.", "location": "İstanbul, Türkiye", "rating": 4, "quote": "Müşteri hizmetleri, iki kez sorduğum sorular dahil her soruyu sabırla yanıtladı." },
+      { "author": "Ioana D.", "location": "Bükreş, Romanya", "rating": 5, "quote": "Simülasyondan sözleşmenin imzalanmasına kadar her şey dijitaldi. Bankaya gitmemi gereksiz kıldı." },
+      { "author": "Sanne V.", "location": "Rotterdam, Hollanda", "rating": 5, "quote": "Şeffaf faiz oranları ve net bir geri ödeme planı. Tam da tadilatım için ihtiyacım olan şeydi." },
+      { "author": "Nikola J.", "location": "Belgrad, Sırbistan", "rating": 5, "quote": "Düzenleyici bilgilerin bulunmasının ve anlaşılmasının kolay olmasını takdir ettim." },
+      { "author": "Aoife B.", "location": "Dublin, İrlanda", "rating": 4, "quote": "Tüm süreç beklediğimden daha kısa sürdü ve ekip her adımda beni bilgilendirdi." },
+      { "author": "Petar I.", "location": "Sofya, Bulgaristan", "rating": 5, "quote": "Basit bir kredi simülatörü ve rakamları gerçekten açıklayan bir destek ekibi." },
+      { "author": "Ana T.", "location": "Üsküp, Kuzey Makedonya", "rating": 5, "quote": "Tutarı ve vadeyi ayarlayıp taksitin anında güncellendiğini görebilmeyi sevdim." }
+    ]
+  },
+  "regulatory": {
+    "title": "Lisanslı ve denetlenen",
+    "subtitle": "Her yargı alanında, tekliflerimiz finansal denetim otoritelerinin gerekliliklerine uygundur.",
+    "badgeText": "Avrupa Ekonomik Alanı (AEA) için lisanslı ve denetlenmektedir",
+    "ctaTitle": "Projenizi hayata geçirmeye hazır mısınız?",
+    "ctaSubtitle": "Tahmininizi 2 dakikada alın ve güvenle başlayın."
+  },
+  "disclaimer": {
+    "text": "Bir kredi sizi bağlar ve geri ödenmesi gerekir. Taahhüt etmeden önce geri ödeme kapasitenizi kontrol edin."
+  }
+}

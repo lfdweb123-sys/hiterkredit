@@ -196,6 +196,23 @@
     "quote": "Smooth and fast process, my application was handled in under 24 hours. Impeccable service.",
     "author": "Marc L., Lyon — €12,000 financing"
   },
+  "testimonials": {
+    "eyebrow": "Client stories",
+    "title": "What our clients say",
+    "subtitle": "Real experiences from applicants across our markets.",
+    "items": [
+      { "author": "Maja P.", "location": "Ljubljana, Slovenia", "rating": 5, "quote": "The simulator showed me the exact monthly payment before I even applied. No surprises, no hidden fees." },
+      { "author": "Julien M.", "location": "Lyon, France", "rating": 5, "quote": "I compared several lenders and FondsLink was by far the clearest about the total cost of my loan." },
+      { "author": "Eleni K.", "location": "Athens, Greece", "rating": 5, "quote": "My application was approved in less than a day and the funds arrived right on schedule." },
+      { "author": "Emre S.", "location": "Istanbul, Turkey", "rating": 4, "quote": "Customer support answered every question patiently, even the ones I asked twice." },
+      { "author": "Ioana D.", "location": "Bucharest, Romania", "rating": 5, "quote": "Everything was digital, from the simulation to the signed contract. It saved me a trip to the bank." },
+      { "author": "Sanne V.", "location": "Rotterdam, Netherlands", "rating": 5, "quote": "Transparent rates and a clear repayment schedule. Exactly what I needed for my renovation." },
+      { "author": "Nikola J.", "location": "Belgrade, Serbia", "rating": 5, "quote": "I appreciated that the regulatory information was easy to find and understand." },
+      { "author": "Aoife B.", "location": "Dublin, Ireland", "rating": 4, "quote": "The whole process took less time than I expected, and the team kept me informed at every step." },
+      { "author": "Petar I.", "location": "Sofia, Bulgaria", "rating": 5, "quote": "A straightforward loan simulator and a support team that actually explains the numbers." },
+      { "author": "Ana T.", "location": "Skopje, North Macedonia", "rating": 5, "quote": "I liked being able to adjust the amount and duration and see the payment update instantly." }
+    ]
+  },
   "regulatory": {
     "title": "Licensed & regulated",
     "subtitle": "In every jurisdiction, our offers comply with the requirements of financial supervisory authorities.",

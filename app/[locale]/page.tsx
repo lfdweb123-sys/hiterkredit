@@ -16,7 +16,8 @@ import {
   Globe2,
 } from 'lucide-react';
 import LoanSimulator from './components/LoanSimulator';
-import { IMAGES } from '@/lib/images';
+import TestimonialsSlider from './components/TestimonialsSlider';
+import { IMAGES, FINANCE_VIDEO } from '@/lib/images';
 
 export async function generateMetadata({
   params,
@@ -59,7 +60,13 @@ export default async function HomePage({
   const hero = await getTranslations({ locale, namespace: 'hero' });
   const how = await getTranslations({ locale, namespace: 'howItWorks' });
   const features = await getTranslations({ locale, namespace: 'features' });
-  const testimonial = await getTranslations({ locale, namespace: 'testimonial' });
+  const testimonials = await getTranslations({ locale, namespace: 'testimonials' });
+  const testimonialItems = testimonials.raw('items') as Array<{
+    author: string;
+    location: string;
+    rating: number;
+    quote: string;
+  }>;
   const countries = await getTranslations({ locale, namespace: 'countries' });
   const regulatory = await getTranslations({ locale, namespace: 'regulatory' });
   const disclaimer = await getTranslations({ locale, namespace: 'disclaimer' });
@@ -72,6 +79,13 @@ export default async function HomePage({
     { flag: '🇵🇷', name: 'Puerto Rico' },
     { flag: '🇳🇱', name: 'Nederland / Vlaanderen' },
     { flag: '🇮🇪', name: 'Ireland' },
+    { flag: '🇫🇷', name: 'France' },
+    { flag: '🇧🇬', name: 'Bulgaria' },
+    { flag: '🇹🇷', name: 'Türkiye' },
+    { flag: '🇷🇸', name: 'Srbija' },
+    { flag: '🇲🇰', name: 'Severna Makedonija' },
+    { flag: '🇬🇷', name: 'Ελλάδα' },
+    { flag: '🇷🇴', name: 'România' },
   ];
 
   const trustItems = [
@@ -381,33 +395,51 @@ export default async function HomePage({
       <WaveDivider top={c.white} bottom={c.mist} />
 
       {/* ============================================================= */}
-      {/* TÉMOIGNAGE                                                     */}
+      {/* TÉMOIGNAGES (carrousel)                                        */}
       {/* ============================================================= */}
       <section className="bg-[var(--color-sky-mist)] py-16 md:py-20">
         <div data-reveal data-reveal-dir="up" className="mx-auto max-w-3xl px-5 md:px-8 text-center">
           <p className="inline-flex items-center gap-2.5 text-sm text-[var(--color-sky-deep)] mb-6">
             <span className="h-px w-7 bg-[var(--color-sky-deep)]" />
-            {testimonial('eyebrow')}
+            {testimonials('eyebrow')}
           </p>
-          <div className="flex items-center justify-center gap-2 mb-5">
-            <div className="flex text-[var(--color-warning,#F59E0B)]">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={17} fill="currentColor" strokeWidth={0} />
-              ))}
-            </div>
-            <span className="font-ledger font-medium text-[var(--color-ink)]">
-              {testimonial('score')}
-            </span>
-            <span className="text-sm text-[var(--color-ink-soft)]">{testimonial('reviewCount')}</span>
-          </div>
-          <p className="font-display italic text-xl md:text-2xl font-medium text-[var(--color-ink)] leading-snug">
-            {testimonial('quote')}
-          </p>
-          <p className="mt-4 text-sm text-[var(--color-ink-soft)]">{testimonial('author')}</p>
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-[var(--color-ink)] mb-10">
+            {testimonials('title')}
+          </h2>
+          <TestimonialsSlider items={testimonialItems} />
         </div>
       </section>
 
       <WaveDivider top={c.mist} bottom={c.ink} />
+
+      {/* ============================================================= */}
+      {/* VIDÉO & REMISE DES FONDS                                       */}
+      {/* ============================================================= */}
+      <section className="bg-[var(--color-ink)] py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-5 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div data-reveal data-reveal-dir="left" className="relative rounded-[1.75rem] overflow-hidden ring-1 ring-white/15">
+            <Image
+              src={IMAGES.heroHandover.src}
+              alt={hero('title')}
+              width={IMAGES.heroHandover.width}
+              height={IMAGES.heroHandover.height}
+              className="w-full h-64 md:h-80 object-cover"
+            />
+          </div>
+          <div data-reveal data-reveal-dir="right" className="relative rounded-[1.75rem] overflow-hidden ring-1 ring-white/15">
+            <video
+              className="w-full h-64 md:h-80 object-cover"
+              src={FINANCE_VIDEO.src}
+              poster={FINANCE_VIDEO.poster}
+              autoPlay
+              loop
+              muted
+              playsInline
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* ============================================================= */}
       {/* PAYS                                                           */}

@@ -196,6 +196,23 @@
     "quote": "Proceso ágil y rápido, mi solicitud se gestionó en menos de 24 horas. Servicio impecable.",
     "author": "Marc L., Lyon — financiación de 12.000 €"
   },
+  "testimonials": {
+    "eyebrow": "Historias de clientes",
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Experiencias reales de solicitantes en todos nuestros mercados.",
+    "items": [
+      { "author": "Maja P.", "location": "Liubliana, Eslovenia", "rating": 5, "quote": "El simulador me mostró el pago mensual exacto incluso antes de solicitar el préstamo. Sin sorpresas, sin cargos ocultos." },
+      { "author": "Julien M.", "location": "Lyon, Francia", "rating": 5, "quote": "Comparé varios prestamistas y FondsLink fue, por mucho, el más claro sobre el costo total de mi préstamo." },
+      { "author": "Eleni K.", "location": "Atenas, Grecia", "rating": 5, "quote": "Mi solicitud fue aprobada en menos de un día y los fondos llegaron justo en la fecha indicada." },
+      { "author": "Emre S.", "location": "Estambul, Turquía", "rating": 4, "quote": "El servicio al cliente respondió con paciencia cada pregunta, incluso las que hice dos veces." },
+      { "author": "Ioana D.", "location": "Bucarest, Rumanía", "rating": 5, "quote": "Todo fue digital, desde la simulación hasta la firma del contrato. Me ahorré un viaje al banco." },
+      { "author": "Sanne V.", "location": "Róterdam, Países Bajos", "rating": 5, "quote": "Tasas transparentes y un calendario de pagos claro. Justo lo que necesitaba para mi remodelación." },
+      { "author": "Nikola J.", "location": "Belgrado, Serbia", "rating": 5, "quote": "Aprecié que la información regulatoria fuera fácil de encontrar y entender." },
+      { "author": "Aoife B.", "location": "Dublín, Irlanda", "rating": 4, "quote": "Todo el proceso tomó menos tiempo del que esperaba, y el equipo me mantuvo informado en cada paso." },
+      { "author": "Petar I.", "location": "Sofía, Bulgaria", "rating": 5, "quote": "Un simulador de préstamos sencillo y un equipo de soporte que realmente explica los números." },
+      { "author": "Ana T.", "location": "Skopie, Macedonia del Norte", "rating": 5, "quote": "Me gustó poder ajustar el monto y el plazo y ver la cuota actualizarse al instante." }
+    ]
+  },
   "regulatory": {
     "title": "Autorizados y regulados",
     "subtitle": "En cada jurisdicción, nuestras ofertas cumplen los requisitos de las autoridades de supervisión financiera.",

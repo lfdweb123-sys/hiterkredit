@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "siteName": "FondsLink",
+    "titleHome": "FondsLink — Credite personale rapide și transparente",
+    "descHome": "Simulați-vă creditul în timp real și trimiteți cererea în câteva minute. Fără costuri ascunse, fără stocare inutilă de date.",
+    "titleSimulate": "Simulator de credit — FondsLink",
+    "descSimulate": "Calculați-vă rata lunară și costul total al creditului cu ajutorul unui simplu cursor. Folosiți rezultatul direct în cererea dumneavoastră.",
+    "titleApply": "Cerere de credit — FondsLink",
+    "descApply": "Trimiteți o cerere de credit simplă. Răspuns rapid, fără birocrație inutilă.",
+    "titleAbout": "Despre noi — FondsLink",
+    "descAbout": "Descoperiți FondsLink: transparență, rapiditate și creditare responsabilă.",
+    "titleContact": "Contact — FondsLink",
+    "descContact": "Contactați echipa FondsLink pentru orice întrebare despre credite, cereri sau parteneriate."
+  },
+  "nav": {
+    "home": "Acasă",
+    "simulate": "Simulator",
+    "apply": "Solicită",
+    "about": "Despre noi",
+    "contact": "Contact",
+    "cta": "Vezi oferta ta"
+  },
+  "hero": {
+    "badgeSecure": "Simulare rapidă și 100% securizată",
+    "eyebrow": "Credite personale în mai multe țări",
+    "title": "Suma ta. Durata ta. Rata ta — instantaneu.",
+    "subtitle": "Mișcă cursorul și vezi în timp real care ar fi rata ta lunară. Fără înregistrare, fără costuri ascunse.",
+    "ctaPrimary": "Calculează-ți creditul",
+    "ctaSecondary": "Cum funcționează",
+    "trust1": "Răspuns în 24 de ore",
+    "trust2": "Fără costuri ascunse",
+    "trust3": "Datele nu sunt stocate",
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "„Ofertă acceptată în 24h, fonduri primite rapid” — Thomas & Clara"
+  },
+  "simulator": {
+    "title": "Calculează-ți rata",
+    "subtitle": "Ajustează suma și durata — calculul se actualizează instantaneu.",
+    "amountLabel": "Suma creditului",
+    "durationLabel": "Durata de rambursare",
+    "months": "luni",
+    "monthlyPayment": "Rata lunară",
+    "totalRepay": "Total de rambursat",
+    "totalCost": "Costul total al creditului",
+    "rateNote": "Dobânda anuală efectivă indicativă (DAE) 6,9% nominală / 7,4% efectivă. Oferta reală depinde de evaluarea dumneavoastră personală.",
+    "ctaUseValues": "Continuă cererea cu aceste valori",
+    "disclaimer": "Această simulare are caracter informativ și nu constituie o ofertă fermă."
+  },
+  "howItWorks": {
+    "title": "Trei pași până la creditul tău",
+    "step1Title": "Calculează",
+    "step1Text": "Setează suma și durata pe cursor și vezi instantaneu rata lunară.",
+    "step2Title": "Trimite cererea",
+    "step2Text": "Completează un formular scurt — sumele calculate sunt preluate automat.",
+    "step3Title": "Primește un răspuns",
+    "step3Text": "Echipa noastră analizează cererea ta și îți răspunde cât mai repede posibil.",
+    "subtitle": "Un parcurs complet digital, gândit să fie direct, transparent și fără birocrație inutilă.",
+    "step1Note": "Fără niciun angajament",
+    "step2Note": "Transmitere securizată pe 256 de biți",
+    "step3Note": "Transfer rapid al fondurilor"
+  },
+  "features": {
+    "title": "De ce FondsLink",
+    "f1Title": "Transparență totală",
+    "f1Text": "Vezi fiecare cost încă din simulator — fără surprize în contract.",
+    "f2Title": "Procesare rapidă",
+    "f2Text": "Un formular simplu și timpi de răspuns rapizi din partea echipei noastre.",
+    "f3Title": "Securitatea datelor",
+    "f3Text": "Nu păstrăm datele tale personale mai mult timp decât este necesar pentru procesarea cererii.",
+    "f4Title": "Asistență personalizată",
+    "f4Text": "Echipa noastră este disponibilă pentru a răspunde la orice întrebare despre creditul tău.",
+    "subtitle": "Combinăm puterea tehnologiei financiare moderne cu o asistență umană responsabilă și certificată.",
+    "imageCaption1": "Urmărirea în timp real a cererii tale și semnătură electronică securizată",
+    "imageCaption2": "Experți financiari autorizați alături de tine la fiecare pas"
+  },
+  "countries": {
+    "title": "Disponibil în țara ta",
+    "subtitle": "FondsLink operează în mai multe țări europene și în Puerto Rico, adaptându-se limbii și practicilor locale.",
+    "eyebrow": "Prezenți în toată Europa"
+  },
+  "form": {
+    "badgeOfficial": "Cerere oficială și 100% securizată",
+    "title": "Cerere de credit",
+    "subtitle": "Completați formularul de mai jos. Toate câmpurile sunt obligatorii dacă nu se specifică altfel.",
+    "prefilled": "Valorile din simulator au fost completate automat. Le puteți modifica.",
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "email": "Adresă de e-mail",
+    "phone": "Număr de telefon",
+    "amount": "Suma dorită a creditului",
+    "duration": "Durata dorită de rambursare (luni)",
+    "message": "Mesaj suplimentar (opțional)",
+    "consent": "Sunt de acord ca FondsLink să folosească datele mele exclusiv pentru procesarea acestei cereri.",
+    "submit": "Trimite cererea",
+    "submitting": "Se trimite...",
+    "successTitle": "Cererea a fost trimisă cu succes",
+    "successText": "Mulțumim! Echipa noastră vă va contacta cât mai curând posibil.",
+    "errorTitle": "A apărut o eroare",
+    "errorText": "Nu am putut trimite cererea. Vă rugăm să încercați din nou sau să ne contactați direct.",
+    "required": "Acest câmp este obligatoriu.",
+    "successContractNote": "V-am trimis oferta detaliată de credit în format PDF la adresa dumneavoastră de e-mail."
+  },
+  "contactForm": {
+    "title": "Contactați-ne",
+    "subtitle": "Aveți o întrebare? Scrieți-ne și vă vom răspunde cât mai curând posibil.",
+    "name": "Nume complet",
+    "email": "Adresă de e-mail",
+    "subject": "Subiect",
+    "message": "Mesaj",
+    "submit": "Trimite mesajul",
+    "submitting": "Se trimite...",
+    "successTitle": "Mesaj trimis",
+    "successText": "Vă mulțumim pentru mesaj. Vă vom răspunde cât mai curând posibil.",
+    "errorTitle": "Mesajul nu a putut fi trimis",
+    "errorText": "Vă rugăm să încercați din nou mai târziu."
+  },
+  "about": {
+    "eyebrow": "Despre companie",
+    "title": "Transparență, rapiditate și creditare responsabilă",
+    "intro": "FondsLink a fost fondată cu un singur scop: să facă creditul personal simplu, transparent și accesibil, oriunde ați locui.",
+    "missionTitle": "Misiunea noastră",
+    "missionText": "Credem că o decizie financiară trebuie să fie simplă. De aceea am creat un simulator care arată costul real al unui credit în timp real, precum și un formular de cerere care durează sub două minute.",
+    "valuesTitle": "Valorile noastre",
+    "value1Title": "Claritate",
+    "value1Text": "Fără costuri ascunse sau clauze scrise mărunt care să vă ia prin surprindere.",
+    "value2Title": "Respectarea datelor tale",
+    "value2Text": "Colectăm doar datele necesare pentru procesarea cererii tale.",
+    "value3Title": "Responsabilitate",
+    "value3Text": "Credităm în mod responsabil și te încurajăm să îți evaluezi capacitatea de rambursare.",
+    "presenceTitle": "Unde operăm",
+    "presenceText": "Operăm în Slovenia, Slovacia, Lituania, Puerto Rico, Țările de Jos/Flandra, Irlanda, Franța, Grecia, Turcia, Serbia, România, Bulgaria și Macedonia de Nord, fiecare adaptat limbii locale."
+  },
+  "footer": {
+    "tagline": "Credite personale rapide și transparente.",
+    "linksTitle": "Linkuri",
+    "legalTitle": "Informații legale",
+    "contactTitle": "Contact",
+    "terms": "Termeni și condiții",
+    "privacy": "Confidențialitate",
+    "cookies": "Cookie-uri",
+    "rights": "Toate drepturile rezervate.",
+    "riskNote": "Un credit vă angajează și trebuie rambursat. Evaluați cu atenție capacitatea de rambursare înainte de a semna contractul."
+  },
+  "bottomNav": {
+    "home": "Acasă",
+    "simulate": "Simulator",
+    "apply": "Solicită",
+    "about": "Despre noi"
+  },
+  "contactPage": {
+    "eyebrow": "Suntem aici pentru tine",
+    "title": "Contactează echipa FondsLink",
+    "subtitle": "Ai o întrebare despre un credit, o cerere sau despre modul în care operăm în țara ta? Scrie-ne — răspundem rapid.",
+    "emailLabel": "E-mail",
+    "emailValue": "podpora@fondslink.com",
+    "responseLabel": "Timp de răspuns",
+    "responseValue": "De obicei în 24 de ore în zilele lucrătoare",
+    "hoursLabel": "Program de suport",
+    "hoursValue": "Luni–vineri, 9:00–17:00 (CET)"
+  },
+  "trust": {
+    "title": "Operăm în conformitate cu reglementările locale",
+    "subtitle": "În fiecare țară, respectăm regulile stabilite de autoritatea de supraveghere financiară competentă."
+  },
+  "legal": {
+    "termsTitle": "Termeni și condiții",
+    "termsP1": "Acest document reglementează condițiile de utilizare a site-ului FondsLink (fondslink.com) și a serviciilor sale de simulare și cerere de credit. Prin utilizarea site-ului, sunteți de acord cu acești termeni.",
+    "termsP2": "Simulatorul de credit de pe site are caracter exclusiv informativ și nu constituie o ofertă de credit fermă. Oferta reală depinde de o evaluare individuală a cererii.",
+    "termsP3": "FondsLink își rezervă dreptul de a refuza orice cerere de credit fără a preciza motivul, în conformitate cu legislația aplicabilă din fiecare țară.",
+    "termsP4": "Conținutul site-ului este protejat prin drepturi de autor. Copierea sau distribuirea conținutului fără permisiune este interzisă.",
+    "privacyTitle": "Confidențialitate",
+    "privacyP1": "FondsLink vă respectă confidențialitatea. Simulatorul de credit de pe acest site nu necesită date personale, iar nimic nu este stocat pe serverele noastre — valorile rămân doar în browserul dumneavoastră pe durata sesiunii.",
+    "privacyP2": "Datele personale (prenume, nume, e-mail, telefon) pe care le furnizați prin formularul de contact sau de cerere de credit sunt folosite exclusiv pentru procesarea cererii dumneavoastră și sunt trimise direct la e-mailul nostru. Nu stocăm aceste date într-o bază de date.",
+    "privacyP3": "Nu vindem și nu partajăm niciodată datele dumneavoastră cu terți în scopuri de marketing.",
+    "privacyP4": "Pentru orice întrebare privind protecția datelor, contactați-ne la podpora@fondslink.com.",
+    "cookiesTitle": "Cookie-uri",
+    "cookiesP1": "Acest site utilizează o cantitate minimă de date tehnice stocate în browserul dumneavoastră (sessionStorage), exclusiv pentru a reține valorile simulatorului de credit (suma și durata) pe durata vizitei, atunci când treceți la formularul de cerere.",
+    "cookiesP2": "Aceste date sunt șterse automat la închiderea browserului și nu sunt niciodată trimise către vreun server.",
+    "cookiesP3": "Site-ul nu utilizează cookie-uri terțe de urmărire sau publicitate."
+  },
+  "contractEmail": {
+    "subject": "Oferta ta de credit FondsLink — {ref}",
+    "greeting": "Bună ziua, {name},",
+    "intro": "Vă mulțumim că ați depus cererea la FondsLink. Găsiți atașată oferta de credit calculată, pregătită pe baza datelor pe care ni le-ați furnizat.",
+    "summaryTitle": "Rezumatul cererii dumneavoastră",
+    "amountLabel": "Sumă",
+    "durationLabel": "Durata de rambursare",
+    "monthlyLabel": "Rata lunară",
+    "instructions": "Vă rugăm să analizați cu atenție documentul atașat. Pentru semnătură și pașii următori, contactați-ne la podpora@fondslink.com — este posibil să vă contactăm și telefonic, dacă este necesar.",
+    "closing": "Cu stimă,\nEchipa FondsLink"
+  },
+  "testimonial": {
+    "eyebrow": "Recenzii verificate ale clienților",
+    "score": "4.9",
+    "reviewCount": "+1.200 de recenzii ale clienților",
+    "quote": "Proces rapid și fără probleme, cererea mea a fost procesată în mai puțin de 24 de ore. Serviciu impecabil.",
+    "author": "Marc L., Lyon — finanțare de 12.000 €"
+  },
+  "testimonials": {
+    "eyebrow": "Poveștile clienților",
+    "title": "Ce spun clienții noștri",
+    "subtitle": "Experiențe reale ale solicitanților din toate piețele noastre.",
+    "items": [
+      { "author": "Maja P.", "location": "Ljubljana, Slovenia", "rating": 5, "quote": "Simulatorul mi-a arătat rata lunară exactă chiar înainte să depun cererea. Fără surprize, fără costuri ascunse." },
+      { "author": "Julien M.", "location": "Lyon, Franța", "rating": 5, "quote": "Am comparat mai mulți creditori, iar FondsLink a fost de departe cel mai clar în privința costului total al creditului." },
+      { "author": "Eleni K.", "location": "Atena, Grecia", "rating": 5, "quote": "Cererea mea a fost aprobată în mai puțin de o zi, iar banii au ajuns exact la termenul stabilit." },
+      { "author": "Emre S.", "location": "Istanbul, Turcia", "rating": 4, "quote": "Serviciul clienți a răspuns cu răbdare la fiecare întrebare, chiar și la cele puse de două ori." },
+      { "author": "Ioana D.", "location": "București, România", "rating": 5, "quote": "Totul a fost digital, de la simulare până la semnarea contractului. Mi-a economisit o deplasare la bancă." },
+      { "author": "Sanne V.", "location": "Rotterdam, Țările de Jos", "rating": 5, "quote": "Dobânzi transparente și un grafic de rambursare clar. Exact ce aveam nevoie pentru renovare." },
+      { "author": "Nikola J.", "location": "Belgrad, Serbia", "rating": 5, "quote": "Am apreciat faptul că informațiile de reglementare au fost ușor de găsit și de înțeles." },
+      { "author": "Aoife B.", "location": "Dublin, Irlanda", "rating": 4, "quote": "Întregul proces a durat mai puțin decât mă așteptam, iar echipa m-a ținut informat la fiecare pas." },
+      { "author": "Petar I.", "location": "Sofia, Bulgaria", "rating": 5, "quote": "Un simulator de credit simplu și o echipă de suport care chiar explică cifrele." },
+      { "author": "Ana T.", "location": "Skopje, Macedonia de Nord", "rating": 5, "quote": "Mi-a plăcut că am putut ajusta suma și durata și am văzut rata actualizându-se instantaneu." }
+    ]
+  },
+  "regulatory": {
+    "title": "Autorizat și reglementat",
+    "subtitle": "În fiecare jurisdicție, ofertele noastre respectă cerințele autorităților de supraveghere financiară.",
+    "badgeText": "Autorizat și supravegheat pentru Spațiul Economic European (SEE)",
+    "ctaTitle": "Ești gata să îți pui în practică proiectul?",
+    "ctaSubtitle": "Obține-ți estimarea în 2 minute și începe cu încredere."
+  },
+  "disclaimer": {
+    "text": "Un credit vă angajează și trebuie rambursat. Verificați-vă capacitatea de rambursare înainte de a vă angaja."
+  }
+}

@@ -196,6 +196,23 @@
     "quote": "Sklandus ir greitas procesas, mano prašymas buvo išnagrinėtas per mažiau nei 24 valandas. Nepriekaištingas aptarnavimas.",
     "author": "Marc L., Lionas — 12 000 € finansavimas"
   },
+  "testimonials": {
+    "eyebrow": "Klientų istorijos",
+    "title": "Ką sako mūsų klientai",
+    "subtitle": "Tikros pareiškėjų patirtys visose mūsų rinkose.",
+    "items": [
+      { "author": "Maja P.", "location": "Liublijana, Slovėnija", "rating": 5, "quote": "Simuliatorius parodė tikslią mėnesinę įmoką dar prieš pateikiant paraišką. Jokių netikėtumų, jokių paslėptų mokesčių." },
+      { "author": "Julien M.", "location": "Lionas, Prancūzija", "rating": 5, "quote": "Palyginau kelis skolintojus ir FondsLink buvo kur kas aiškiausias dėl bendros paskolos kainos." },
+      { "author": "Eleni K.", "location": "Atėnai, Graikija", "rating": 5, "quote": "Mano paraiška buvo patvirtinta greičiau nei per dieną, o lėšos atkeliavo tiksliai numatytu laiku." },
+      { "author": "Emre S.", "location": "Stambulas, Turkija", "rating": 4, "quote": "Klientų aptarnavimo komanda kantriai atsakė į kiekvieną klausimą, net į tuos, kuriuos uždaviau du kartus." },
+      { "author": "Ioana D.", "location": "Bukareštas, Rumunija", "rating": 5, "quote": "Viskas vyko skaitmeniniu būdu – nuo simuliacijos iki sutarties pasirašymo. Sutaupiau kelionę į banką." },
+      { "author": "Sanne V.", "location": "Roterdamas, Nyderlandai", "rating": 5, "quote": "Skaidrios palūkanos ir aiškus grąžinimo grafikas. Būtent tai, ko man reikėjo remontui." },
+      { "author": "Nikola J.", "location": "Belgradas, Serbija", "rating": 5, "quote": "Vertinau, kad reguliavimo informaciją buvo lengva rasti ir suprasti." },
+      { "author": "Aoife B.", "location": "Dublinas, Airija", "rating": 4, "quote": "Visas procesas užtruko trumpiau, nei tikėjausi, o komanda informavo mane kiekviename žingsnyje." },
+      { "author": "Petar I.", "location": "Sofija, Bulgarija", "rating": 5, "quote": "Paprastas paskolos simuliatorius ir palaikymo komanda, kuri iš tiesų paaiškina skaičius." },
+      { "author": "Ana T.", "location": "Skopjė, Šiaurės Makedonija", "rating": 5, "quote": "Man patiko, kad galėjau koreguoti sumą ir terminą ir iškart matyti atnaujintą įmoką." }
+    ]
+  },
   "regulatory": {
     "title": "Licencijuoti ir reguliuojami",
     "subtitle": "Kiekvienoje jurisdikcijoje mūsų pasiūlymai atitinka finansų priežiūros institucijų reikalavimus.",

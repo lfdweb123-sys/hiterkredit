@@ -102,8 +102,8 @@ export default async function LocaleLayout({
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.png`,
     email: 'podpora@fondslink.com',
-    areaServed: ['SI', 'SK', 'LT', 'PR', 'NL', 'BE', 'IE'],
-    availableLanguage: ['sl', 'sk', 'lt', 'es', 'nl', 'en'],
+    areaServed: ['SI', 'SK', 'LT', 'PR', 'NL', 'BE', 'IE', 'FR', 'GR', 'TR', 'RS', 'RO', 'BG', 'MK'],
+    availableLanguage: [...locales],
   };
 
   return (

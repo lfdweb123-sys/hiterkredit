@@ -196,6 +196,23 @@
     "quote": "Plynulý a rýchly proces, moja žiadosť bola vybavená do 24 hodín. Bezchybný servis.",
     "author": "Marc L., Lyon — financovanie 12 000 €"
   },
+  "testimonials": {
+    "eyebrow": "Príbehy klientov",
+    "title": "Čo hovoria naši klienti",
+    "subtitle": "Skutočné skúsenosti žiadateľov zo všetkých našich trhov.",
+    "items": [
+      { "author": "Maja P.", "location": "Ľubľana, Slovinsko", "rating": 5, "quote": "Simulátor mi ukázal presnú mesačnú splátku ešte pred podaním žiadosti. Žiadne prekvapenia, žiadne skryté poplatky." },
+      { "author": "Julien M.", "location": "Lyon, Francúzsko", "rating": 5, "quote": "Porovnal som viacero veriteľov a FondsLink bol jednoznačne najjasnejší v otázke celkových nákladov na môj úver." },
+      { "author": "Eleni K.", "location": "Atény, Grécko", "rating": 5, "quote": "Moja žiadosť bola schválená za menej ako deň a prostriedky dorazili presne v dohodnutom termíne." },
+      { "author": "Emre S.", "location": "Istanbul, Turecko", "rating": 4, "quote": "Zákaznícka podpora trpezlivo odpovedala na každú otázku, aj na tie, ktoré som sa pýtal dvakrát." },
+      { "author": "Ioana D.", "location": "Bukurešť, Rumunsko", "rating": 5, "quote": "Všetko prebehlo digitálne, od simulácie až po podpis zmluvy. Ušetril mi to cestu do banky." },
+      { "author": "Sanne V.", "location": "Rotterdam, Holandsko", "rating": 5, "quote": "Transparentné úrokové sadzby a jasný splátkový kalendár. Presne to, čo som potreboval na rekonštrukciu." },
+      { "author": "Nikola J.", "location": "Belehrad, Srbsko", "rating": 5, "quote": "Ocenil som, že regulačné informácie boli ľahko dostupné a zrozumiteľné." },
+      { "author": "Aoife B.", "location": "Dublin, Írsko", "rating": 4, "quote": "Celý proces trval kratšie, než som čakal, a tím ma informoval v každom kroku." },
+      { "author": "Petar I.", "location": "Sofia, Bulharsko", "rating": 5, "quote": "Jednoduchý simulátor úveru a tím podpory, ktorý naozaj vysvetľuje čísla." },
+      { "author": "Ana T.", "location": "Skopje, Severné Macedónsko", "rating": 5, "quote": "Páčilo sa mi, že som mohol upraviť sumu a dobu splácania a hneď vidieť aktualizovanú splátku." }
+    ]
+  },
   "regulatory": {
     "title": "Licencovaní a regulovaní",
     "subtitle": "V každej jurisdikcii naše ponuky spĺňajú požiadavky orgánov finančného dohľadu.",

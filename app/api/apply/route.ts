@@ -4,6 +4,7 @@ import { buildContractData, formatMoney, formatDate } from '@/lib/contract';
 import { generateContractPdf } from '@/lib/generateContractPdf';
 import { getContractEmailText } from '@/lib/emailTranslations';
 import { AMOUNT_MIN, AMOUNT_MAX, DURATION_MIN, DURATION_MAX } from '@/lib/loan';
+import { locales } from '@/i18n/config';
 
 function bufferToBase64(buf: Uint8Array): string {
   return Buffer.from(buf).toString('base64');
@@ -56,7 +57,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false, error: 'out_of_range' }, { status: 400 });
     }
 
-    const safeLocale = ['sl', 'sk', 'lt', 'es', 'nl', 'en'].includes(locale) ? locale : 'sl';
+    const safeLocale = (locales as readonly string[]).includes(locale) ? locale : 'sl';
 
     // --- Compute the contract deterministically from the applicant's data ---
     const contractData = buildContractData({

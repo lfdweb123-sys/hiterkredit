@@ -68,6 +68,13 @@ function localeToIntl(locale: string): string {
     es: 'es-PR',
     nl: 'nl-NL',
     en: 'en-IE',
+    fr: 'fr-FR',
+    el: 'el-GR',
+    tr: 'tr-TR',
+    sr: 'sr-RS',
+    ro: 'ro-RO',
+    bg: 'bg-BG',
+    mk: 'mk-MK',
   };
   return map[locale] ?? 'en-IE';
 }

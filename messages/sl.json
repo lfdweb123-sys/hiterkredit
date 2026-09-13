@@ -197,6 +197,23 @@
     "quote": "Hiter in pregleden postopek, moja vloga je bila obravnavana v manj kot 24 urah. Brezhibna storitev.",
     "author": "Marc L., Lyon — financiranje 12.000 €"
   },
+  "testimonials": {
+    "eyebrow": "Zgodbe strank",
+    "title": "Kaj pravijo naše stranke",
+    "subtitle": "Resnične izkušnje prosilcev na vseh naših trgih.",
+    "items": [
+      { "author": "Maja P.", "location": "Ljubljana, Slovenija", "rating": 5, "quote": "Simulator mi je pokazal natančen mesečni obrok, še preden sem sploh oddal vlogo. Brez presenečenj, brez skritih stroškov." },
+      { "author": "Julien M.", "location": "Lyon, Francija", "rating": 5, "quote": "Primerjal sem več ponudnikov in FondsLink je bil daleč najbolj jasen glede skupnih stroškov mojega posojila." },
+      { "author": "Eleni K.", "location": "Atene, Grčija", "rating": 5, "quote": "Moja vloga je bila odobrena v manj kot enem dnevu, sredstva pa so prispela točno po dogovorjenem terminu." },
+      { "author": "Emre S.", "location": "Istanbul, Turčija", "rating": 4, "quote": "Podpora uporabnikom je potrpežljivo odgovorila na vsako vprašanje, tudi na tista, ki sem jih vprašal dvakrat." },
+      { "author": "Ioana D.", "location": "Bukarešta, Romunija", "rating": 5, "quote": "Vse je bilo digitalno, od simulacije do podpisane pogodbe. Prihranil sem si pot v banko." },
+      { "author": "Sanne V.", "location": "Rotterdam, Nizozemska", "rating": 5, "quote": "Pregledne obrestne mere in jasen načrt odplačevanja. Točno to, kar sem potreboval za prenovo." },
+      { "author": "Nikola J.", "location": "Beograd, Srbija", "rating": 5, "quote": "Cenil sem, da so bile regulativne informacije lahko dostopne in razumljive." },
+      { "author": "Aoife B.", "location": "Dublin, Irska", "rating": 4, "quote": "Celoten postopek je trajal krajše, kot sem pričakoval, ekipa pa me je obveščala na vsakem koraku." },
+      { "author": "Petar I.", "location": "Sofija, Bolgarija", "rating": 5, "quote": "Preprost simulator posojila in ekipa podpore, ki dejansko pojasni številke." },
+      { "author": "Ana T.", "location": "Skopje, Severna Makedonija", "rating": 5, "quote": "Všeč mi je bilo, da sem lahko prilagodil znesek in trajanje ter takoj videl posodobljen obrok." }
+    ]
+  },
   "regulatory": {
     "title": "Licencirani in regulirani",
     "subtitle": "V vsaki jurisdikciji naše ponudbe izpolnjujejo zahteve organov finančnega nadzora.",

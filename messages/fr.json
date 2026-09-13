@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "siteName": "FondsLink",
+    "titleHome": "FondsLink — Prêts personnels rapides et transparents",
+    "descHome": "Simulez votre prêt en temps réel et déposez votre demande en quelques minutes. Aucun frais caché, aucune conservation de données inutile.",
+    "titleSimulate": "Simulateur de prêt — FondsLink",
+    "descSimulate": "Calculez votre mensualité et le coût total de votre prêt à l'aide d'un simple curseur. Utilisez le résultat directement dans votre demande.",
+    "titleApply": "Demande de prêt — FondsLink",
+    "descApply": "Déposez une demande de prêt simple. Réponse rapide, sans démarches inutiles.",
+    "titleAbout": "À propos — FondsLink",
+    "descAbout": "Découvrez FondsLink : transparence, rapidité et prêt responsable.",
+    "titleContact": "Contact — FondsLink",
+    "descContact": "Contactez l'équipe FondsLink pour toute question sur les prêts, les demandes ou les partenariats."
+  },
+  "nav": {
+    "home": "Accueil",
+    "simulate": "Simulateur",
+    "apply": "Demander",
+    "about": "À propos",
+    "contact": "Contact",
+    "cta": "Voir mon offre"
+  },
+  "hero": {
+    "badgeSecure": "Simulation rapide et 100 % sécurisée",
+    "eyebrow": "Prêts personnels dans plusieurs pays",
+    "title": "Votre montant. Votre durée. Votre mensualité — instantanément.",
+    "subtitle": "Déplacez le curseur et découvrez en temps réel votre mensualité. Sans inscription, sans frais cachés.",
+    "ctaPrimary": "Calculer mon prêt",
+    "ctaSecondary": "Comment ça marche",
+    "trust1": "Réponse sous 24 heures",
+    "trust2": "Aucun frais caché",
+    "trust3": "Données non conservées",
+    "heroRatingScore": "4.9/5",
+    "heroTestimonial": "« Offre acceptée en 24h, fonds reçus rapidement » — Thomas & Clara"
+  },
+  "simulator": {
+    "title": "Calculez votre mensualité",
+    "subtitle": "Ajustez le montant et la durée — le calcul se met à jour instantanément.",
+    "amountLabel": "Montant du prêt",
+    "durationLabel": "Durée de remboursement",
+    "months": "mois",
+    "monthlyPayment": "Mensualité",
+    "totalRepay": "Total à rembourser",
+    "totalCost": "Coût total du crédit",
+    "rateNote": "Taux annuel effectif global (TAEG) indicatif : 6,9 % nominal / 7,4 % effectif. L'offre réelle dépend de votre évaluation personnelle.",
+    "ctaUseValues": "Continuer la demande avec ces valeurs",
+    "disclaimer": "Cette simulation est fournie à titre indicatif et ne constitue pas une offre ferme."
+  },
+  "howItWorks": {
+    "title": "Trois étapes vers votre prêt",
+    "step1Title": "Calculer",
+    "step1Text": "Réglez le montant et la durée sur le curseur et découvrez votre mensualité instantanément.",
+    "step2Title": "Déposez votre demande",
+    "step2Text": "Remplissez un formulaire court — les montants calculés sont repris automatiquement.",
+    "step3Title": "Recevez une réponse",
+    "step3Text": "Notre équipe étudie votre demande et vous répond le plus rapidement possible.",
+    "subtitle": "Un parcours entièrement numérique, pensé pour être direct, transparent et sans démarches inutiles.",
+    "step1Note": "Aucun engagement requis",
+    "step2Note": "Transmission sécurisée 256 bits",
+    "step3Note": "Virement rapide des fonds"
+  },
+  "features": {
+    "title": "Pourquoi FondsLink",
+    "f1Title": "Transparence totale",
+    "f1Text": "Vous voyez chaque coût dès le simulateur — aucune surprise dans le contrat.",
+    "f2Title": "Traitement rapide",
+    "f2Text": "Un formulaire simple et des délais de réponse rapides de notre équipe.",
+    "f3Title": "Sécurité des données",
+    "f3Text": "Nous ne conservons vos données personnelles que le temps nécessaire au traitement de votre demande.",
+    "f4Title": "Accompagnement personnalisé",
+    "f4Text": "Notre équipe est disponible pour répondre à toute question concernant votre prêt.",
+    "subtitle": "Nous combinons la puissance de la technologie financière moderne à un accompagnement humain responsable et certifié.",
+    "imageCaption1": "Suivi en temps réel de votre demande et signature électronique sécurisée",
+    "imageCaption2": "Des experts financiers agréés à vos côtés à chaque étape"
+  },
+  "countries": {
+    "title": "Disponible dans votre pays",
+    "subtitle": "FondsLink opère dans plusieurs pays d'Europe et à Porto Rico, en s'adaptant à la langue et aux pratiques locales.",
+    "eyebrow": "Présent à travers l'Europe"
+  },
+  "form": {
+    "badgeOfficial": "Demande officielle et 100 % sécurisée",
+    "title": "Demande de prêt",
+    "subtitle": "Remplissez le formulaire ci-dessous. Tous les champs sont obligatoires sauf mention contraire.",
+    "prefilled": "Les valeurs issues du simulateur ont été renseignées automatiquement. Vous pouvez les modifier.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Adresse e-mail",
+    "phone": "Numéro de téléphone",
+    "amount": "Montant souhaité",
+    "duration": "Durée de remboursement souhaitée (mois)",
+    "message": "Message complémentaire (facultatif)",
+    "consent": "J'accepte que FondsLink utilise mes données uniquement pour traiter cette demande.",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours...",
+    "successTitle": "Demande envoyée avec succès",
+    "successText": "Merci ! Notre équipe vous contactera dès que possible.",
+    "errorTitle": "Une erreur est survenue",
+    "errorText": "Nous n'avons pas pu envoyer votre demande. Veuillez réessayer ou nous contacter directement.",
+    "required": "Ce champ est obligatoire.",
+    "successContractNote": "Nous avons envoyé l'offre de prêt détaillée au format PDF à votre adresse e-mail."
+  },
+  "contactForm": {
+    "title": "Contactez-nous",
+    "subtitle": "Une question ? Écrivez-nous et nous répondrons dès que possible.",
+    "name": "Nom complet",
+    "email": "Adresse e-mail",
+    "subject": "Sujet",
+    "message": "Message",
+    "submit": "Envoyer le message",
+    "submitting": "Envoi en cours...",
+    "successTitle": "Message envoyé",
+    "successText": "Merci pour votre message. Nous vous répondrons dès que possible.",
+    "errorTitle": "Le message n'a pas pu être envoyé",
+    "errorText": "Veuillez réessayer plus tard."
+  },
+  "about": {
+    "eyebrow": "À propos de l'entreprise",
+    "title": "Transparence, rapidité et prêt responsable",
+    "intro": "FondsLink a été créé avec un seul objectif : rendre le prêt personnel simple, transparent et accessible, où que vous viviez.",
+    "missionTitle": "Notre mission",
+    "missionText": "Nous pensons qu'une décision financière doit être simple. C'est pourquoi nous avons conçu un simulateur qui affiche le coût réel d'un prêt en temps réel, ainsi qu'un formulaire de demande qui prend moins de deux minutes.",
+    "valuesTitle": "Nos valeurs",
+    "value1Title": "Clarté",
+    "value1Text": "Aucun frais caché ni petites lignes destinées à vous surprendre.",
+    "value2Title": "Respect de vos données",
+    "value2Text": "Nous ne collectons que les données nécessaires au traitement de votre demande.",
+    "value3Title": "Responsabilité",
+    "value3Text": "Nous prêtons de manière responsable et vous encourageons à évaluer votre capacité de remboursement.",
+    "presenceTitle": "Où nous opérons",
+    "presenceText": "Nous opérons en Slovénie, en Slovaquie, en Lituanie, à Porto Rico, aux Pays-Bas/en Flandre, en Irlande, en France, en Grèce, en Turquie, en Serbie, en Roumanie, en Bulgarie et en Macédoine du Nord, chacun adapté à la langue locale."
+  },
+  "footer": {
+    "tagline": "Des prêts personnels rapides et transparents.",
+    "linksTitle": "Liens",
+    "legalTitle": "Mentions légales",
+    "contactTitle": "Contact",
+    "terms": "Conditions générales",
+    "privacy": "Confidentialité",
+    "cookies": "Cookies",
+    "rights": "Tous droits réservés.",
+    "riskNote": "Un prêt vous engage et doit être remboursé. Vérifiez bien vos capacités de remboursement avant de signer le contrat."
+  },
+  "bottomNav": {
+    "home": "Accueil",
+    "simulate": "Simulateur",
+    "apply": "Demander",
+    "about": "À propos"
+  },
+  "contactPage": {
+    "eyebrow": "Nous sommes là pour vous",
+    "title": "Contactez l'équipe FondsLink",
+    "subtitle": "Une question sur un prêt, une demande, ou notre fonctionnement dans votre pays ? Écrivez-nous — nous répondons rapidement.",
+    "emailLabel": "E-mail",
+    "emailValue": "podpora@fondslink.com",
+    "responseLabel": "Délai de réponse",
+    "responseValue": "Généralement sous 24 heures les jours ouvrés",
+    "hoursLabel": "Horaires du support",
+    "hoursValue": "Lundi–vendredi, 9h00–17h00 (CET)"
+  },
+  "trust": {
+    "title": "Nous opérons conformément à la réglementation locale",
+    "subtitle": "Dans chaque pays, nous respectons les règles fixées par l'autorité de contrôle financier compétente."
+  },
+  "legal": {
+    "termsTitle": "Conditions générales",
+    "termsP1": "Ce document régit les conditions d'utilisation du site FondsLink (fondslink.com) et de ses services de simulation et de demande de prêt. En utilisant le site, vous acceptez ces conditions.",
+    "termsP2": "Le simulateur de prêt présent sur le site est fourni à titre indicatif uniquement et ne constitue pas une offre de crédit ferme. L'offre réelle dépend d'une évaluation individuelle de la demande.",
+    "termsP3": "FondsLink se réserve le droit de refuser toute demande de prêt sans en préciser le motif, conformément à la législation applicable dans chaque pays.",
+    "termsP4": "Le contenu du site est protégé par le droit d'auteur. Toute copie ou diffusion du contenu sans autorisation est interdite.",
+    "privacyTitle": "Confidentialité",
+    "privacyP1": "FondsLink respecte votre vie privée. Le simulateur de prêt de ce site ne requiert aucune donnée personnelle, et rien n'est stocké sur nos serveurs — les valeurs restent uniquement dans votre navigateur pendant votre session.",
+    "privacyP2": "Les données personnelles (prénom, nom, e-mail, téléphone) que vous fournissez via le formulaire de contact ou de demande de prêt sont utilisées uniquement pour traiter votre demande et sont envoyées directement à notre adresse e-mail. Nous ne stockons pas ces données dans une base de données.",
+    "privacyP3": "Nous ne vendons ni ne partageons jamais vos données avec des tiers à des fins commerciales.",
+    "privacyP4": "Pour toute question relative à la protection des données, contactez-nous à podpora@fondslink.com.",
+    "cookiesTitle": "Cookies",
+    "cookiesP1": "Ce site utilise un minimum de données techniques stockées dans votre navigateur (sessionStorage), uniquement pour mémoriser les valeurs du simulateur (montant et durée) pendant votre visite, lorsque vous passez au formulaire de demande.",
+    "cookiesP2": "Ces données sont automatiquement supprimées à la fermeture de votre navigateur et ne sont jamais envoyées à un serveur.",
+    "cookiesP3": "Le site n'utilise pas de cookies tiers de suivi ou publicitaires."
+  },
+  "contractEmail": {
+    "subject": "Votre offre de prêt FondsLink — {ref}",
+    "greeting": "Bonjour {name},",
+    "intro": "Merci d'avoir déposé votre demande auprès de FondsLink. Vous trouverez ci-joint l'offre de prêt calculée à partir des informations que vous avez fournies.",
+    "summaryTitle": "Récapitulatif de votre demande",
+    "amountLabel": "Montant",
+    "durationLabel": "Durée de remboursement",
+    "monthlyLabel": "Mensualité",
+    "instructions": "Merci de lire attentivement le document joint. Pour la signature et les prochaines étapes, contactez-nous à podpora@fondslink.com — nous pourrons également vous contacter par téléphone si nécessaire.",
+    "closing": "Cordialement,\nL'équipe FondsLink"
+  },
+  "testimonial": {
+    "eyebrow": "Avis clients vérifiés",
+    "score": "4.9",
+    "reviewCount": "+1 200 avis clients",
+    "quote": "Processus fluide et rapide, ma demande a été traitée en moins de 24 heures. Service impeccable.",
+    "author": "Marc L., Lyon — financement de 12 000 €"
+  },
+  "testimonials": {
+    "eyebrow": "Témoignages clients",
+    "title": "Ce que disent nos clients",
+    "subtitle": "Des expériences réelles de demandeurs dans tous nos marchés.",
+    "items": [
+      { "author": "Maja P.", "location": "Ljubljana, Slovénie", "rating": 5, "quote": "Le simulateur m'a montré la mensualité exacte avant même de déposer ma demande. Aucune surprise, aucun frais caché." },
+      { "author": "Julien M.", "location": "Lyon, France", "rating": 5, "quote": "J'ai comparé plusieurs prêteurs et FondsLink était de loin le plus clair sur le coût total de mon prêt." },
+      { "author": "Eleni K.", "location": "Athènes, Grèce", "rating": 5, "quote": "Ma demande a été approuvée en moins d'une journée et les fonds sont arrivés dans les délais annoncés." },
+      { "author": "Emre S.", "location": "Istanbul, Turquie", "rating": 4, "quote": "Le service client a répondu à chaque question avec patience, même celles que j'ai posées deux fois." },
+      { "author": "Ioana D.", "location": "Bucarest, Roumanie", "rating": 5, "quote": "Tout était numérique, de la simulation jusqu'à la signature du contrat. Cela m'a évité un déplacement en agence." },
+      { "author": "Sanne V.", "location": "Rotterdam, Pays-Bas", "rating": 5, "quote": "Des taux transparents et un échéancier clair. Exactement ce dont j'avais besoin pour mes travaux." },
+      { "author": "Nikola J.", "location": "Belgrade, Serbie", "rating": 5, "quote": "J'ai apprécié que les informations réglementaires soient faciles à trouver et à comprendre." },
+      { "author": "Aoife B.", "location": "Dublin, Irlande", "rating": 4, "quote": "Toute la démarche a pris moins de temps que prévu, et l'équipe m'a tenu informé à chaque étape." },
+      { "author": "Petar I.", "location": "Sofia, Bulgarie", "rating": 5, "quote": "Un simulateur de prêt simple et une équipe qui explique vraiment les chiffres." },
+      { "author": "Ana T.", "location": "Skopje, Macédoine du Nord", "rating": 5, "quote": "J'ai aimé pouvoir ajuster le montant et la durée et voir la mensualité se mettre à jour instantanément." }
+    ]
+  },
+  "regulatory": {
+    "title": "Agréé et réglementé",
+    "subtitle": "Dans chaque juridiction, nos offres respectent les exigences des autorités de contrôle financier.",
+    "badgeText": "Agréé et supervisé pour l'Espace économique européen (EEE)",
+    "ctaTitle": "Prêt à concrétiser votre projet ?",
+    "ctaSubtitle": "Obtenez votre estimation en 2 minutes et lancez-vous en toute confiance."
+  },
+  "disclaimer": {
+    "text": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager."
+  }
+}

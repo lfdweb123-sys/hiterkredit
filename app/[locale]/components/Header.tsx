@@ -60,7 +60,7 @@ export default function Header() {
               </svg>
             </button>
             {langOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-2xl shadow-xl border border-[var(--color-line)] py-2 overflow-hidden">
+              <div className="absolute right-0 mt-2 w-48 max-h-80 overflow-y-auto bg-white rounded-2xl shadow-xl border border-[var(--color-line)] py-2">
                 {locales.map((l) => (
                   <Link
                     key={l}

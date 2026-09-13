@@ -52,4 +52,18 @@ export const IMAGES = {
     width: 1600,
     height: 700,
   },
+  heroHandover: {
+    src: 'https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?q=80&w=1400&auto=format&fit=crop',
+    width: 1400,
+    height: 1050,
+  },
+} as const;
+
+// Vidéo courte (muette, en boucle) illustrant le thème "finance", utilisée en
+// arrière-plan d'une section de la page d'accueil. Hébergée sur le CDN de
+// Mixkit (mixkit.co/license) : usage commercial libre, aucune attribution
+// requise.
+export const FINANCE_VIDEO = {
+  src: 'https://assets.mixkit.co/videos/23168/23168-360.mp4',
+  poster: 'https://assets.mixkit.co/videos/23168/23168-thumb-360-2.jpg',
 } as const;

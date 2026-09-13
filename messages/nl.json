@@ -196,6 +196,23 @@
     "quote": "Vlot en snel proces, mijn aanvraag werd binnen 24 uur behandeld. Uitstekende service.",
     "author": "Marc L., Lyon — financiering van € 12.000"
   },
+  "testimonials": {
+    "eyebrow": "Klantverhalen",
+    "title": "Wat onze klanten zeggen",
+    "subtitle": "Echte ervaringen van aanvragers in al onze markten.",
+    "items": [
+      { "author": "Maja P.", "location": "Ljubljana, Slovenië", "rating": 5, "quote": "De simulator liet me het exacte maandbedrag zien nog voordat ik de aanvraag indiende. Geen verrassingen, geen verborgen kosten." },
+      { "author": "Julien M.", "location": "Lyon, Frankrijk", "rating": 5, "quote": "Ik vergeleek meerdere kredietverstrekkers en FondsLink was verreweg de duidelijkste over de totale kosten van mijn lening." },
+      { "author": "Eleni K.", "location": "Athene, Griekenland", "rating": 5, "quote": "Mijn aanvraag werd binnen een dag goedgekeurd en het geld kwam precies op de afgesproken datum binnen." },
+      { "author": "Emre S.", "location": "Istanboel, Turkije", "rating": 4, "quote": "De klantenservice beantwoordde geduldig elke vraag, zelfs de vragen die ik twee keer stelde." },
+      { "author": "Ioana D.", "location": "Boekarest, Roemenië", "rating": 5, "quote": "Alles verliep digitaal, van de simulatie tot de ondertekening van het contract. Dat scheelde me een bezoek aan de bank." },
+      { "author": "Sanne V.", "location": "Rotterdam, Nederland", "rating": 5, "quote": "Transparante rentetarieven en een duidelijk aflossingsschema. Precies wat ik nodig had voor mijn verbouwing." },
+      { "author": "Nikola J.", "location": "Belgrado, Servië", "rating": 5, "quote": "Ik waardeerde dat de wettelijke informatie makkelijk te vinden en te begrijpen was." },
+      { "author": "Aoife B.", "location": "Dublin, Ierland", "rating": 4, "quote": "Het hele proces duurde korter dan verwacht en het team hield me bij elke stap op de hoogte." },
+      { "author": "Petar I.", "location": "Sofia, Bulgarije", "rating": 5, "quote": "Een eenvoudige leningsimulator en een supportteam dat de cijfers echt uitlegt." },
+      { "author": "Ana T.", "location": "Skopje, Noord-Macedonië", "rating": 5, "quote": "Ik vond het fijn dat ik het bedrag en de looptijd kon aanpassen en de termijn meteen zag bijwerken." }
+    ]
+  },
   "regulatory": {
     "title": "Erkend & gereguleerd",
     "subtitle": "In elk rechtsgebied voldoen onze aanbiedingen aan de vereisten van de financiële toezichthouders.",
