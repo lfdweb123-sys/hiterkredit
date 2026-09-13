@@ -37,13 +37,24 @@ export default function TestimonialsSlider({ items }: { items: TestimonialItem[]
 
   if (count === 0) return null;
   const current = items[index];
+  const avatarSrc = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+    current.author
+  )}&background=0F4C81&color=fff&size=128&rounded=true&bold=true&font-size=0.4`;
 
   return (
     <div
       className="relative"
       onMouseEnter={() => timerRef.current && clearInterval(timerRef.current)}
     >
-      <div className="min-h-[220px] md:min-h-[190px] flex flex-col items-center justify-center">
+      <div className="min-h-[260px] md:min-h-[220px] flex flex-col items-center justify-center px-4">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={avatarSrc}
+          alt={current.author}
+          width={64}
+          height={64}
+          className="w-16 h-16 rounded-full object-cover ring-2 ring-white shadow-sm mb-5"
+        />
         <div className="flex items-center gap-1 mb-5">
           {Array.from({ length: 5 }).map((_, i) => (
             <Star
@@ -55,7 +66,7 @@ export default function TestimonialsSlider({ items }: { items: TestimonialItem[]
             />
           ))}
         </div>
-        <p className="font-display italic text-xl md:text-2xl font-medium text-[var(--color-ink)] leading-snug max-w-2xl">
+        <p className="font-display italic text-xl md:text-2xl font-medium text-[var(--color-ink)] leading-snug max-w-2xl text-center">
           {current.quote}
         </p>
         <p className="mt-4 text-sm text-[var(--color-ink-soft)]">

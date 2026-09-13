@@ -58,7 +58,25 @@ export const IMAGES = {
     width: 1200,
     height: 1050,
   },
-  } as const;
+  // Bandeau "argent en main" (billets euro) sous les badges de confiance du hero.
+  moneyHandStrip: {
+    src: 'https://images.unsplash.com/photo-1527788263495-3518a5c1c42d?q=80&w=1200&auto=format&fit=crop',
+    width: 1200,
+    height: 500,
+  },
+  // Illustration argent/finance à côté de la section "Comment ça marche".
+  howItWorksMoney: {
+    src: 'https://images.unsplash.com/photo-1746682603366-14c27a422e62?q=80&w=1200&auto=format&fit=crop',
+    width: 1200,
+    height: 1400,
+  },
+  // Illustration argent/finance à côté de la section "Pays".
+  countriesMoney: {
+    src: 'https://images.unsplash.com/photo-1763730001873-c1779d133a0f?q=80&w=1200&auto=format&fit=crop',
+    width: 1200,
+    height: 1400,
+  },
+} as const;
 
 // Vidéo courte (muette, en boucle) illustrant le thème "finance", utilisée en
 // arrière-plan d'une section de la page d'accueil. Hébergée sur le CDN de

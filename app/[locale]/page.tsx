@@ -237,13 +237,25 @@ export default async function HomePage({
             </div>
 
             <div>
-              <div className="mt-12 flex flex-wrap divide-x divide-[var(--color-line)] border-t border-[var(--color-line)] pt-6">
+              <div className="mt-12 flex flex-col items-center gap-3 border-t border-[var(--color-line)] pt-6 sm:flex-row sm:flex-wrap sm:items-stretch sm:justify-start sm:divide-x sm:divide-[var(--color-line)] sm:gap-0">
                 {trustItems.map(({ icon: Icon, label }, i) => (
-                  <div key={i} className="flex items-center gap-2.5 pr-6 pl-6 first:pl-0 py-1">
+                  <div
+                    key={i}
+                    className="flex items-center justify-center gap-2.5 py-1 text-center sm:justify-start sm:pr-6 sm:pl-6 sm:first:pl-0 sm:text-left"
+                  >
                     <Icon size={16} className="text-[var(--color-sky-deep)] shrink-0" />
                     <span className="text-sm text-[var(--color-ink-soft)]">{label}</span>
                   </div>
                 ))}
+              </div>
+              <div className="mt-6 relative rounded-2xl overflow-hidden ring-1 ring-[var(--color-line)]">
+                <Image
+                  src={IMAGES.moneyHandStrip.src}
+                  alt={hero('trust2')}
+                  width={IMAGES.moneyHandStrip.width}
+                  height={IMAGES.moneyHandStrip.height}
+                  className="w-full h-28 sm:h-32 object-cover"
+                />
               </div>
             </div>
           </div>
@@ -294,28 +306,40 @@ export default async function HomePage({
       {/* COMMENT ÇA MARCHE                                              */}
       {/* ============================================================= */}
       <section id="how-it-works" className="bg-[var(--color-ink)] py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <div data-reveal data-reveal-dir="up">
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-white max-w-xl">
-              {how('title')}
-            </h2>
-            <p className="mt-4 text-white/60 max-w-xl leading-relaxed">{how('subtitle')}</p>
+        <div className="mx-auto max-w-7xl px-5 md:px-8 grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-14 items-start">
+          <div data-reveal data-reveal-dir="left" className="order-2 lg:order-1 relative rounded-[1.75rem] overflow-hidden ring-1 ring-white/15">
+            <Image
+              src={IMAGES.howItWorksMoney.src}
+              alt={how('title')}
+              width={IMAGES.howItWorksMoney.width}
+              height={IMAGES.howItWorksMoney.height}
+              className="w-full h-56 sm:h-72 lg:h-full lg:min-h-[420px] object-cover"
+            />
           </div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-12">
-            {[
-              { num: '01', title: how('step1Title'), text: how('step1Text'), note: how('step1Note') },
-              { num: '02', title: how('step2Title'), text: how('step2Text'), note: how('step2Note') },
-              { num: '03', title: how('step3Title'), text: how('step3Text'), note: how('step3Note') },
-            ].map((step) => (
-              <div key={step.num} data-reveal data-reveal-dir="up" className="group/step">
-                <span className="font-ledger text-sm text-[var(--color-sky)]">{step.num}</span>
-                <div className="rule-grow mt-3 mb-5 h-px w-full bg-white/15" />
-                <h3 className="font-display text-xl font-medium text-white">{step.title}</h3>
-                <p className="mt-2.5 text-white/60 leading-relaxed">{step.text}</p>
-                <p className="mt-4 text-sm font-medium text-[var(--color-sky)]">{step.note}</p>
-              </div>
-            ))}
+          <div className="order-1 lg:order-2">
+            <div data-reveal data-reveal-dir="up">
+              <h2 className="font-display text-3xl md:text-4xl font-medium text-white max-w-xl">
+                {how('title')}
+              </h2>
+              <p className="mt-4 text-white/60 max-w-xl leading-relaxed">{how('subtitle')}</p>
+            </div>
+
+            <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12">
+              {[
+                { num: '01', title: how('step1Title'), text: how('step1Text'), note: how('step1Note') },
+                { num: '02', title: how('step2Title'), text: how('step2Text'), note: how('step2Note') },
+                { num: '03', title: how('step3Title'), text: how('step3Text'), note: how('step3Note') },
+              ].map((step) => (
+                <div key={step.num} data-reveal data-reveal-dir="up" className="group/step">
+                  <span className="font-ledger text-sm text-[var(--color-sky)]">{step.num}</span>
+                  <div className="rule-grow mt-3 mb-5 h-px w-full bg-white/15" />
+                  <h3 className="font-display text-xl font-medium text-white">{step.title}</h3>
+                  <p className="mt-2.5 text-white/60 leading-relaxed">{step.text}</p>
+                  <p className="mt-4 text-sm font-medium text-[var(--color-sky)]">{step.note}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -445,29 +469,41 @@ export default async function HomePage({
       {/* PAYS                                                           */}
       {/* ============================================================= */}
       <section className="bg-[var(--color-ink)] py-16 md:py-24">
-        <div className="mx-auto max-w-3xl px-5 md:px-8">
-          <div data-reveal data-reveal-dir="up" className="text-center mb-14">
-            <p className="inline-flex items-center gap-2.5 text-sm text-white/50 mb-5">
-              <span className="h-px w-7 bg-[var(--color-sky)]" />
-              {countries('eyebrow')}
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-white">
-              {countries('title')}
-            </h2>
-            <p className="mt-4 text-white/60 max-w-xl mx-auto leading-relaxed">
-              {countries('subtitle')}
-            </p>
+        <div className="mx-auto max-w-7xl px-5 md:px-8 grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-start">
+          <div>
+            <div data-reveal data-reveal-dir="up" className="text-center lg:text-left mb-14">
+              <p className="inline-flex items-center gap-2.5 text-sm text-white/50 mb-5">
+                <span className="h-px w-7 bg-[var(--color-sky)]" />
+                {countries('eyebrow')}
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl font-medium text-white">
+                {countries('title')}
+              </h2>
+              <p className="mt-4 text-white/60 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                {countries('subtitle')}
+              </p>
+            </div>
+
+            <div className="border-t border-white/15">
+              {countryList.map((cItem) => (
+                <div key={cItem.name} data-reveal data-reveal-dir="up">
+                  <div className="flex items-center gap-3.5 py-4 border-b border-white/15 px-2 transition-colors duration-300 hover:bg-white/5">
+                    <span className="text-lg">{cItem.flag}</span>
+                    <span className="text-white font-medium">{cItem.name}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="border-t border-white/15">
-            {countryList.map((cItem) => (
-              <div key={cItem.name} data-reveal data-reveal-dir="up">
-                <div className="flex items-center gap-3.5 py-4 border-b border-white/15 px-2 transition-colors duration-300 hover:bg-white/5">
-                  <span className="text-lg">{cItem.flag}</span>
-                  <span className="text-white font-medium">{cItem.name}</span>
-                </div>
-              </div>
-            ))}
+          <div data-reveal data-reveal-dir="right" className="hidden lg:block relative rounded-[1.75rem] overflow-hidden ring-1 ring-white/15 lg:sticky lg:top-24">
+            <Image
+              src={IMAGES.countriesMoney.src}
+              alt={countries('title')}
+              width={IMAGES.countriesMoney.width}
+              height={IMAGES.countriesMoney.height}
+              className="w-full h-full min-h-[420px] object-cover"
+            />
           </div>
         </div>
       </section>

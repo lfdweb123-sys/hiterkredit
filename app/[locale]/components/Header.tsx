@@ -103,7 +103,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-[var(--color-line)] bg-white px-5 py-4 flex flex-col gap-1">
+        <div className="md:hidden border-t border-[var(--color-line)] bg-white px-5 py-4 flex flex-col gap-1 max-h-[calc(100dvh-4rem)] overflow-y-auto">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -114,11 +114,18 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+          <Link
+            href="/simulator"
+            onClick={() => setMenuOpen(false)}
+            className="mt-1 px-3 py-3 rounded-xl text-center text-base font-semibold bg-[var(--color-sky)] text-white"
+          >
+            {t('cta')}
+          </Link>
           <div className="h-px bg-[var(--color-line)] my-2" />
           <p className="px-3 text-xs font-semibold text-[var(--color-ink-soft)] uppercase tracking-wide mb-1">
             Jazyk / Language
           </p>
-          <div className="grid grid-cols-2 gap-1 px-1">
+          <div className="grid grid-cols-2 gap-1 px-1 pb-2">
             {locales.map((l) => (
               <Link
                 key={l}
