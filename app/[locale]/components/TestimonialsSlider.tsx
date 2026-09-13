@@ -10,6 +10,23 @@ type TestimonialItem = {
   quote: string;
 };
 
+// Photos réelles (Unsplash License — usage commercial libre, sans attribution
+// requise) associées à chaque avis. Le nom de l'auteur n'est pas traduit
+// (identique dans les 13 langues), donc cette table fonctionne pour toutes
+// les locales.
+const AVATARS: Record<string, string> = {
+  'Maja P.': 'https://images.unsplash.com/photo-1569925444984-9e2e5fc3d1fb?q=80&w=256&auto=format&fit=crop',
+  'Julien M.': 'https://images.unsplash.com/photo-1651684215020-f7a5b6610f23?q=80&w=256&auto=format&fit=crop',
+  'Eleni K.': 'https://images.unsplash.com/photo-1552334949-51934e5f2d38?q=80&w=256&auto=format&fit=crop',
+  'Emre S.': 'https://images.unsplash.com/photo-1549043671-1e4550948355?q=80&w=256&auto=format&fit=crop',
+  'Ioana D.': 'https://images.unsplash.com/photo-1565793244233-3d09028aad47?q=80&w=256&auto=format&fit=crop',
+  'Sanne V.': 'https://images.unsplash.com/photo-1573497160825-0d94a2724d40?q=80&w=256&auto=format&fit=crop',
+  'Nikola J.': 'https://images.unsplash.com/photo-1667996113116-02fe641c5528?q=80&w=256&auto=format&fit=crop',
+  'Aoife B.': 'https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?q=80&w=256&auto=format&fit=crop',
+  'Petar I.': 'https://images.unsplash.com/photo-1758598305480-176fb2ee4d5c?q=80&w=256&auto=format&fit=crop',
+  'Ana T.': 'https://images.unsplash.com/photo-1634974026092-95f33ba2cb49?q=80&w=256&auto=format&fit=crop',
+};
+
 export default function TestimonialsSlider({ items }: { items: TestimonialItem[] }) {
   const [index, setIndex] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -37,9 +54,9 @@ export default function TestimonialsSlider({ items }: { items: TestimonialItem[]
 
   if (count === 0) return null;
   const current = items[index];
-  const avatarSrc = `https://ui-avatars.com/api/?name=${encodeURIComponent(
-    current.author
-  )}&background=0F4C81&color=fff&size=128&rounded=true&bold=true&font-size=0.4`;
+  const avatarSrc =
+    AVATARS[current.author] ??
+    `https://ui-avatars.com/api/?name=${encodeURIComponent(current.author)}&background=0F4C81&color=fff&size=128&rounded=true&bold=true`;
 
   return (
     <div

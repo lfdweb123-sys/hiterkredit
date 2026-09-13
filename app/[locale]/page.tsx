@@ -237,14 +237,15 @@ export default async function HomePage({
             </div>
 
             <div>
-              <div className="mt-12 flex flex-col items-center gap-3 border-t border-[var(--color-line)] pt-6 sm:flex-row sm:flex-wrap sm:items-stretch sm:justify-start sm:divide-x sm:divide-[var(--color-line)] sm:gap-0">
+              <div className="mt-12 flex flex-nowrap items-center justify-center sm:justify-start gap-0 overflow-x-auto border-t border-[var(--color-line)] pt-6 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                 {trustItems.map(({ icon: Icon, label }, i) => (
                   <div
                     key={i}
-                    className="flex items-center justify-center gap-2.5 py-1 text-center sm:justify-start sm:pr-6 sm:pl-6 sm:first:pl-0 sm:text-left"
+                    className="flex items-center gap-1.5 sm:gap-2.5 shrink-0 whitespace-nowrap px-2.5 sm:px-6 first:pl-0 py-1 border-r last:border-r-0 border-[var(--color-line)]"
                   >
-                    <Icon size={16} className="text-[var(--color-sky-deep)] shrink-0" />
-                    <span className="text-sm text-[var(--color-ink-soft)]">{label}</span>
+                    <Icon size={14} className="sm:hidden text-[var(--color-sky-deep)] shrink-0" />
+                    <Icon size={16} className="hidden sm:block text-[var(--color-sky-deep)] shrink-0" />
+                    <span className="text-[11px] sm:text-sm text-[var(--color-ink-soft)]">{label}</span>
                   </div>
                 ))}
               </div>
