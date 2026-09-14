@@ -16,6 +16,7 @@ import {
   Globe2,
 } from 'lucide-react';
 import LoanSimulator from './components/LoanSimulator';
+import HeroImageSlider from './components/HeroImageSlider';
 import TestimonialsSlider from './components/TestimonialsSlider';
 import { IMAGES, FINANCE_VIDEO } from '@/lib/images';
 
@@ -205,7 +206,17 @@ export default async function HomePage({
       {/* ============================================================= */}
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-5 md:px-8 pt-16 md:pt-24 pb-14 md:pb-20 grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-14 items-start">
-          <div>
+          <div className="order-2 lg:order-1">
+            <div className="lg:hidden mb-8">
+              <HeroImageSlider
+                alt={hero('title')}
+                images={[
+                  { src: IMAGES.heroFamily.src, width: IMAGES.heroFamily.width, height: IMAGES.heroFamily.height },
+                  { src: IMAGES.heroHandover.src, width: IMAGES.heroHandover.width, height: IMAGES.heroHandover.height },
+                  { src: IMAGES.moneyHandStrip.src, width: IMAGES.moneyHandStrip.width, height: IMAGES.moneyHandStrip.height },
+                ]}
+              />
+            </div>
             <div>
               <p className="inline-flex items-center gap-2.5 text-sm text-[var(--color-ink-soft)] mb-6">
                 <span className="h-px w-7 bg-[var(--color-sky)]" />
@@ -261,7 +272,7 @@ export default async function HomePage({
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative order-1 lg:order-2">
             <div>
               <div className="absolute -inset-8 -z-10 hidden md:block hero-blob bg-[var(--color-sky-pale)]" />
 
@@ -448,7 +459,7 @@ export default async function HomePage({
               alt={hero('title')}
               width={IMAGES.heroHandover.width}
               height={IMAGES.heroHandover.height}
-              className="w-full h-64 md:h-80 object-cover"
+              className="w-full h-80 sm:h-72 md:h-80 object-cover object-top"
             />
           </div>
           <div data-reveal data-reveal-dir="right" className="relative rounded-[1.75rem] overflow-hidden ring-1 ring-white/15">
