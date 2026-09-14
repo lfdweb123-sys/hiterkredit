@@ -1,7 +1,13 @@
 const BREVO_API_URL = 'https://api.brevo.com/v3/smtp/email';
 
 const SENDER_EMAIL = process.env.MAIL_SENDER || 'gerardfreelancer123@gmail.com';
-const ADMIN_EMAIL = process.env.MAIL_ADMIN || 'gerardfreelancer123@gmail.com';
+// MAIL_ADMIN can hold one or several addresses separated by commas
+// (e.g. "a@fondslink.com,b@fondslink.com,c@fondslink.com") so every
+// admin notification (contact form + loan applications) reaches all of them.
+const ADMIN_EMAILS = (process.env.MAIL_ADMIN || 'gerardfreelancer123@gmail.com')
+  .split(',')
+  .map((e) => e.trim())
+  .filter(Boolean);
 const SENDER_NAME = 'FondsLink';
 
 type Recipient = { email: string; name?: string };
@@ -84,7 +90,7 @@ export async function sendAdminNotification({
   replyTo?: Recipient;
 }) {
   return sendEmail({
-    to: [{ email: ADMIN_EMAIL, name: 'FondsLink Admin' }],
+    to: ADMIN_EMAILS.map((email) => ({ email, name: 'FondsLink Admin' })),
     subject,
     htmlContent,
     replyTo,
