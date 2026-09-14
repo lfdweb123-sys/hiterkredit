@@ -211,9 +211,9 @@ export default async function HomePage({
               <HeroImageSlider
                 alt={hero('title')}
                 images={[
-                  { src: IMAGES.heroFamily.src, width: IMAGES.heroFamily.width, height: IMAGES.heroFamily.height },
-                  { src: IMAGES.heroHandover.src, width: IMAGES.heroHandover.width, height: IMAGES.heroHandover.height },
-                  { src: IMAGES.moneyHandStrip.src, width: IMAGES.moneyHandStrip.width, height: IMAGES.moneyHandStrip.height },
+                  { src: IMAGES.heroFamily.src, width: IMAGES.heroFamily.width, height: IMAGES.heroFamily.height, focalPoint: 'center 15%' },
+                  { src: IMAGES.heroHandover.src, width: IMAGES.heroHandover.width, height: IMAGES.heroHandover.height, focalPoint: '75% 10%' },
+                  { src: IMAGES.moneyHandStrip.src, width: IMAGES.moneyHandStrip.width, height: IMAGES.moneyHandStrip.height, focalPoint: 'center 30%' },
                 ]}
               />
             </div>
@@ -459,7 +459,8 @@ export default async function HomePage({
               alt={hero('title')}
               width={IMAGES.heroHandover.width}
               height={IMAGES.heroHandover.height}
-              className="w-full h-80 sm:h-72 md:h-80 object-cover object-top"
+              style={{ objectPosition: '75% 10%' }}
+              className="w-full h-80 sm:h-72 md:h-80 object-cover"
             />
           </div>
           <div data-reveal data-reveal-dir="right" className="relative rounded-[1.75rem] overflow-hidden ring-1 ring-white/15">

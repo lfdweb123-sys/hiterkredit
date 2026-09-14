@@ -7,6 +7,8 @@ type SlideImage = {
   src: string;
   width: number;
   height: number;
+  /** CSS object-position value, e.g. "50% 15%". Defaults to "center 20%". */
+  focalPoint?: string;
 };
 
 export default function HeroImageSlider({
@@ -38,7 +40,8 @@ export default function HeroImageSlider({
           width={img.width}
           height={img.height}
           priority={i === 0}
-          className={`w-full h-56 sm:h-64 object-cover object-top transition-opacity duration-700 ease-in-out ${
+          style={{ objectPosition: img.focalPoint ?? 'center 20%' }}
+          className={`w-full h-64 sm:h-72 object-cover transition-opacity duration-700 ease-in-out ${
             i === index ? 'opacity-100' : 'opacity-0 absolute inset-0'
           }`}
         />
