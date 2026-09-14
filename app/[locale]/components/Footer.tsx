@@ -108,7 +108,7 @@ export default function Footer() {
                 href="mailto:podpora@fondslink.com"
                 className="text-white/70 hover:text-[var(--color-sky)] transition-colors inline-flex items-center gap-2"
               >
-                <span>podpora@fondslink.com</span>
+                <span>contact@fondslink.com</span>
               </a>
             </li>
           </ul>
