@@ -103,7 +103,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-[var(--color-line)] bg-white px-5 py-4 flex flex-col gap-1 max-h-[calc(100dvh-4rem)] overflow-y-auto">
+        <div className="md:hidden border-t border-[var(--color-line)] bg-white px-5 py-4 flex flex-col gap-1 max-h-[85vh] overflow-y-auto">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -123,9 +123,9 @@ export default function Header() {
           </Link>
           <div className="h-px bg-[var(--color-line)] my-2" />
           <p className="px-3 text-xs font-semibold text-[var(--color-ink-soft)] uppercase tracking-wide mb-1">
-            Jazyk / Language
+            {locales.length} langues disponibles
           </p>
-          <div className="grid grid-cols-2 gap-1 px-1 pb-2">
+          <div className="grid grid-cols-2 gap-1 p-1 max-h-56 overflow-y-auto rounded-xl border border-[var(--color-line)] bg-[var(--color-sky-mist)]/40">
             {locales.map((l) => (
               <Link
                 key={l}
@@ -133,7 +133,7 @@ export default function Header() {
                 locale={l}
                 onClick={() => setMenuOpen(false)}
                 className={`flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm ${
-                  l === locale ? 'bg-[var(--color-sky-pale)] text-[var(--color-sky-deep)] font-semibold' : 'text-[var(--color-ink)]'
+                  l === locale ? 'bg-white text-[var(--color-sky-deep)] font-semibold shadow-sm' : 'text-[var(--color-ink)]'
                 }`}
               >
                 <span>{localeFlag[l]}</span>

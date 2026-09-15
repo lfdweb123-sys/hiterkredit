@@ -206,7 +206,7 @@ export default async function HomePage({
       {/* ============================================================= */}
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-5 md:px-8 pt-16 md:pt-24 pb-14 md:pb-20 grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-14 items-start">
-          <div className="order-2 lg:order-1">
+          <div className="order-1 lg:order-1">
             <div className="lg:hidden mb-8">
               <HeroImageSlider
                 alt={hero('title')}
@@ -272,7 +272,7 @@ export default async function HomePage({
             </div>
           </div>
 
-          <div className="relative order-1 lg:order-2">
+          <div className="relative order-2 lg:order-2">
             <div>
               <div className="absolute -inset-8 -z-10 hidden md:block hero-blob bg-[var(--color-sky-pale)]" />
 

@@ -41,7 +41,7 @@ export const localeFlag: Record<Locale, string> = {
   lt: '🇱🇹',
   es: '🇵🇷',
   nl: '🇳🇱',
-  en: '🇮🇪',
+  en: '🇺🇸',
   fr: '🇫🇷',
   el: '🇬🇷',
   tr: '🇹🇷',
